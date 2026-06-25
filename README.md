@@ -36,7 +36,11 @@ npm run dev
 
 **https://wutiange.github.io/Wujing/**
 
-推送 `main` 分支后会自动重新部署。
+更新内容后，执行以下命令重新发布：
+
+```bash
+npm run deploy
+```
 
 ## 添加笔记
 
