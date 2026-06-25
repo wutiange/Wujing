@@ -1,0 +1,168 @@
+1:"$Sreact.fragment"
+2:I[22016,["/Wujing/_next/static/chunks/05-c3ty_6dwfk.js","/Wujing/_next/static/chunks/1-8s9_t85wwr4.js","/Wujing/_next/static/chunks/1pwivukx9ooa0.js","/Wujing/_next/static/chunks/2ked2nz6230co.js","/Wujing/_next/static/chunks/1tv9sylm2u-b4.js","/Wujing/_next/static/chunks/27ieaxpw17j59.js","/Wujing/_next/static/chunks/0z6p61nq40ik6.js","/Wujing/_next/static/chunks/3qv4diprhj39l.js","/Wujing/_next/static/chunks/3qbhpum9b-92f.js","/Wujing/_next/static/chunks/3bjn-vr1eou3v.js","/Wujing/_next/static/chunks/39mbm6jpkg43n.js"],""]
+3:I[9308,["/Wujing/_next/static/chunks/05-c3ty_6dwfk.js","/Wujing/_next/static/chunks/1-8s9_t85wwr4.js","/Wujing/_next/static/chunks/1pwivukx9ooa0.js","/Wujing/_next/static/chunks/2ked2nz6230co.js","/Wujing/_next/static/chunks/1tv9sylm2u-b4.js","/Wujing/_next/static/chunks/27ieaxpw17j59.js","/Wujing/_next/static/chunks/0z6p61nq40ik6.js","/Wujing/_next/static/chunks/3qv4diprhj39l.js","/Wujing/_next/static/chunks/3qbhpum9b-92f.js","/Wujing/_next/static/chunks/3bjn-vr1eou3v.js","/Wujing/_next/static/chunks/39mbm6jpkg43n.js"],"MarkdownContent"]
+f:I[97367,["/Wujing/_next/static/chunks/05-c3ty_6dwfk.js","/Wujing/_next/static/chunks/1-8s9_t85wwr4.js"],"OutletBoundary"]
+10:"$Sreact.suspense"
+4:T287f,<h2>问题现象</h2>
+<p>离开浏览器 Tab 一段时间后（去做其他事、下班未关页等），再次切回时页面<strong>崩溃</strong>或<strong>明显变卡</strong>。</p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>情况</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>业务场景</td>
+<td>串口接收设备上报的 base64 图片，持续渲染形成「视频流」效果</td>
+</tr>
+<tr>
+<td>初步怀疑</td>
+<td>内存泄漏</td>
+</tr>
+<tr>
+<td>内存工具结论</td>
+<td>每次释放后内存能回到之前水平，<strong>未发现典型泄漏</strong></td>
+</tr>
+<tr>
+<td>线上/旧版本</td>
+<td>线上无法复现；测试 overnight 操作旧版本也无问题</td>
+</tr>
+<tr>
+<td>浏览器</td>
+<td>仅在 Chrome 中验证（其他浏览器需单独测试）</td>
+</tr>
+</tbody>
+</table>
+<h2>业务背景</h2>
+<pre class="mermaid-source"><code class="language-mermaid">flowchart LR
+    A[设备] --&gt;|串口| B[上报 base64 图片]
+    B --&gt; C[前端接收]
+    C --&gt; D[解码 / 渲染]
+    D --&gt; E[画面更新]</code></pre>
+<ul>
+<li>数据源头：设备通过串口连接，持续上报图片帧</li>
+<li>前端：<strong>有数据到达即触发处理</strong>，解码 base64 并渲染，形成「视频流」效果</li>
+</ul>
+<h2>排查过程摘要</h2>
+<table>
+<thead>
+<tr>
+<th>步骤</th>
+<th>结论</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Chrome DevTools 内存分析（约 1h）</td>
+<td>无泄漏，GC 后内存回落</td>
+</tr>
+<tr>
+<td>逐行审查新增代码</td>
+<td>无明显问题</td>
+</tr>
+<tr>
+<td>线上环境复现</td>
+<td>失败</td>
+</tr>
+<tr>
+<td>测试旧版本 overnight</td>
+<td>问题不存在 → 锁定<strong>新增代码</strong></td>
+</tr>
+<tr>
+<td>性能面板长期开启 + 刻意切换 Tab</td>
+<td><strong>发现根因</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>关键观察：</strong> Tab 处于非激活状态一段时间后切回，JS 堆大小<strong>瞬间飙高</strong>，随后才缓慢回落——说明离开期间有任务在<strong>堆积</strong>，而非持续泄漏。</p>
+<h2>根因分析</h2>
+<h3>问题代码</h3>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="javascript" data-theme="ayu-dark"><code data-language="javascript" data-theme="ayu-dark" style="display: grid;"><span data-line=""><span style="color:#BFBDB6">serial</span><span style="color:#F29668">.</span><span style="color:#FFB454">onData</span><span style="color:#BFBDB6">((</span><span style="color:#D2A6FF">base64Image</span><span style="color:#BFBDB6">) </span><span style="color:#FF8F40">=></span><span style="color:#BFBDB6"> {</span></span>
+<span data-line=""><span style="color:#FFB454">  requestIdleCallback</span><span style="color:#BFBDB6">(() </span><span style="color:#FF8F40">=></span><span style="color:#BFBDB6"> {</span></span>
+<span data-line=""><span style="color:#5A6673;font-style:italic">    // 解码 base64、渲染图片等耗时逻辑</span></span>
+<span data-line=""><span style="color:#FFB454">    decodeAndRender</span><span style="color:#BFBDB6">(base64Image)</span><span style="color:#BFBDB6B3">;</span></span>
+<span data-line=""><span style="color:#BFBDB6">  })</span><span style="color:#BFBDB6B3">;</span></span>
+<span data-line=""><span style="color:#BFBDB6">})</span><span style="color:#BFBDB6B3">;</span></span></code></pre></figure>
+<h3>requestIdleCallback 在后台 Tab 的行为</h3>
+<pre class="mermaid-source"><code class="language-mermaid">flowchart TD
+    A[Tab 激活] --&gt; B[设备上报新帧]
+    B --&gt; C[requestIdleCallback 入队]
+    C --&gt; D[浏览器空闲时执行]
+    D --&gt; E[解码渲染 / 内存释放]
+
+    F[Tab 切到后台] --&gt; G[设备仍在上报]
+    G --&gt; H[每帧仍触发 requestIdleCallback 入队]
+    H --&gt; I[回调不执行，持续积压]
+    I --&gt; J[切回 Tab → 集中执行积压回调]
+    J --&gt; K[JS 堆瞬间暴涨 / 页面卡顿或崩溃]</code></pre>
+<p><strong>核心机制（Chrome）：</strong></p>
+<ul>
+<li>Tab <strong>非激活</strong>时，<code>requestIdleCallback</code> 的回调<strong>不会执行</strong></li>
+<li>回调会被<strong>缓存</strong>，待 Tab 再次激活后<strong>集中执行</strong></li>
+<li>若回调内处理 base64 图片等重逻辑，短时间大量执行 → 内存峰值、主线程阻塞</li>
+</ul>
+<p><strong>积压机制：</strong></p>
+<pre class="mermaid-source"><code class="language-mermaid">flowchart LR
+    A[设备持续上报] --&gt; B[回调入队]
+    B --&gt; C{Tab 是否激活?}
+    C --&gt;|是| D[空闲时逐个处理]
+    C --&gt;|否| E[回调只进不出]
+    E --&gt; F[切回 Tab 后集中泄洪]</code></pre>
+<p>即使断开设备连接，<strong>队列里已积压的回调仍会执行</strong>，所以图像可能「还在动」。</p>
+<h2>修复方案</h2>
+<h3>方案 1：为 requestIdleCallback 设置 timeout（缓解）</h3>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="javascript" data-theme="ayu-dark"><code data-language="javascript" data-theme="ayu-dark" style="display: grid;"><span data-line=""><span style="color:#BFBDB6">serial</span><span style="color:#F29668">.</span><span style="color:#FFB454">onData</span><span style="color:#BFBDB6">((</span><span style="color:#D2A6FF">base64Image</span><span style="color:#BFBDB6">) </span><span style="color:#FF8F40">=></span><span style="color:#BFBDB6"> {</span></span>
+<span data-line=""><span style="color:#FFB454">  requestIdleCallback</span><span style="color:#BFBDB6">(</span></span>
+<span data-line=""><span style="color:#BFBDB6">    () </span><span style="color:#FF8F40">=></span><span style="color:#BFBDB6"> {</span></span>
+<span data-line=""><span style="color:#FFB454">      decodeAndRender</span><span style="color:#BFBDB6">(base64Image)</span><span style="color:#BFBDB6B3">;</span></span>
+<span data-line=""><span style="color:#BFBDB6">    }</span><span style="color:#BFBDB6B3">,</span></span>
+<span data-line=""><span style="color:#BFBDB6">    { timeout</span><span style="color:#BFBDB6B3">:</span><span style="color:#D2A6FF"> 100</span><span style="color:#BFBDB6"> }</span><span style="color:#BFBDB6B3">,</span><span style="color:#5A6673;font-style:italic"> // 最多等待 100ms，超时后强制执行</span></span>
+<span data-line=""><span style="color:#BFBDB6">  )</span><span style="color:#BFBDB6B3">;</span></span>
+<span data-line=""><span style="color:#BFBDB6">})</span><span style="color:#BFBDB6B3">;</span></span></code></pre></figure>
+<p><code>timeout</code> 保证即使 Tab 后台，回调也会在指定时间内执行，避免无限堆积。</p>
+<blockquote>
+<p>并非完全保险，仅适合必须保留 <code>requestIdleCallback</code> 的场景。</p>
+</blockquote>
+<h3>方案 2：改用 setTimeout / 同步处理（推荐）</h3>
+<p>对于「持续接收 + 必须及时处理」的流式场景：</p>
+<ul>
+<li>直接用 <code>setTimeout(fn, 0)</code> 或同步处理</li>
+<li>Tab 不可见时<strong>暂停消费串口数据</strong>（<code>document.visibilitychange</code>）</li>
+<li>或在组件卸载 / 页面隐藏时<strong>断开监听 + 取消未执行的 idle 回调</strong></li>
+</ul>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="javascript" data-theme="ayu-dark"><code data-language="javascript" data-theme="ayu-dark" style="display: grid;"><span data-line=""><span style="color:#FF8F40">let</span><span style="color:#BFBDB6"> idleId </span><span style="color:#F29668">=</span><span style="color:#D2A6FF"> null</span><span style="color:#BFBDB6B3">;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color:#BFBDB6">document</span><span style="color:#F29668">.</span><span style="color:#FFB454">addEventListener</span><span style="color:#BFBDB6">(</span><span style="color:#AAD94C">"visibilitychange"</span><span style="color:#BFBDB6B3">,</span><span style="color:#BFBDB6"> () </span><span style="color:#FF8F40">=></span><span style="color:#BFBDB6"> {</span></span>
+<span data-line=""><span style="color:#FF8F40">  if</span><span style="color:#BFBDB6"> (document</span><span style="color:#F29668">.</span><span style="color:#BFBDB6">hidden) {</span></span>
+<span data-line=""><span style="color:#BFBDB6">    serial</span><span style="color:#F29668">.</span><span style="color:#FFB454">pause</span><span style="color:#BFBDB6">()</span><span style="color:#BFBDB6B3">;</span><span style="color:#5A6673;font-style:italic"> // 或移除 onData 监听</span></span>
+<span data-line=""><span style="color:#FF8F40">    if</span><span style="color:#BFBDB6"> (idleId </span><span style="color:#F29668">!==</span><span style="color:#D2A6FF"> null</span><span style="color:#BFBDB6">) </span><span style="color:#FFB454">cancelIdleCallback</span><span style="color:#BFBDB6">(idleId)</span><span style="color:#BFBDB6B3">;</span></span>
+<span data-line=""><span style="color:#BFBDB6">  } </span><span style="color:#FF8F40">else</span><span style="color:#BFBDB6"> {</span></span>
+<span data-line=""><span style="color:#BFBDB6">    serial</span><span style="color:#F29668">.</span><span style="color:#FFB454">resume</span><span style="color:#BFBDB6">()</span><span style="color:#BFBDB6B3">;</span></span>
+<span data-line=""><span style="color:#BFBDB6">  }</span></span>
+<span data-line=""><span style="color:#BFBDB6">})</span><span style="color:#BFBDB6B3">;</span></span></code></pre></figure>
+<h2>经验总结</h2>
+<ol>
+<li><strong><code>requestIdleCallback</code> 不适合处理持续、不可丢失的后台任务</strong>——后台 Tab 会暂停 idle 回调</li>
+<li><strong>内存不涨 ≠ 无问题</strong>——任务堆积会在切回 Tab 时以「峰值」形式爆发</li>
+<li><strong>性能面板 + 刻意切换 Tab</strong> 比纯 Memory 快照更适合排查此类问题</li>
+<li>使用 <code>requestIdleCallback</code> 时必须理解 <strong><code>timeout</code> 选项</strong>，并考虑 <code>cancelIdleCallback</code> 做清理</li>
+<li>流式数据场景应结合 <strong><code>Page Visibility API</code></strong> 在后台暂停消费</li>
+</ol>
+<h2>参考</h2>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/requestIdleCallback">MDN: requestIdleCallback</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Page_Visibility_API">MDN: Page Visibility API</a></li>
+</ul>0:{"rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-full bg-zinc-50 dark:bg-black","children":["$","main",null,{"className":"mx-auto max-w-3xl px-6 py-12","children":[["$","$L2",null,{"href":"/companies/xidi/projects/others","className":"mb-8 inline-block text-sm text-zinc-500 transition-colors hover:text-zinc-900 dark:hover:text-zinc-200","children":["← 返回 ","Others"]}],["$","article",null,{"children":[["$","header",null,{"className":"mb-8 border-b border-zinc-200 pb-6 dark:border-zinc-800","children":[["$","p",null,{"className":"text-sm text-zinc-500","children":["深圳矽递科技有限公司"," · ","Others"," · 问题记录"]}],["$","div",null,{"className":"mt-2 flex flex-wrap items-center gap-3","children":[["$","h1",null,{"className":"text-3xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-50","children":"Chrome 后台 Tab 内存暴涨：requestIdleCallback 回调堆积"}],["$","span",null,{"className":"inline-flex shrink-0 items-center rounded-full bg-amber-50 px-2.5 py-0.5 text-xs font-medium text-amber-800 dark:bg-amber-950 dark:text-amber-200","children":["难度 ",6,"/10"]}]]}],["$","time",null,{"className":"mt-2 block text-sm text-zinc-500","children":"2024-01-22"}],["$","p",null,{"className":"mt-3 text-zinc-600 dark:text-zinc-400","children":"离开 Tab 后页面变卡甚至崩溃，根因是 requestIdleCallback 在后台不执行导致图片处理回调堆积"}]]}],["$","$L3",null,{"html":"$4"}]]}]]}]}],["$L5","$L6","$L7","$L8","$L9","$La","$Lb","$Lc","$Ld"],"$Le"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"FvjiZjpdvZnFq96Zsyv_l"}
+5:["$","script","script-0",{"src":"/Wujing/_next/static/chunks/1pwivukx9ooa0.js","async":true}]
+6:["$","script","script-1",{"src":"/Wujing/_next/static/chunks/2ked2nz6230co.js","async":true}]
+7:["$","script","script-2",{"src":"/Wujing/_next/static/chunks/1tv9sylm2u-b4.js","async":true}]
+8:["$","script","script-3",{"src":"/Wujing/_next/static/chunks/27ieaxpw17j59.js","async":true}]
+9:["$","script","script-4",{"src":"/Wujing/_next/static/chunks/0z6p61nq40ik6.js","async":true}]
+a:["$","script","script-5",{"src":"/Wujing/_next/static/chunks/3qv4diprhj39l.js","async":true}]
+b:["$","script","script-6",{"src":"/Wujing/_next/static/chunks/3qbhpum9b-92f.js","async":true}]
+c:["$","script","script-7",{"src":"/Wujing/_next/static/chunks/3bjn-vr1eou3v.js","async":true}]
+d:["$","script","script-8",{"src":"/Wujing/_next/static/chunks/39mbm6jpkg43n.js","async":true}]
+e:["$","$Lf",null,{"children":["$","$10",null,{"name":"Next.MetadataOutlet","children":"$@11"}]}]
+11:null

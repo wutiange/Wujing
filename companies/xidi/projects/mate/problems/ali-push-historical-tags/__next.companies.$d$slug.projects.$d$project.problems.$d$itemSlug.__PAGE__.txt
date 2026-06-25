@@ -3,7 +3,7 @@
 3:I[9308,["/Wujing/_next/static/chunks/05-c3ty_6dwfk.js","/Wujing/_next/static/chunks/1-8s9_t85wwr4.js","/Wujing/_next/static/chunks/1pwivukx9ooa0.js","/Wujing/_next/static/chunks/2ked2nz6230co.js","/Wujing/_next/static/chunks/1tv9sylm2u-b4.js","/Wujing/_next/static/chunks/27ieaxpw17j59.js","/Wujing/_next/static/chunks/0z6p61nq40ik6.js","/Wujing/_next/static/chunks/3qv4diprhj39l.js","/Wujing/_next/static/chunks/3qbhpum9b-92f.js","/Wujing/_next/static/chunks/3bjn-vr1eou3v.js","/Wujing/_next/static/chunks/39mbm6jpkg43n.js"],"MarkdownContent"]
 f:I[97367,["/Wujing/_next/static/chunks/05-c3ty_6dwfk.js","/Wujing/_next/static/chunks/1-8s9_t85wwr4.js"],"OutletBoundary"]
 10:"$Sreact.suspense"
-4:T3fbf,<h2>问题现象</h2>
+4:T3fb4,<h2>问题现象</h2>
 <p>正式版 App 用户收到来自公司 App 的异常推送（乱码/测试文案），而用户安装的是<strong>正式版</strong>，理论上不应收到开发/测试环境的推送。</p>
 <table>
 <thead>
@@ -169,7 +169,7 @@ f:I[97367,["/Wujing/_next/static/chunks/05-c3ty_6dwfk.js","/Wujing/_next/static/
 <ul>
 <li>用 <code>destroyRef</code> / AbortController 串行化异步操作</li>
 <li>或改用专门的状态机/队列管理标签生命周期</li>
-<li>参考：<a href="https://overreacted.io/a-complete-guide-to-useeffect/">用 useEffect 优雅管理 React 中的异步操作</a></li>
+<li>参考：<a href="https://juejin.cn/post/7429369513424273408">用 useEffect 优雅管理 React 中的异步操作</a></li>
 </ul>
 <p><strong>修复后的执行顺序：</strong></p>
 <pre class="mermaid-source"><code class="language-mermaid">sequenceDiagram
@@ -189,7 +189,7 @@ f:I[97367,["/Wujing/_next/static/chunks/05-c3ty_6dwfk.js","/Wujing/_next/static/
 <li><strong>标签/订阅类功能要有「全量清理 + 增量绑定」策略</strong>，不能只做增量 bind</li>
 <li><strong>环境切换（测试 ↔ 正式）</strong> 是标签类推送的高危场景，需单独验证</li>
 <li><strong>useEffect + 异步副作用</strong> 要注意依赖抖动和任务乱序，关键路径应串行化</li>
-</ol>0:{"rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-full bg-zinc-50 dark:bg-black","children":["$","main",null,{"className":"mx-auto max-w-3xl px-6 py-12","children":[["$","$L2",null,{"href":"/companies/xidi/projects/mate","className":"mb-8 inline-block text-sm text-zinc-500 transition-colors hover:text-zinc-900 dark:hover:text-zinc-200","children":["← 返回 ","Mate"]}],["$","article",null,{"children":[["$","header",null,{"className":"mb-8 border-b border-zinc-200 pb-6 dark:border-zinc-800","children":[["$","p",null,{"className":"text-sm text-zinc-500","children":["深圳矽递科技有限公司"," · ","Mate"," · 问题记录"]}],["$","div",null,{"className":"mt-2 flex flex-wrap items-center gap-3","children":[["$","h1",null,{"className":"text-3xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-50","children":"阿里推送：历史标签未解绑导致正式版收到测试推送"}],["$","span",null,{"className":"inline-flex shrink-0 items-center rounded-full bg-amber-50 px-2.5 py-0.5 text-xs font-medium text-amber-800 dark:bg-amber-950 dark:text-amber-200","children":["难度 ",7,"/10"]}]]}],["$","time",null,{"className":"mt-2 block text-sm text-zinc-500","children":"2024-11-01"}],["$","p",null,{"className":"mt-3 text-zinc-600 dark:text-zinc-400","children":"正式版 App 收到乱码测试推送，根因是旧版标签绑定逻辑未清理历史测试标签"}]]}],["$","$L3",null,{"html":"$4"}]]}]]}]}],["$L5","$L6","$L7","$L8","$L9","$La","$Lb","$Lc","$Ld"],"$Le"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"VGF4hSYchJGSQgo3868aW"}
+</ol>0:{"rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-full bg-zinc-50 dark:bg-black","children":["$","main",null,{"className":"mx-auto max-w-3xl px-6 py-12","children":[["$","$L2",null,{"href":"/companies/xidi/projects/mate","className":"mb-8 inline-block text-sm text-zinc-500 transition-colors hover:text-zinc-900 dark:hover:text-zinc-200","children":["← 返回 ","Mate"]}],["$","article",null,{"children":[["$","header",null,{"className":"mb-8 border-b border-zinc-200 pb-6 dark:border-zinc-800","children":[["$","p",null,{"className":"text-sm text-zinc-500","children":["深圳矽递科技有限公司"," · ","Mate"," · 问题记录"]}],["$","div",null,{"className":"mt-2 flex flex-wrap items-center gap-3","children":[["$","h1",null,{"className":"text-3xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-50","children":"阿里推送：历史标签未解绑导致正式版收到测试推送"}],["$","span",null,{"className":"inline-flex shrink-0 items-center rounded-full bg-amber-50 px-2.5 py-0.5 text-xs font-medium text-amber-800 dark:bg-amber-950 dark:text-amber-200","children":["难度 ",7,"/10"]}]]}],["$","time",null,{"className":"mt-2 block text-sm text-zinc-500","children":"2024-11-01"}],["$","p",null,{"className":"mt-3 text-zinc-600 dark:text-zinc-400","children":"正式版 App 收到乱码测试推送，根因是旧版标签绑定逻辑未清理历史测试标签"}]]}],["$","$L3",null,{"html":"$4"}]]}]]}]}],["$L5","$L6","$L7","$L8","$L9","$La","$Lb","$Lc","$Ld"],"$Le"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"FvjiZjpdvZnFq96Zsyv_l"}
 5:["$","script","script-0",{"src":"/Wujing/_next/static/chunks/1pwivukx9ooa0.js","async":true}]
 6:["$","script","script-1",{"src":"/Wujing/_next/static/chunks/2ked2nz6230co.js","async":true}]
 7:["$","script","script-2",{"src":"/Wujing/_next/static/chunks/1tv9sylm2u-b4.js","async":true}]
