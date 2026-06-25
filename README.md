@@ -30,6 +30,14 @@ npm run dev
 
 浏览器访问 [http://localhost:3000](http://localhost:3000)。
 
+## 在线访问
+
+站点已部署到 GitHub Pages：
+
+**https://wutiange.github.io/Wujing/**
+
+推送 `main` 分支后会自动重新部署。
+
 ## 添加笔记
 
 在 `content/` 目录下新建 `.md` 文件，使用 frontmatter 定义元信息：
@@ -46,10 +54,32 @@ description: 简短描述
 
 文件名即 URL 路径，例如 `content/my-note.md` 对应 `/notes/my-note`。
 
+## 公司经历
+
+各公司经历存放在 `content/companies/` 目录，直接编辑 Markdown 即可渲染：
+
+| 文件 | 路由 |
+|------|------|
+| `tengwan-weigu.md` | `/companies/tengwan-weigu` |
+| `yuanqi-senlin.md` | `/companies/yuanqi-senlin` |
+| `xidi.md` | `/companies/xidi` |
+| `boshi.md` | `/companies/boshi` |
+| `dreame.md` | `/companies/dreame` |
+
+```markdown
+---
+title: 北京藤蔓微谷科技有限公司
+---
+
+在此直接写 Markdown 正文...
+```
+
 ## 项目结构
 
 ```
-content/          # Markdown 笔记内容
+content/
+  companies/      # 公司经历 Markdown
+  *.md            # 其他笔记
 src/
   app/            # Next.js 页面
   lib/markdown.ts # Markdown 读取与解析
