@@ -138,6 +138,40 @@ body {
   height: auto;
 }
 
+.prose .callout {
+  margin-bottom: 1.25em;
+  padding: 1em 1.25em;
+  border-radius: 0.5rem;
+  border-left: 4px solid;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+
+.prose .callout-title {
+  margin: 0 0 0.5em;
+  font-weight: 600;
+  font-size: 0.9375rem;
+}
+
+.prose .callout p:last-child {
+  margin-bottom: 0;
+}
+
+.prose .callout-error {
+  border-left-color: #ef4444;
+  background: #fef2f2;
+  color: #991b1b;
+}
+
+.prose .callout-error .callout-title {
+  color: #b91c1c;
+}
+
+.prose .callout-error code {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
 @media (prefers-color-scheme: dark) {
   .prose {
     color: #a1a1aa;
@@ -169,5 +203,20 @@ body {
 
   .prose tr:nth-child(even) td {
     background: #18181b;
+  }
+
+  .prose .callout-error {
+    border-left-color: #f87171;
+    background: #2a1215;
+    color: #fecaca;
+  }
+
+  .prose .callout-error .callout-title {
+    color: #fca5a5;
+  }
+
+  .prose .callout-error code {
+    background: #3f1519;
+    color: #fecaca;
   }
 }
