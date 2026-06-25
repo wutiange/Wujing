@@ -1,0 +1,367 @@
+1:"$Sreact.fragment"
+2:I[39756,["/Wujing/_next/static/chunks/05-c3ty_6dwfk.js","/Wujing/_next/static/chunks/1-8s9_t85wwr4.js"],"default"]
+3:I[37457,["/Wujing/_next/static/chunks/05-c3ty_6dwfk.js","/Wujing/_next/static/chunks/1-8s9_t85wwr4.js"],"default"]
+9:I[68027,["/Wujing/_next/static/chunks/05-c3ty_6dwfk.js","/Wujing/_next/static/chunks/1-8s9_t85wwr4.js"],"default",1]
+:HL["/Wujing/_next/static/chunks/09mv_-wtvk01x.css","style"]
+:HL["/Wujing/_next/static/media/797e433ab948586e-s.p.0r6juujl39pe6.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/Wujing/_next/static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+0:{"P":null,"c":["","companies","xidi","projects","others","problems","react-redux-empty-object-reference"],"q":"","i":false,"f":[[["",{"children":["companies",{"children":[["slug","xidi","d",null],{"children":["projects",{"children":[["project","others","d",null],{"children":["problems",{"children":[["itemSlug","react-redux-empty-object-reference","d",null],{"children":["__PAGE__",{}]}]}]}]}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/Wujing/_next/static/chunks/09mv_-wtvk01x.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/Wujing/_next/static/chunks/05-c3ty_6dwfk.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/Wujing/_next/static/chunks/1-8s9_t85wwr4.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"zh-CN","className":"geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__variable h-full antialiased","children":["$","body",null,{"className":"min-h-full flex flex-col","children":["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":["$L4",[["$","script","script-0",{"src":"/Wujing/_next/static/chunks/1pwivukx9ooa0.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/Wujing/_next/static/chunks/2ked2nz6230co.js","async":true,"nonce":"$undefined"}],["$","script","script-2",{"src":"/Wujing/_next/static/chunks/1tv9sylm2u-b4.js","async":true,"nonce":"$undefined"}],["$","script","script-3",{"src":"/Wujing/_next/static/chunks/27ieaxpw17j59.js","async":true,"nonce":"$undefined"}],["$","script","script-4",{"src":"/Wujing/_next/static/chunks/0z6p61nq40ik6.js","async":true,"nonce":"$undefined"}],["$","script","script-5",{"src":"/Wujing/_next/static/chunks/3qv4diprhj39l.js","async":true,"nonce":"$undefined"}],["$","script","script-6",{"src":"/Wujing/_next/static/chunks/3qbhpum9b-92f.js","async":true,"nonce":"$undefined"}],["$","script","script-7",{"src":"/Wujing/_next/static/chunks/3bjn-vr1eou3v.js","async":true,"nonce":"$undefined"}],"$L5"],"$L6"]}],{},null,false,null]},null,false,"$@7"]},null,false,"$@7"]},null,false,"$@7"]},null,false,"$@7"]},null,false,"$@7"]},null,false,"$@7"]},null,false,null],"$L8",false]],"m":"$undefined","G":["$9",["$La"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"RG4-OKJLPAWX0yYkatK_V"}
+b:I[97367,["/Wujing/_next/static/chunks/05-c3ty_6dwfk.js","/Wujing/_next/static/chunks/1-8s9_t85wwr4.js"],"OutletBoundary"]
+c:"$Sreact.suspense"
+f:I[97367,["/Wujing/_next/static/chunks/05-c3ty_6dwfk.js","/Wujing/_next/static/chunks/1-8s9_t85wwr4.js"],"ViewportBoundary"]
+11:I[97367,["/Wujing/_next/static/chunks/05-c3ty_6dwfk.js","/Wujing/_next/static/chunks/1-8s9_t85wwr4.js"],"MetadataBoundary"]
+5:["$","script","script-8",{"src":"/Wujing/_next/static/chunks/39mbm6jpkg43n.js","async":true,"nonce":"$undefined"}]
+6:["$","$Lb",null,{"children":["$","$c",null,{"name":"Next.MetadataOutlet","children":"$@d"}]}]
+e:[]
+7:"$We"
+8:["$","$1","h",{"children":[null,["$","$Lf",null,{"children":"$L10"}],["$","div",null,{"hidden":true,"children":["$","$L11",null,{"children":["$","$c",null,{"name":"Next.Metadata","children":"$L12"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+a:["$","link","0",{"rel":"stylesheet","href":"/Wujing/_next/static/chunks/09mv_-wtvk01x.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+13:I[22016,["/Wujing/_next/static/chunks/05-c3ty_6dwfk.js","/Wujing/_next/static/chunks/1-8s9_t85wwr4.js","/Wujing/_next/static/chunks/1pwivukx9ooa0.js","/Wujing/_next/static/chunks/2ked2nz6230co.js","/Wujing/_next/static/chunks/1tv9sylm2u-b4.js","/Wujing/_next/static/chunks/27ieaxpw17j59.js","/Wujing/_next/static/chunks/0z6p61nq40ik6.js","/Wujing/_next/static/chunks/3qv4diprhj39l.js","/Wujing/_next/static/chunks/3qbhpum9b-92f.js","/Wujing/_next/static/chunks/3bjn-vr1eou3v.js","/Wujing/_next/static/chunks/39mbm6jpkg43n.js"],""]
+14:I[9308,["/Wujing/_next/static/chunks/05-c3ty_6dwfk.js","/Wujing/_next/static/chunks/1-8s9_t85wwr4.js","/Wujing/_next/static/chunks/1pwivukx9ooa0.js","/Wujing/_next/static/chunks/2ked2nz6230co.js","/Wujing/_next/static/chunks/1tv9sylm2u-b4.js","/Wujing/_next/static/chunks/27ieaxpw17j59.js","/Wujing/_next/static/chunks/0z6p61nq40ik6.js","/Wujing/_next/static/chunks/3qv4diprhj39l.js","/Wujing/_next/static/chunks/3qbhpum9b-92f.js","/Wujing/_next/static/chunks/3bjn-vr1eou3v.js","/Wujing/_next/static/chunks/39mbm6jpkg43n.js"],"MarkdownContent"]
+15:T6ab9,<h2>问题现象</h2>
+<p>组件在开发环境<strong>疯狂重渲染</strong>，最终触发警告并卡死：</p>
+<div class="callout callout-error">
+  <p class="callout-title">Warning: Maximum update depth exceeded</p>
+  <p>This can happen when a component calls <code>setState</code> inside <code>useEffect</code>, but <code>useEffect</code> either doesn't have a dependency array, or one of the dependencies changes on every render.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>情况</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>触发代码</td>
+<td><code>useAppSelector(state => state.app.userInfo || {})</code></td>
+</tr>
+<tr>
+<td>初始状态</td>
+<td><code>userInfo</code> 为 <code>undefined</code></td>
+</tr>
+<tr>
+<td>表现</td>
+<td>理论 2～4 次渲染，实际 50+ 次甚至无限循环</td>
+</tr>
+<tr>
+<td>接口无数据时</td>
+<td>可能<strong>永久卡死</strong></td>
+</tr>
+</tbody>
+</table>
+<h2>问题代码</h2>
+<h3>典型空引用写法</h3>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="typescript" data-theme="ayu-dark"><code data-language="typescript" data-theme="ayu-dark" style="display: grid;"><span data-line=""><span style="color:#FF8F40">const</span><span style="color:#BFBDB6"> userInfo </span><span style="color:#F29668">=</span><span style="color:#FFB454"> useAppSelector</span><span style="color:#BFBDB6">(</span></span>
+<span data-line=""><span style="color:#D2A6FF">  state</span><span style="color:#FF8F40"> =></span><span style="color:#BFBDB6"> state</span><span style="color:#F29668">.</span><span style="color:#BFBDB6">app</span><span style="color:#F29668">.</span><span style="color:#BFBDB6">userInfo </span><span style="color:#F29668">||</span><span style="color:#BFBDB6"> {} </span><span style="color:#5A6673;font-style:italic">/* 每次都是新对象 */</span></span>
+<span data-line=""><span style="color:#BFBDB6">)</span><span style="color:#BFBDB6B3">;</span></span></code></pre></figure>
+<p><code>useAppSelector</code> 即 <code>react-redux</code> 的 <code>useSelector</code>，<code>useAppDispatch</code> 同理。</p>
+<h3>引发无限循环的版本</h3>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="ayu-dark"><code data-language="tsx" data-theme="ayu-dark" style="display: grid;"><span data-line=""><span style="color:#FF8F40">const</span><span style="color:#FFB454"> UserInfo</span><span style="color:#F29668"> =</span><span style="color:#BFBDB6"> () </span><span style="color:#FF8F40">=></span><span style="color:#BFBDB6"> {</span></span>
+<span data-line=""><span style="color:#FF8F40">  const</span><span style="color:#BFBDB6"> userInfo </span><span style="color:#F29668">=</span><span style="color:#FFB454"> useAppSelector</span><span style="color:#BFBDB6">(</span><span style="color:#D2A6FF">state</span><span style="color:#FF8F40"> =></span><span style="color:#BFBDB6"> state</span><span style="color:#F29668">.</span><span style="color:#BFBDB6">app</span><span style="color:#F29668">.</span><span style="color:#BFBDB6">userInfo </span><span style="color:#F29668">||</span><span style="color:#BFBDB6"> {})</span><span style="color:#BFBDB6B3">;</span></span>
+<span data-line=""><span style="color:#FF8F40">  const</span><span style="color:#BFBDB6"> dispatch </span><span style="color:#F29668">=</span><span style="color:#FFB454"> useAppDispatch</span><span style="color:#BFBDB6">()</span><span style="color:#BFBDB6B3">;</span></span>
+<span data-line=""><span style="color:#FF8F40">  const</span><span style="color:#BFBDB6"> [nameArr</span><span style="color:#BFBDB6B3">,</span><span style="color:#BFBDB6"> setNameArr] </span><span style="color:#F29668">=</span><span style="color:#FFB454"> useState</span><span style="color:#BFBDB6">&#x3C;</span><span style="color:#39BAE6">string</span><span style="color:#BFBDB6">[]>([])</span><span style="color:#BFBDB6B3">;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color:#FFB454">  useEffect</span><span style="color:#BFBDB6">(() </span><span style="color:#FF8F40">=></span><span style="color:#BFBDB6"> {</span></span>
+<span data-line=""><span style="color:#FFB454">    dispatch</span><span style="color:#BFBDB6">(</span><span style="color:#FFB454">updateUserInfo</span><span style="color:#BFBDB6">(userInfo</span><span style="color:#F29668">.</span><span style="color:#BFBDB6">phone))</span><span style="color:#BFBDB6B3">;</span></span>
+<span data-line=""><span style="color:#BFBDB6">  }</span><span style="color:#BFBDB6B3">,</span><span style="color:#BFBDB6"> [userInfo</span><span style="color:#F29668">.</span><span style="color:#BFBDB6">phone])</span><span style="color:#BFBDB6B3">;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color:#FFB454">  useEffect</span><span style="color:#BFBDB6">(() </span><span style="color:#FF8F40">=></span><span style="color:#BFBDB6"> {</span></span>
+<span data-line=""><span style="color:#FFB454">    setNameArr</span><span style="color:#BFBDB6">([userInfo</span><span style="color:#F29668">.</span><span style="color:#BFBDB6">name])</span><span style="color:#BFBDB6B3">;</span><span style="color:#5A6673;font-style:italic"> // 每次返回新数组</span></span>
+<span data-line=""><span style="color:#BFBDB6">  }</span><span style="color:#BFBDB6B3">,</span><span style="color:#BFBDB6"> [userInfo])</span><span style="color:#BFBDB6B3">;</span><span style="color:#5A6673;font-style:italic"> // userInfo 每次都是新 {}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color:#BFBDB6">  console</span><span style="color:#F29668">.</span><span style="color:#FFB454">log</span><span style="color:#BFBDB6">(</span><span style="color:#AAD94C">"函数重新执行了"</span><span style="color:#BFBDB6">)</span><span style="color:#BFBDB6B3">;</span></span>
+<span data-line=""><span style="color:#FF8F40">  return</span><span style="color:#39BAE680"> &#x3C;</span><span style="color:#39BAE6">h1</span><span style="color:#39BAE680">></span><span style="color:#FF8F40">{</span><span style="color:#BFBDB6">nameArr</span><span style="color:#FF8F40">}</span><span style="color:#39BAE680">&#x3C;/</span><span style="color:#39BAE6">h1</span><span style="color:#39BAE680">></span><span style="color:#BFBDB6B3">;</span></span>
+<span data-line=""><span style="color:#BFBDB6">}</span><span style="color:#BFBDB6B3">;</span></span></code></pre></figure>
+<h2>根因分析</h2>
+<h3>useSelector 的比较机制</h3>
+<p><code>useSelector</code> 对 selector <strong>返回值</strong>做<strong>引用相等</strong>（<code>===</code>）比较：</p>
+<ul>
+<li>返回值与上次相同 → 不触发重渲染</li>
+<li>返回值不同 → 订阅组件重渲染</li>
+</ul>
+<pre class="mermaid-source"><code class="language-mermaid">flowchart TD
+    A[userInfo 为 undefined] --&gt; B[&quot;selector 返回 {} （新对象）&quot;]
+    B --&gt; C[useSelector 认为数据变化]
+    C --&gt; D[组件重渲染]
+    D --&gt; A</code></pre>
+<p><strong>关键：<code>|| {}</code> 在每次 selector 执行时都会创建一个全新的空对象。</strong></p>
+<h3>无限循环链路</h3>
+<pre class="mermaid-source"><code class="language-mermaid">flowchart TD
+    A[组件渲染] --&gt; B[&quot;useSelector 返回新 {}&quot;]
+    B --&gt; C[&quot;useEffect([userInfo]) 触发&quot;]
+    C --&gt; D[&quot;setNameArr([name]) 新数组&quot;]
+    D --&gt; E[组件再次渲染]
+    E --&gt; A</code></pre>
+<table>
+<thead>
+<tr>
+<th>步骤</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><code>userInfo</code> 为 <code>undefined</code>，selector 返回<strong>新</strong> <code>{}</code></td>
+</tr>
+<tr>
+<td>2</td>
+<td><code>useEffect</code> 依赖 <code>[userInfo]</code>，引用变了 → 执行 <code>setNameArr</code></td>
+</tr>
+<tr>
+<td>3</td>
+<td><code>setNameArr([userInfo.name])</code> 返回<strong>新数组</strong> → 触发渲染</td>
+</tr>
+<tr>
+<td>4</td>
+<td>重新渲染 → selector 再次返回<strong>新</strong> <code>{}</code> → 回到步骤 2</td>
+</tr>
+</tbody>
+</table>
+<h3>为何 <code>setNameArr('')</code> 不会死循环？</h3>
+<p>去掉 <code>|| {}</code> 后，<code>userInfo</code> 在数据到达前稳定为 <code>undefined</code>，<code>useEffect</code> 依赖不再每次变化。此时 <code>setNameArr('')</code> 因<strong>值相等</strong>（<code>Object.is('', '')</code>）被 React 跳过，不会额外触发渲染：</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="ayu-dark"><code data-language="tsx" data-theme="ayu-dark" style="display: grid;"><span data-line=""><span style="color:#FF8F40">const</span><span style="color:#BFBDB6"> userInfo </span><span style="color:#F29668">=</span><span style="color:#FFB454"> useAppSelector</span><span style="color:#BFBDB6">(</span><span style="color:#D2A6FF">state</span><span style="color:#FF8F40"> =></span><span style="color:#BFBDB6"> state</span><span style="color:#F29668">.</span><span style="color:#BFBDB6">app</span><span style="color:#F29668">.</span><span style="color:#BFBDB6">userInfo)</span><span style="color:#BFBDB6B3">;</span><span style="color:#5A6673;font-style:italic"> // 不再 || {}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color:#FFB454">useEffect</span><span style="color:#BFBDB6">(() </span><span style="color:#FF8F40">=></span><span style="color:#BFBDB6"> {</span></span>
+<span data-line=""><span style="color:#FFB454">  setNameArr</span><span style="color:#BFBDB6">(</span><span style="color:#AAD94C">''</span><span style="color:#BFBDB6">)</span><span style="color:#BFBDB6B3">;</span><span style="color:#5A6673;font-style:italic"> // 字符串是基本类型，值相同则不触发渲染</span></span>
+<span data-line=""><span style="color:#BFBDB6">}</span><span style="color:#BFBDB6B3">,</span><span style="color:#BFBDB6"> [userInfo])</span><span style="color:#BFBDB6B3">;</span></span></code></pre></figure>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>比较方式</th>
+<th>重复 set 相同「空值」</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>字符串 <code>''</code></td>
+<td>值相等</td>
+<td>不触发渲染 ✅</td>
+</tr>
+<tr>
+<td>数组 <code>[]</code></td>
+<td>引用比较</td>
+<td>每次都是新引用，触发渲染 ❌</td>
+</tr>
+<tr>
+<td>对象 <code>{}</code></td>
+<td>引用比较</td>
+<td>每次都是新引用，触发渲染 ❌</td>
+</tr>
+</tbody>
+</table>
+<p><strong>复现验证</strong>见下文「复现环境」一节。</p>
+<table>
+<thead>
+<tr>
+<th>场景</th>
+<th>渲染次数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>|| {}</code> + <code>useEffect</code> + <code>setNameArr([...])</code></td>
+<td><strong>51+ 次</strong>，触发 Maximum update depth（原文 Chrome 实测）</td>
+</tr>
+<tr>
+<td>去掉 <code>|| {}</code> + <code>setNameArr('')</code></td>
+<td><strong>有限次</strong>，不触发 Maximum update depth</td>
+</tr>
+<tr>
+<td>理想写法 / useMemo 写法</td>
+<td><strong>3 次</strong>（初始化 + 数据到达 + <code>phone</code> 变化触发 <code>dispatch</code>）</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>单独 <code>|| {}</code> 会让 selector 每次返回新引用；与 <code>useEffect</code> + <code>setState(新引用)</code> 组合后才会形成死循环。</p>
+</blockquote>
+<h3>Hooks 相关原理</h3>
+<table>
+<thead>
+<tr>
+<th>Hook</th>
+<th>行为</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>函数组件</td>
+<td>每次渲染 = 重新执行整个函数，局部变量重新创建</td>
+</tr>
+<tr>
+<td><code>useState</code></td>
+<td>新 state 与旧 state 比较，相同则跳过渲染</td>
+</tr>
+<tr>
+<td><code>useSelector</code></td>
+<td>selector 返回值与上次比较，相同则跳过渲染</td>
+</tr>
+<tr>
+<td><code>useCallback</code></td>
+<td>缓存函数引用，依赖不变则复用</td>
+</tr>
+<tr>
+<td><code>useMemo</code></td>
+<td>缓存计算结果，依赖不变则复用</td>
+</tr>
+</tbody>
+</table>
+<h2>理论 vs 实际渲染次数</h2>
+<p><strong>理想情况（数据流清晰）：</strong></p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="ayu-dark"><code data-language="tsx" data-theme="ayu-dark" style="display: grid;"><span data-line=""><span style="color:#FF8F40">const</span><span style="color:#FFB454"> UserInfo</span><span style="color:#F29668"> =</span><span style="color:#BFBDB6"> () </span><span style="color:#FF8F40">=></span><span style="color:#BFBDB6"> {</span></span>
+<span data-line=""><span style="color:#FF8F40">  const</span><span style="color:#BFBDB6"> userInfo </span><span style="color:#F29668">=</span><span style="color:#FFB454"> useAppSelector</span><span style="color:#BFBDB6">(</span><span style="color:#D2A6FF">state</span><span style="color:#FF8F40"> =></span><span style="color:#BFBDB6"> state</span><span style="color:#F29668">.</span><span style="color:#BFBDB6">app</span><span style="color:#F29668">.</span><span style="color:#BFBDB6">userInfo)</span><span style="color:#BFBDB6B3">;</span></span>
+<span data-line=""><span style="color:#FF8F40">  const</span><span style="color:#BFBDB6"> dispatch </span><span style="color:#F29668">=</span><span style="color:#FFB454"> useAppDispatch</span><span style="color:#BFBDB6">()</span><span style="color:#BFBDB6B3">;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color:#FFB454">  useEffect</span><span style="color:#BFBDB6">(() </span><span style="color:#FF8F40">=></span><span style="color:#BFBDB6"> {</span></span>
+<span data-line=""><span style="color:#FFB454">    dispatch</span><span style="color:#BFBDB6">(</span><span style="color:#FFB454">updateUserInfo</span><span style="color:#BFBDB6">(userInfo</span><span style="color:#F29668">?.</span><span style="color:#BFBDB6">phone))</span><span style="color:#BFBDB6B3">;</span></span>
+<span data-line=""><span style="color:#BFBDB6">  }</span><span style="color:#BFBDB6B3">,</span><span style="color:#BFBDB6"> [userInfo</span><span style="color:#F29668">?.</span><span style="color:#BFBDB6">phone])</span><span style="color:#BFBDB6B3">;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color:#BFBDB6">  console</span><span style="color:#F29668">.</span><span style="color:#FFB454">log</span><span style="color:#BFBDB6">(</span><span style="color:#AAD94C">"函数重新执行了"</span><span style="color:#BFBDB6">)</span><span style="color:#BFBDB6B3">;</span></span>
+<span data-line=""><span style="color:#FF8F40">  return</span><span style="color:#39BAE680"> &#x3C;</span><span style="color:#39BAE6">h1</span><span style="color:#39BAE680">></span><span style="color:#FF8F40">{</span><span style="color:#BFBDB6">userInfo</span><span style="color:#F29668">?.</span><span style="color:#BFBDB6">name</span><span style="color:#FF8F40">}</span><span style="color:#39BAE680">&#x3C;/</span><span style="color:#39BAE6">h1</span><span style="color:#39BAE680">></span><span style="color:#BFBDB6B3">;</span></span>
+<span data-line=""><span style="color:#BFBDB6">}</span><span style="color:#BFBDB6B3">;</span></span></code></pre></figure>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>次数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>初始化</td>
+<td>1 次</td>
+</tr>
+<tr>
+<td>Redux 数据到达</td>
+<td>+1 次</td>
+</tr>
+<tr>
+<td><code>userInfo.phone</code> 变化 → <code>useEffect</code> 内 <code>dispatch</code></td>
+<td>+1 次</td>
+</tr>
+<tr>
+<td><strong>合计</strong></td>
+<td><strong>3 次</strong> ✅</td>
+</tr>
+</tbody>
+</table>
+<p><strong>问题版本理论次数（无循环时）：</strong> 约 4 次（初始化 + setState + dispatch 更新 + setState），但实际因 <code>{}</code> 引用问题 → <strong>无限次</strong>。</p>
+<h2>修复方案</h2>
+<h3>方案 1：去掉 <code>|| {}</code>，使用可选链（推荐）</h3>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="ayu-dark"><code data-language="tsx" data-theme="ayu-dark" style="display: grid;"><span data-line=""><span style="color:#FF8F40">const</span><span style="color:#BFBDB6"> userInfo </span><span style="color:#F29668">=</span><span style="color:#FFB454"> useAppSelector</span><span style="color:#BFBDB6">(</span><span style="color:#D2A6FF">state</span><span style="color:#FF8F40"> =></span><span style="color:#BFBDB6"> state</span><span style="color:#F29668">.</span><span style="color:#BFBDB6">app</span><span style="color:#F29668">.</span><span style="color:#BFBDB6">userInfo)</span><span style="color:#BFBDB6B3">;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color:#5A6673;font-style:italic">// 使用时</span></span>
+<span data-line=""><span style="color:#BFBDB6">userInfo</span><span style="color:#F29668">?.</span><span style="color:#BFBDB6">name</span></span>
+<span data-line=""><span style="color:#BFBDB6">userInfo</span><span style="color:#F29668">?.</span><span style="color:#BFBDB6">phone</span></span></code></pre></figure>
+<p>Redux 初始 state <strong>不要设为 <code>undefined</code></strong>，使用明确默认值：</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="typescript" data-theme="ayu-dark"><code data-language="typescript" data-theme="ayu-dark" style="display: grid;"><span data-line=""><span style="color:#FF8F40">const</span><span style="color:#BFBDB6"> initialState </span><span style="color:#F29668">=</span><span style="color:#BFBDB6"> {</span></span>
+<span data-line=""><span style="color:#BFBDB6">  userInfo</span><span style="color:#BFBDB6B3">:</span><span style="color:#D2A6FF"> null</span><span style="color:#FF8F40"> as</span><span style="color:#59C2FF"> UserInfo</span><span style="color:#F29668"> |</span><span style="color:#39BAE6"> null</span><span style="color:#BFBDB6B3">,</span><span style="color:#5A6673;font-style:italic"> // 或 {}</span></span>
+<span data-line=""><span style="color:#BFBDB6">}</span><span style="color:#BFBDB6B3">;</span></span></code></pre></figure>
+<p>若必须用 <code>{}</code>，在 <strong>reducer 层</strong>定义一次，不要在 selector 里每次创建：</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="typescript" data-theme="ayu-dark"><code data-language="typescript" data-theme="ayu-dark" style="display: grid;"><span data-line=""><span style="color:#FF8F40">const</span><span style="color:#BFBDB6"> EMPTY_USER </span><span style="color:#F29668">=</span><span style="color:#BFBDB6"> {}</span><span style="color:#BFBDB6B3">;</span></span>
+<span data-line=""><span style="color:#FF8F40">const</span><span style="color:#FFB454"> selectUserInfo</span><span style="color:#F29668"> =</span><span style="color:#BFBDB6"> (</span><span style="color:#D2A6FF">state</span><span style="color:#F29668">:</span><span style="color:#59C2FF"> RootState</span><span style="color:#BFBDB6">) </span><span style="color:#FF8F40">=></span><span style="color:#BFBDB6"> state</span><span style="color:#F29668">.</span><span style="color:#BFBDB6">app</span><span style="color:#F29668">.</span><span style="color:#BFBDB6">userInfo </span><span style="color:#F29668">??</span><span style="color:#BFBDB6"> EMPTY_USER</span><span style="color:#BFBDB6B3">;</span></span></code></pre></figure>
+<h3>方案 2：useMemo 派生展示数据</h3>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="ayu-dark"><code data-language="tsx" data-theme="ayu-dark" style="display: grid;"><span data-line=""><span style="color:#FF8F40">const</span><span style="color:#FFB454"> UserInfo</span><span style="color:#F29668"> =</span><span style="color:#BFBDB6"> () </span><span style="color:#FF8F40">=></span><span style="color:#BFBDB6"> {</span></span>
+<span data-line=""><span style="color:#FF8F40">  const</span><span style="color:#BFBDB6"> userInfo </span><span style="color:#F29668">=</span><span style="color:#FFB454"> useAppSelector</span><span style="color:#BFBDB6">(</span><span style="color:#D2A6FF">state</span><span style="color:#FF8F40"> =></span><span style="color:#BFBDB6"> state</span><span style="color:#F29668">.</span><span style="color:#BFBDB6">app</span><span style="color:#F29668">.</span><span style="color:#BFBDB6">userInfo)</span><span style="color:#BFBDB6B3">;</span></span>
+<span data-line=""><span style="color:#FF8F40">  const</span><span style="color:#BFBDB6"> dispatch </span><span style="color:#F29668">=</span><span style="color:#FFB454"> useAppDispatch</span><span style="color:#BFBDB6">()</span><span style="color:#BFBDB6B3">;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color:#FFB454">  useEffect</span><span style="color:#BFBDB6">(() </span><span style="color:#FF8F40">=></span><span style="color:#BFBDB6"> {</span></span>
+<span data-line=""><span style="color:#FFB454">    dispatch</span><span style="color:#BFBDB6">(</span><span style="color:#FFB454">updateUserInfo</span><span style="color:#BFBDB6">(userInfo</span><span style="color:#F29668">?.</span><span style="color:#BFBDB6">phone))</span><span style="color:#BFBDB6B3">;</span></span>
+<span data-line=""><span style="color:#BFBDB6">  }</span><span style="color:#BFBDB6B3">,</span><span style="color:#BFBDB6"> [userInfo</span><span style="color:#F29668">?.</span><span style="color:#BFBDB6">phone])</span><span style="color:#BFBDB6B3">;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color:#FF8F40">  const</span><span style="color:#BFBDB6"> nameArr </span><span style="color:#F29668">=</span><span style="color:#FFB454"> useMemo</span><span style="color:#BFBDB6">(() </span><span style="color:#FF8F40">=></span><span style="color:#BFBDB6"> {</span></span>
+<span data-line=""><span style="color:#FF8F40">    return</span><span style="color:#BFBDB6"> [userInfo</span><span style="color:#F29668">?.</span><span style="color:#BFBDB6">name]</span><span style="color:#BFBDB6B3">;</span></span>
+<span data-line=""><span style="color:#BFBDB6">  }</span><span style="color:#BFBDB6B3">,</span><span style="color:#BFBDB6"> [userInfo</span><span style="color:#F29668">?.</span><span style="color:#BFBDB6">name])</span><span style="color:#BFBDB6B3">;</span><span style="color:#5A6673;font-style:italic"> // 依赖具体字段，而非整个对象</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color:#FF8F40">  return</span><span style="color:#39BAE680"> &#x3C;</span><span style="color:#39BAE6">h1</span><span style="color:#39BAE680">></span><span style="color:#FF8F40">{</span><span style="color:#BFBDB6">nameArr</span><span style="color:#FF8F40">}</span><span style="color:#39BAE680">&#x3C;/</span><span style="color:#39BAE6">h1</span><span style="color:#39BAE680">></span><span style="color:#BFBDB6B3">;</span></span>
+<span data-line=""><span style="color:#BFBDB6">}</span><span style="color:#BFBDB6B3">;</span></span></code></pre></figure>
+<p>数据到达后共 <strong>3 次</strong>执行，不会陷入循环。</p>
+<h3>方案 3：避免在 useEffect 中 setState 依赖不稳定引用</h3>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="ayu-dark"><code data-language="tsx" data-theme="ayu-dark" style="display: grid;"><span data-line=""><span style="color:#5A6673;font-style:italic">// ❌ 依赖整个 userInfo 对象（可能是新 {}）</span></span>
+<span data-line=""><span style="color:#FFB454">useEffect</span><span style="color:#BFBDB6">(() </span><span style="color:#FF8F40">=></span><span style="color:#BFBDB6"> { </span><span style="color:#F29668">...</span><span style="color:#BFBDB6"> }</span><span style="color:#BFBDB6B3">,</span><span style="color:#BFBDB6"> [userInfo])</span><span style="color:#BFBDB6B3">;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color:#5A6673;font-style:italic">// ✅ 依赖具体字段</span></span>
+<span data-line=""><span style="color:#FFB454">useEffect</span><span style="color:#BFBDB6">(() </span><span style="color:#FF8F40">=></span><span style="color:#BFBDB6"> { </span><span style="color:#F29668">...</span><span style="color:#BFBDB6"> }</span><span style="color:#BFBDB6B3">,</span><span style="color:#BFBDB6"> [userInfo</span><span style="color:#F29668">?.</span><span style="color:#BFBDB6">phone])</span><span style="color:#BFBDB6B3">;</span></span>
+<span data-line=""><span style="color:#FFB454">useEffect</span><span style="color:#BFBDB6">(() </span><span style="color:#FF8F40">=></span><span style="color:#BFBDB6"> { </span><span style="color:#F29668">...</span><span style="color:#BFBDB6"> }</span><span style="color:#BFBDB6B3">,</span><span style="color:#BFBDB6"> [userInfo</span><span style="color:#F29668">?.</span><span style="color:#BFBDB6">name])</span><span style="color:#BFBDB6B3">;</span></span></code></pre></figure>
+<h2>经验总结</h2>
+<ol>
+<li><strong>永远不要在 selector 里写 <code>|| {}</code> / <code>|| []</code></strong>——每次渲染产生新引用</li>
+<li><code>useSelector</code> 使用<strong>引用相等</strong>比较，对象/数组默认值必须在组件外或 reducer 中定义</li>
+<li><code>useEffect</code> 依赖项避免不稳定引用；优先依赖<strong>原始值字段</strong>（<code>userInfo?.name</code>）</li>
+<li>Redux 初始 state 用 <code>null</code> 或稳定的空对象，避免 <code>undefined</code> + 兜底对象的组合</li>
+<li>排查渲染次数：对比<strong>理论执行次数</strong>与 <code>console.log</code> 实际次数，差异大时先查引用稳定性</li>
+</ol>
+<h2>复现环境</h2>
+<p>与原文相同的 <strong>create-react-app</strong> 技术栈，核心依赖版本如下（2022 年前后 CRA 5 默认组合）：</p>
+<table>
+<thead>
+<tr>
+<th>项</th>
+<th>版本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>create-react-app / react-scripts</td>
+<td>5.0.1</td>
+</tr>
+<tr>
+<td>react / react-dom</td>
+<td>18.2.0</td>
+</tr>
+<tr>
+<td>react-redux</td>
+<td>8.0.5</td>
+</tr>
+<tr>
+<td>@reduxjs/toolkit</td>
+<td>1.8.6</td>
+</tr>
+</tbody>
+</table>
+<p><strong>复现步骤：</strong></p>
+<ol>
+<li><code>npx create-react-app@5.0.1 my-app --template redux</code>（或手动安装上表依赖）</li>
+<li>将文中 <code>UserInfo</code> 组件粘贴进项目，保留 <code>console.log("函数重新执行了")</code></li>
+<li><code>npm start</code>，在 <strong>Chrome</strong> 开发者工具 Console 观察执行次数与 Warning</li>
+<li>使用 CRA 自带的 <code>react-scripts test</code>（Jest + jsdom）对去掉 <code>|| {}</code> 的写法做补充验证</li>
+</ol>
+<p><strong>验证结论：</strong></p>
+<table>
+<thead>
+<tr>
+<th>验证项</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>state.app.userInfo || {}</code> 连续两次调用</td>
+<td>返回不同引用</td>
+</tr>
+<tr>
+<td>问题版本（<code>setNameArr([...])</code>）</td>
+<td>原文记录 <strong>51 次</strong> log 后出现 Maximum update depth</td>
+</tr>
+<tr>
+<td><code>setNameArr('')</code> 版本</td>
+<td>不触发无限循环</td>
+</tr>
+<tr>
+<td>理想 / useMemo 写法</td>
+<td>数据到达后共 <strong>3 次</strong></td>
+</tr>
+</tbody>
+</table>
+<h2>参考</h2>
+<ul>
+<li><a href="https://react-redux.js.org/api/hooks#useselector">React Redux: useSelector</a></li>
+<li><a href="https://react.dev/reference/react/useMemo">React: useMemo</a></li>
+</ul>4:["$","div",null,{"className":"min-h-full bg-zinc-50 dark:bg-black","children":["$","main",null,{"className":"mx-auto max-w-3xl px-6 py-12","children":[["$","$L13",null,{"href":"/companies/xidi/projects/others","className":"mb-8 inline-block text-sm text-zinc-500 transition-colors hover:text-zinc-900 dark:hover:text-zinc-200","children":["← 返回 ","Others"]}],["$","article",null,{"children":[["$","header",null,{"className":"mb-8 border-b border-zinc-200 pb-6 dark:border-zinc-800","children":[["$","p",null,{"className":"text-sm text-zinc-500","children":["深圳矽递科技有限公司"," · ","Others"," · 问题记录"]}],["$","div",null,{"className":"mt-2 flex flex-wrap items-center gap-3","children":[["$","h1",null,{"className":"text-3xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-50","children":"React Redux 空引用陷阱：useSelector 中的 `|| {}`"}],["$","span",null,{"className":"inline-flex shrink-0 items-center rounded-full bg-amber-50 px-2.5 py-0.5 text-xs font-medium text-amber-800 dark:bg-amber-950 dark:text-amber-200","children":["难度 ",7,"/10"]}]]}],["$","time",null,{"className":"mt-2 block text-sm text-zinc-500","children":"2022-04-04"}],["$","p",null,{"className":"mt-3 text-zinc-600 dark:text-zinc-400","children":"useAppSelector 中使用 `|| {}` 导致每次渲染返回新对象引用，引发无限重渲染"}]]}],["$","$L14",null,{"html":"$15"}]]}]]}]}]
+10:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+16:I[27201,["/Wujing/_next/static/chunks/05-c3ty_6dwfk.js","/Wujing/_next/static/chunks/1-8s9_t85wwr4.js"],"IconMark"]
+d:null
+12:[["$","title","0",{"children":"React Redux 空引用陷阱：useSelector 中的 `|| {}`"}],["$","meta","1",{"name":"description","content":"useAppSelector 中使用 `|| {}` 导致每次渲染返回新对象引用，引发无限重渲染"}],["$","link","2",{"rel":"icon","href":"/Wujing/favicon.ico?favicon.2vob68tjqpejf.ico","sizes":"256x256","type":"image/x-icon"}],["$","$L16","3",{}]]
