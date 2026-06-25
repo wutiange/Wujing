@@ -1,0 +1,30 @@
+/* Zed Ayu Dark — 配色来自 zed/assets/themes/ayu/ayu.json */
+
+.prose pre[data-theme="ayu-dark"],
+.prose pre.shiki,
+.prose .mermaid-source {
+  margin-bottom: 1.25em;
+  padding: 1em;
+  overflow-x: auto;
+  border-radius: 0.5rem;
+  background: #0d1016 !important;
+}
+
+.prose pre[data-theme="ayu-dark"] code,
+.prose pre.shiki code {
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  font-size: 0.875em;
+  line-height: 1.6;
+  background: transparent !important;
+}
+
+.prose pre[data-theme="ayu-dark"] code span {
+  font-family: inherit;
+}
+
+.prose .mermaid-source code {
+  color: #bfbdb6;
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  font-size: 0.875em;
+  white-space: pre;
+}

@@ -2,9 +2,52 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { remark } from "remark";
-import html from "remark-html";
+import remarkGfm from "remark-gfm";
+import remarkRehype from "remark-rehype";
+import rehypePrettyCode from "rehype-pretty-code";
+import rehypeStringify from "rehype-stringify";
+import { visit } from "unist-util-visit";
+import type { Root } from "mdast";
 
 const contentRoot = path.join(process.cwd(), "content");
+
+function escapeHtml(value: string): string {
+  return value
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+
+function remarkMermaid() {
+  return (tree: Root) => {
+    visit(tree, "code", (node, index, parent) => {
+      if (node.lang !== "mermaid" || !parent || index === undefined) {
+        return;
+      }
+
+      parent.children[index] = {
+        type: "html",
+        value: `<pre class="mermaid-source"><code class="language-mermaid">${escapeHtml(node.value)}</code></pre>`,
+      };
+    });
+  };
+}
+
+async function renderMarkdown(content: string): Promise<string> {
+  const processed = await remark()
+    .use(remarkGfm)
+    .use(remarkMermaid)
+    .use(remarkRehype, { allowDangerousHtml: true })
+    .use(rehypePrettyCode, {
+      theme: "ayu-dark",
+      keepBackground: false,
+    })
+    .use(rehypeStringify, { allowDangerousHtml: true })
+    .process(content);
+
+  return processed.toString();
+}
 
 export type ProjectCategory = "problems" | "features";
 
@@ -41,14 +84,14 @@ function getContentDirectory(subdir = ""): string {
 async function parseMarkdownFile(fullPath: string, slug: string) {
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const { data, content } = matter(fileContents);
-  const processedContent = await remark().use(html).process(content);
+  const processedContent = await renderMarkdown(content);
 
   return {
     slug,
     title: (data.title as string) || slug,
     date: formatDate(data.date),
     description: data.description as string | undefined,
-    contentHtml: processedContent.toString(),
+    contentHtml: processedContent,
   };
 }
 
@@ -183,6 +226,46 @@ function getCategoryDirectory(
   );
 }
 
+function listProjectItemFiles(categoryDirectory: string): string[] {
+  if (!fs.existsSync(categoryDirectory)) {
+    return [];
+  }
+
+  return fs.readdirSync(categoryDirectory).filter((file) => file.endsWith(".md"));
+}
+
+function getItemUrlSlug(fileName: string, fullPath: string): string {
+  const { data } = matter(fs.readFileSync(fullPath, "utf8"));
+
+  if (typeof data.slug === "string" && data.slug.trim()) {
+    return data.slug.trim();
+  }
+
+  return fileName.replace(/\.md$/, "");
+}
+
+function resolveProjectItemPath(
+  companySlug: string,
+  projectSlug: string,
+  category: ProjectCategory,
+  itemSlug: string,
+): string | null {
+  const categoryDirectory = getCategoryDirectory(
+    companySlug,
+    projectSlug,
+    category,
+  );
+
+  for (const fileName of listProjectItemFiles(categoryDirectory)) {
+    const fullPath = path.join(categoryDirectory, fileName);
+    if (getItemUrlSlug(fileName, fullPath) === itemSlug) {
+      return fullPath;
+    }
+  }
+
+  return null;
+}
+
 export function getProjectItemSlugs(
   companySlug: string,
   projectSlug: string,
@@ -194,14 +277,9 @@ export function getProjectItemSlugs(
     category,
   );
 
-  if (!fs.existsSync(categoryDirectory)) {
-    return [];
-  }
-
-  return fs
-    .readdirSync(categoryDirectory)
-    .filter((file) => file.endsWith(".md"))
-    .map((file) => file.replace(/\.md$/, ""));
+  return listProjectItemFiles(categoryDirectory).map((fileName) =>
+    getItemUrlSlug(fileName, path.join(categoryDirectory, fileName)),
+  );
 }
 
 function parseProjectItemMeta(
@@ -224,13 +302,17 @@ export function getAllProjectItems(
   projectSlug: string,
   category: ProjectCategory,
 ): ProjectItemMeta[] {
-  return getProjectItemSlugs(companySlug, projectSlug, category)
-    .map((slug) => {
-      const fullPath = path.join(
-        getCategoryDirectory(companySlug, projectSlug, category),
-        `${slug}.md`,
-      );
-      return parseProjectItemMeta(fullPath, slug);
+  const categoryDirectory = getCategoryDirectory(
+    companySlug,
+    projectSlug,
+    category,
+  );
+
+  return listProjectItemFiles(categoryDirectory)
+    .map((fileName) => {
+      const fullPath = path.join(categoryDirectory, fileName);
+      const urlSlug = getItemUrlSlug(fileName, fullPath);
+      return parseProjectItemMeta(fullPath, urlSlug);
     })
     .sort((a, b) => b.difficulty - a.difficulty || a.title.localeCompare(b.title));
 }
@@ -241,13 +323,20 @@ export async function getProjectItemBySlug(
   category: ProjectCategory,
   itemSlug: string,
 ): Promise<ProjectItem> {
-  const fullPath = path.join(
-    getCategoryDirectory(companySlug, projectSlug, category),
-    `${itemSlug}.md`,
+  const fullPath = resolveProjectItemPath(
+    companySlug,
+    projectSlug,
+    category,
+    itemSlug,
   );
+
+  if (!fullPath) {
+    throw new Error(`Project item not found: ${itemSlug}`);
+  }
+
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const { data, content } = matter(fileContents);
-  const processedContent = await remark().use(html).process(content);
+  const contentHtml = await renderMarkdown(content);
 
   return {
     slug: itemSlug,
@@ -255,7 +344,7 @@ export async function getProjectItemBySlug(
     date: formatDate(data.date),
     description: data.description as string | undefined,
     difficulty: parseDifficulty(data.difficulty),
-    contentHtml: processedContent.toString(),
+    contentHtml,
   };
 }
 

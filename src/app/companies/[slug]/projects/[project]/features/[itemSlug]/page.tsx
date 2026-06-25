@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { MarkdownContent } from "@/components/MarkdownContent";
 import { notFound } from "next/navigation";
 import { DifficultyBadge } from "@/components/DifficultyBadge";
 import {
@@ -111,10 +112,7 @@ export default async function FeaturePage({
           </header>
 
           {item.contentHtml ? (
-            <div
-              className="prose"
-              dangerouslySetInnerHTML={{ __html: item.contentHtml }}
-            />
+            <MarkdownContent html={item.contentHtml} />
           ) : (
             <p className="text-zinc-500">暂无正文，请直接编辑对应的 Markdown 文件。</p>
           )}

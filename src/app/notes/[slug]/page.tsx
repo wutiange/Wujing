@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { MarkdownContent } from "@/components/MarkdownContent";
 import { notFound } from "next/navigation";
 import { getAllNotes, getNoteBySlug, getNoteSlugs } from "@/lib/markdown";
 
@@ -67,10 +68,7 @@ export default async function NotePage({
             )}
           </header>
 
-          <div
-            className="prose"
-            dangerouslySetInnerHTML={{ __html: note.contentHtml }}
-          />
+          <MarkdownContent html={note.contentHtml} />
         </article>
       </main>
     </div>

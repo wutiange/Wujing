@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { MarkdownContent } from "@/components/MarkdownContent";
 import { notFound } from "next/navigation";
 import {
   getAllProjects,
@@ -73,10 +74,9 @@ export default async function CompanyPage({
           </header>
 
           {company.contentHtml ? (
-            <div
-              className="prose mb-12"
-              dangerouslySetInnerHTML={{ __html: company.contentHtml }}
-            />
+            <div className="mb-12">
+              <MarkdownContent html={company.contentHtml} />
+            </div>
           ) : null}
 
           {projects.length > 0 && (
