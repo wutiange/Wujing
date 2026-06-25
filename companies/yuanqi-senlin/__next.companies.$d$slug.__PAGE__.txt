@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[22016,["/Wujing/_next/static/chunks/05-c3ty_6dwfk.js","/Wujing/_next/static/chunks/14mrh2-p_w84d.js","/Wujing/_next/static/chunks/1rxncug86bump.js"],""]
+3:I[97367,["/Wujing/_next/static/chunks/05-c3ty_6dwfk.js","/Wujing/_next/static/chunks/14mrh2-p_w84d.js"],"OutletBoundary"]
+4:"$Sreact.suspense"
+0:{"rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-full bg-zinc-50 dark:bg-black","children":["$","main",null,{"className":"mx-auto max-w-3xl px-6 py-12","children":[["$","$L2",null,{"href":"/","className":"mb-8 inline-block text-sm text-zinc-500 transition-colors hover:text-zinc-900 dark:hover:text-zinc-200","children":"← 返回首页"}],["$","article",null,{"children":[["$","header",null,{"className":"mb-8 border-b border-zinc-200 pb-6 dark:border-zinc-800","children":[["$","h1",null,{"className":"text-3xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-50","children":"北京元气森林科技有限公司"}],"$undefined","$undefined"]}],["$","p",null,{"className":"text-zinc-500","children":"暂无内容，请直接编辑对应的 Markdown 文件。"}]]}]]}]}],[["$","script","script-0",{"src":"/Wujing/_next/static/chunks/1rxncug86bump.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"25z4sjtSDpZvGRmXVcyyW"}
+5:null
