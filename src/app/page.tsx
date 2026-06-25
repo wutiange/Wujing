@@ -9,7 +9,7 @@ export default function Home() {
       <main className="mx-auto max-w-3xl px-6 py-16">
         <header className="mb-12">
           <h1 className="text-4xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-50">
-            Wujing 笔记
+            吴敬笔记
           </h1>
           <p className="mt-4 text-lg leading-8 text-zinc-600 dark:text-zinc-400">
             学习记录、工作记录，以及工作中遇到的问题与解决方案。
