@@ -1,0 +1,477 @@
+1:"$Sreact.fragment"
+2:I[39756,["/Wujing/_next/static/chunks/05-c3ty_6dwfk.js","/Wujing/_next/static/chunks/1-8s9_t85wwr4.js"],"default"]
+3:I[37457,["/Wujing/_next/static/chunks/05-c3ty_6dwfk.js","/Wujing/_next/static/chunks/1-8s9_t85wwr4.js"],"default"]
+9:I[68027,["/Wujing/_next/static/chunks/05-c3ty_6dwfk.js","/Wujing/_next/static/chunks/1-8s9_t85wwr4.js"],"default",1]
+:HL["/Wujing/_next/static/chunks/09mv_-wtvk01x.css","style"]
+:HL["/Wujing/_next/static/media/797e433ab948586e-s.p.0r6juujl39pe6.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/Wujing/_next/static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+0:{"P":null,"c":["","companies","yuanqi-senlin","projects","xundian","problems","recyclerview-edittext-textwatcher-reuse"],"q":"","i":false,"f":[[["",{"children":["companies",{"children":[["slug","yuanqi-senlin","d",null],{"children":["projects",{"children":[["project","xundian","d",null],{"children":["problems",{"children":[["itemSlug","recyclerview-edittext-textwatcher-reuse","d",null],{"children":["__PAGE__",{}]}]}]}]}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/Wujing/_next/static/chunks/09mv_-wtvk01x.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/Wujing/_next/static/chunks/05-c3ty_6dwfk.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/Wujing/_next/static/chunks/1-8s9_t85wwr4.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"zh-CN","className":"geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__variable h-full antialiased","children":["$","body",null,{"className":"min-h-full flex flex-col","children":["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":["$L4",[["$","script","script-0",{"src":"/Wujing/_next/static/chunks/1pwivukx9ooa0.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/Wujing/_next/static/chunks/2ked2nz6230co.js","async":true,"nonce":"$undefined"}],["$","script","script-2",{"src":"/Wujing/_next/static/chunks/1tv9sylm2u-b4.js","async":true,"nonce":"$undefined"}],["$","script","script-3",{"src":"/Wujing/_next/static/chunks/27ieaxpw17j59.js","async":true,"nonce":"$undefined"}],["$","script","script-4",{"src":"/Wujing/_next/static/chunks/0z6p61nq40ik6.js","async":true,"nonce":"$undefined"}],["$","script","script-5",{"src":"/Wujing/_next/static/chunks/3qv4diprhj39l.js","async":true,"nonce":"$undefined"}],["$","script","script-6",{"src":"/Wujing/_next/static/chunks/3qbhpum9b-92f.js","async":true,"nonce":"$undefined"}],["$","script","script-7",{"src":"/Wujing/_next/static/chunks/3bjn-vr1eou3v.js","async":true,"nonce":"$undefined"}],"$L5"],"$L6"]}],{},null,false,null]},null,false,"$@7"]},null,false,"$@7"]},null,false,"$@7"]},null,false,"$@7"]},null,false,"$@7"]},null,false,"$@7"]},null,false,null],"$L8",false]],"m":"$undefined","G":["$9",["$La"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"6NGEB5P_8FoDmN3-hcnSP"}
+b:I[97367,["/Wujing/_next/static/chunks/05-c3ty_6dwfk.js","/Wujing/_next/static/chunks/1-8s9_t85wwr4.js"],"OutletBoundary"]
+c:"$Sreact.suspense"
+f:I[97367,["/Wujing/_next/static/chunks/05-c3ty_6dwfk.js","/Wujing/_next/static/chunks/1-8s9_t85wwr4.js"],"ViewportBoundary"]
+11:I[97367,["/Wujing/_next/static/chunks/05-c3ty_6dwfk.js","/Wujing/_next/static/chunks/1-8s9_t85wwr4.js"],"MetadataBoundary"]
+5:["$","script","script-8",{"src":"/Wujing/_next/static/chunks/39mbm6jpkg43n.js","async":true,"nonce":"$undefined"}]
+6:["$","$Lb",null,{"children":["$","$c",null,{"name":"Next.MetadataOutlet","children":"$@d"}]}]
+e:[]
+7:"$We"
+8:["$","$1","h",{"children":[null,["$","$Lf",null,{"children":"$L10"}],["$","div",null,{"hidden":true,"children":["$","$L11",null,{"children":["$","$c",null,{"name":"Next.Metadata","children":"$L12"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+a:["$","link","0",{"rel":"stylesheet","href":"/Wujing/_next/static/chunks/09mv_-wtvk01x.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+13:I[22016,["/Wujing/_next/static/chunks/05-c3ty_6dwfk.js","/Wujing/_next/static/chunks/1-8s9_t85wwr4.js","/Wujing/_next/static/chunks/1pwivukx9ooa0.js","/Wujing/_next/static/chunks/2ked2nz6230co.js","/Wujing/_next/static/chunks/1tv9sylm2u-b4.js","/Wujing/_next/static/chunks/27ieaxpw17j59.js","/Wujing/_next/static/chunks/0z6p61nq40ik6.js","/Wujing/_next/static/chunks/3qv4diprhj39l.js","/Wujing/_next/static/chunks/3qbhpum9b-92f.js","/Wujing/_next/static/chunks/3bjn-vr1eou3v.js","/Wujing/_next/static/chunks/39mbm6jpkg43n.js"],""]
+14:I[9308,["/Wujing/_next/static/chunks/05-c3ty_6dwfk.js","/Wujing/_next/static/chunks/1-8s9_t85wwr4.js","/Wujing/_next/static/chunks/1pwivukx9ooa0.js","/Wujing/_next/static/chunks/2ked2nz6230co.js","/Wujing/_next/static/chunks/1tv9sylm2u-b4.js","/Wujing/_next/static/chunks/27ieaxpw17j59.js","/Wujing/_next/static/chunks/0z6p61nq40ik6.js","/Wujing/_next/static/chunks/3qv4diprhj39l.js","/Wujing/_next/static/chunks/3qbhpum9b-92f.js","/Wujing/_next/static/chunks/3bjn-vr1eou3v.js","/Wujing/_next/static/chunks/39mbm6jpkg43n.js"],"MarkdownContent"]
+15:T6a90,<h2>一句话</h2>
+<p><strong>手指没碰键盘，只是滑了一下列表，控制台就开始疯狂打印 <code>onTextChanged</code>，富豪们的财富值还越变越少。</strong></p>
+<h2>Demo 场景</h2>
+<p>列表数据来自福布斯富豪榜，每项结构：</p>
+<table>
+<thead>
+<tr>
+<th>姓名（TextView）</th>
+<th>财富（EditText，单位：亿美元）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>杰夫·贝索斯</td>
+<td><code>1770</code></td>
+</tr>
+<tr>
+<td>埃隆·马斯克</td>
+<td><code>1510</code></td>
+</tr>
+<tr>
+<td>比尔·盖茨</td>
+<td><code>1240</code></td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+</tr>
+</tbody>
+</table>
+<p>业务逻辑：<code>onTextChanged</code> 里把 EditText 的值写回 <code>Data.wealth</code>，用于提交后端。</p>
+<h2>期望 vs 实际</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>期望</th>
+<th>实际</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>操作</strong></td>
+<td>打开 App → 向下滑动列表</td>
+<td>同上</td>
+</tr>
+<tr>
+<td><strong>用户输入</strong></td>
+<td>无</td>
+<td>无</td>
+</tr>
+<tr>
+<td><strong>控制台</strong></td>
+<td>安静，无输出</td>
+<td>大量 <code>onTextChanged</code></td>
+</tr>
+<tr>
+<td><strong>杰夫·贝索斯财富</strong></td>
+<td>始终 <code>1770</code></td>
+<td>日志里出现 <code>618</code>、<code>418</code>、<code>390</code>…</td>
+</tr>
+<tr>
+<td><strong>同一行数据</strong></td>
+<td>姓名和数值一一对应</td>
+<td>杰夫的名字配上了别人的数值</td>
+</tr>
+</tbody>
+</table>
+<pre class="mermaid-source"><code class="language-mermaid">sequenceDiagram
+    participant 用户
+    participant 列表 as RecyclerView
+    participant 输入框 as EditText #1
+    participant 日志 as Logcat
+
+    用户-&gt;&gt;列表: 向下滑动（未触摸键盘）
+    列表-&gt;&gt;输入框: 复用 bind，setText(&quot;618&quot;)
+    Note over 输入框: 屏上显示 618&lt;br/&gt;但姓名已是「艾丽斯·沃尔顿」
+    输入框-&gt;&gt;日志: onTextChanged 杰夫·贝索斯: 618
+    Note over 日志: ❌ 名字是旧的&lt;br/&gt;数值是新的&lt;br/&gt;用户根本没输入</code></pre>
+<h2>关键日志：只看这三行就懂</h2>
+<p>滑动列表后，Logcat <strong>交替</strong>出现 <code>Holder init</code> 和 <code>onTextChanged</code>：</p>
+<pre><code>I/吴敬悦: onTextChanged 杰夫·贝索斯: 618      ← 没输入，1770 怎么变 618？
+I/吴敬悦: onTextChanged 埃隆·马斯克: 602      ← 没输入，1510 怎么变 602？
+...
+I/吴敬悦: onTextChanged 杰夫·贝索斯: 418      ← 同一个人，又一个新数字
+I/吴敬悦: onTextChanged 艾丽斯·沃尔顿: 418    ← 不同人，同一个数字
+I/吴敬悦: onTextChanged 埃隆·马斯克: 392
+I/吴敬悦: onTextChanged 吉姆·沃尔顿: 392      ← 392 被打印了两次，给了两个不同的人
+</code></pre>
+<p><strong>三个反常点：</strong></p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>反常</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>没碰键盘就有 <code>onTextChanged</code></td>
+<td>不是用户输入，是 <code>setText</code> 触发的</td>
+</tr>
+<tr>
+<td>2</td>
+<td>同一名字出现多个不同数值</td>
+<td>杰夫·贝索斯：<code>618</code> → <code>418</code> → <code>390</code></td>
+</tr>
+<tr>
+<td>3</td>
+<td>不同名字出现相同数值</td>
+<td><code>418</code> 同时出现在杰夫和艾丽斯；<code>392</code> 同时出现在埃隆和吉姆</td>
+</tr>
+</tbody>
+</table>
+<p>第 3 点最直观：<strong>一个数字被当成了多个人的财富写回数据库</strong>——这就是「简单魔法让大佬财富减少」。</p>
+<h2>错位对照表</h2>
+<p>以滑动到底部附近的一次 bind 为例（真实日志摘录）：</p>
+<table>
+<thead>
+<tr>
+<th>日志：<code>onTextChanged 姓名: 数值</code></th>
+<th>该姓名真实财富</th>
+<th>屏上实际 setText 的值属于</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>杰夫·贝索斯: <strong>418</strong></td>
+<td>1770</td>
+<td>艾丽斯·沃尔顿（618 屏）的复用残留</td>
+</tr>
+<tr>
+<td>埃隆·马斯克: <strong>392</strong></td>
+<td>1510</td>
+<td>吉姆·沃尔顿（602 屏）的复用残留</td>
+</tr>
+<tr>
+<td>比尔·盖茨: <strong>382</strong></td>
+<td>1240</td>
+<td>迈克尔·布隆伯格（590 屏）的复用残留</td>
+</tr>
+<tr>
+<td>马克·扎克伯格: <strong>377</strong></td>
+<td>970</td>
+<td>黄峥（553 屏）的复用残留</td>
+</tr>
+</tbody>
+</table>
+<p><strong>结论：</strong> 回调里的 <code>name</code> 来自<strong>旧 Watcher 闭包</strong>，<code>value</code> 来自<strong>当前 setText</strong>——两者不是同一条数据。</p>
+<h2>问题代码</h2>
+<p>典型写法：在 <code>onBindViewHolder</code> / <code>bind</code> 里 <strong>add</strong> TextWatcher（不是 replace）：</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="kotlin" data-theme="ayu-dark"><code data-language="kotlin" data-theme="ayu-dark" style="display: grid;"><span data-line=""><span style="color:#FF8F40">fun</span><span style="color:#FFB454"> bind</span><span style="color:#BFBDB6">(d: </span><span style="color:#59C2FF">Data</span><span style="color:#BFBDB6">, position: </span><span style="color:#59C2FF">Int</span><span style="color:#BFBDB6">) {</span></span>
+<span data-line=""><span style="color:#BFBDB6">    text?.text </span><span style="color:#F29668">=</span><span style="color:#BFBDB6"> d.name</span></span>
+<span data-line=""><span style="color:#BFBDB6">    input?.</span><span style="color:#FFB454">setText</span><span style="color:#BFBDB6">(d.wealth.</span><span style="color:#FFB454">toString</span><span style="color:#BFBDB6">())</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color:#BFBDB6">    input?.</span><span style="color:#FFB454">addTextChangedListener</span><span style="color:#BFBDB6">(</span><span style="color:#FF8F40">object</span><span style="color:#BFBDB6"> : </span><span style="color:#59C2FF">TextWatcher</span><span style="color:#BFBDB6"> {</span></span>
+<span data-line=""><span style="color:#FF8F40">        override</span><span style="color:#FF8F40"> fun</span><span style="color:#FFB454"> onTextChanged</span><span style="color:#BFBDB6">(s: </span><span style="color:#59C2FF">CharSequence</span><span style="color:#BFBDB6">?, start: </span><span style="color:#59C2FF">Int</span><span style="color:#BFBDB6">, before: </span><span style="color:#59C2FF">Int</span><span style="color:#BFBDB6">, count: </span><span style="color:#59C2FF">Int</span><span style="color:#BFBDB6">) {</span></span>
+<span data-line=""><span style="color:#BFBDB6">            d.wealth </span><span style="color:#F29668">=</span><span style="color:#BFBDB6"> s.</span><span style="color:#FFB454">toString</span><span style="color:#BFBDB6">().</span><span style="color:#FFB454">toInt</span><span style="color:#BFBDB6">()   </span><span style="color:#5A6673;font-style:italic">// ← 写入了错位的数据</span></span>
+<span data-line=""><span style="color:#BFBDB6">            Log.</span><span style="color:#FFB454">i</span><span style="color:#BFBDB6">(TAG, </span><span style="color:#AAD94C">"onTextChanged </span><span style="color:#FF8F40">${</span><span style="color:#AAD94C">d.name</span><span style="color:#FF8F40">}</span><span style="color:#AAD94C">: </span><span style="color:#BFBDB6">$s</span><span style="color:#AAD94C">"</span><span style="color:#BFBDB6">)</span></span>
+<span data-line=""><span style="color:#BFBDB6">        }</span></span>
+<span data-line=""><span style="color:#BFBDB6">    })</span></span>
+<span data-line=""><span style="color:#BFBDB6">}</span></span></code></pre></figure>
+<h2>根因分析</h2>
+<h3>为什么滑动就会触发？</h3>
+<pre class="mermaid-source"><code class="language-mermaid">flowchart TD
+    subgraph 屏幕外复用池[&quot;约 16 个 EditText 实例（不是 100+ 条数据）&quot;]
+        E1[&quot;EditText #1&quot;]
+    end
+
+    E1 --&gt; B1[&quot;bind 杰夫 → add Watcher(杰夫) → setText(1770)&quot;]
+    B1 --&gt; B2[&quot;复用 bind 艾丽斯 → add Watcher(艾丽斯) → setText(618)&quot;]
+    B2 --&gt; F[&quot;setText 触发 Watcher(杰夫) 和 Watcher(艾丽斯)&quot;]
+    F --&gt; L[&quot;Log: 杰夫·贝索斯: 618 ❌&quot;]</code></pre>
+<table>
+<thead>
+<tr>
+<th>机制</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RecyclerView 复用</td>
+<td>100 条数据，只有 ~16 个 EditText 实例</td>
+</tr>
+<tr>
+<td><code>addTextChangedListener</code></td>
+<td><strong>追加</strong>到 <code>mListeners</code> 列表，不会替换旧的</td>
+</tr>
+<tr>
+<td>复用 bind 时 <code>setText</code></td>
+<td>触发该 EditText 上<strong>所有</strong> Watcher 的 <code>onTextChanged</code></td>
+</tr>
+<tr>
+<td>匿名类捕获 <code>d</code></td>
+<td>旧 Watcher 里的 <code>d.name</code> 仍是上一次绑定的人</td>
+</tr>
+</tbody>
+</table>
+<h3>addTextChangedListener 源码</h3>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="java" data-theme="ayu-dark"><code data-language="java" data-theme="ayu-dark" style="display: grid;"><span data-line=""><span style="color:#FF8F40">public</span><span style="color:#39BAE6"> void</span><span style="color:#FFB454"> addTextChangedListener</span><span style="color:#BFBDB6">(</span><span style="color:#59C2FF">TextWatcher</span><span style="color:#BFBDB6"> watcher) {</span></span>
+<span data-line=""><span style="color:#FF8F40">    if</span><span style="color:#BFBDB6"> (mListeners </span><span style="color:#F29668">==</span><span style="color:#D2A6FF"> null</span><span style="color:#BFBDB6">) {</span></span>
+<span data-line=""><span style="color:#BFBDB6">        mListeners </span><span style="color:#F29668">=</span><span style="color:#FF8F40"> new</span><span style="color:#59C2FF"> ArrayList</span><span style="color:#BFBDB6">&#x3C;</span><span style="color:#59C2FF">TextWatcher</span><span style="color:#BFBDB6">>()</span><span style="color:#BFBDB6B3">;</span></span>
+<span data-line=""><span style="color:#BFBDB6">    }</span></span>
+<span data-line=""><span style="color:#BFBDB6">    mListeners</span><span style="color:#BFBDB6B3">.</span><span style="color:#FFB454">add</span><span style="color:#BFBDB6">(watcher)</span><span style="color:#BFBDB6B3">;</span><span style="color:#5A6673;font-style:italic">  // 追加，不移除旧监听</span></span>
+<span data-line=""><span style="color:#BFBDB6">}</span></span></code></pre></figure>
+<table>
+<thead>
+<tr>
+<th>行为</th>
+<th>后果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>每次 bind 都 add</td>
+<td>一个 EditText 上挂<strong>多个</strong> TextWatcher</td>
+</tr>
+<tr>
+<td>复用时 <code>setText</code></td>
+<td>触发<strong>所有</strong>已注册监听器的 <code>onTextChanged</code></td>
+</tr>
+<tr>
+<td>匿名类捕获 bind 时的 <code>d</code></td>
+<td>旧监听仍引用<strong>上一次</strong>绑定的姓名</td>
+</tr>
+</tbody>
+</table>
+<h2>错误尝试</h2>
+<h3>尝试 1：每条数据一个 OwnTextWatcher</h3>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="kotlin" data-theme="ayu-dark"><code data-language="kotlin" data-theme="ayu-dark" style="display: grid;"><span data-line=""><span style="color:#FF8F40">class</span><span style="color:#59C2FF"> OwnTextWatcher</span><span style="color:#BFBDB6">(</span><span style="color:#FF8F40">private</span><span style="color:#FF8F40"> val</span><span style="color:#BFBDB6"> name: </span><span style="color:#59C2FF">String</span><span style="color:#BFBDB6">) : </span><span style="color:#59C2FF">TextWatcher</span><span style="color:#BFBDB6"> {</span></span>
+<span data-line=""><span style="color:#FF8F40">    override</span><span style="color:#FF8F40"> fun</span><span style="color:#FFB454"> onTextChanged</span><span style="color:#BFBDB6">(s: </span><span style="color:#59C2FF">CharSequence</span><span style="color:#BFBDB6">?, </span><span style="color:#F29668">..</span><span style="color:#BFBDB6">.) {</span></span>
+<span data-line=""><span style="color:#BFBDB6">        Log.</span><span style="color:#FFB454">i</span><span style="color:#BFBDB6">(TAG, </span><span style="color:#AAD94C">"onTextChanged </span><span style="color:#BFBDB6">$name</span><span style="color:#AAD94C">: </span><span style="color:#BFBDB6">$s</span><span style="color:#AAD94C">"</span><span style="color:#BFBDB6">)</span></span>
+<span data-line=""><span style="color:#BFBDB6">    }</span></span>
+<span data-line=""><span style="color:#BFBDB6">}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color:#5A6673;font-style:italic">// bind 时</span></span>
+<span data-line=""><span style="color:#BFBDB6">input?.</span><span style="color:#FFB454">addTextChangedListener</span><span style="color:#BFBDB6">(</span><span style="color:#FFB454">OwnTextWatcher</span><span style="color:#BFBDB6">(d.name))</span></span></code></pre></figure>
+<table>
+<thead>
+<tr>
+<th>预期</th>
+<th>实际</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>100 个 Data → 100 个独立 Watcher</td>
+<td>init 数量 ≈ 数据量，但 EditText 仍只有 ~16 个</td>
+</tr>
+<tr>
+<td>一对一绑定</td>
+<td><strong>仍是一对多</strong>：同一 EditText 累积多个 Watcher</td>
+</tr>
+</tbody>
+</table>
+<h3>尝试 2：全局 currentData + 仅在 ViewHolder init 注册一次</h3>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="kotlin" data-theme="ayu-dark"><code data-language="kotlin" data-theme="ayu-dark" style="display: grid;"><span data-line=""><span style="color:#FF8F40">companion</span><span style="color:#FF8F40"> object</span><span style="color:#BFBDB6"> {</span></span>
+<span data-line=""><span style="color:#FF8F40">    private</span><span style="color:#FF8F40"> var</span><span style="color:#BFBDB6"> currentData: </span><span style="color:#59C2FF">Data</span><span style="color:#BFBDB6">? </span><span style="color:#F29668">=</span><span style="color:#D2A6FF"> null</span></span>
+<span data-line=""><span style="color:#BFBDB6">}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color:#FF8F40">init</span><span style="color:#BFBDB6"> {</span></span>
+<span data-line=""><span style="color:#BFBDB6">    input?.</span><span style="color:#FFB454">addTextChangedListener</span><span style="color:#BFBDB6">(</span><span style="color:#FF8F40">object</span><span style="color:#BFBDB6"> : </span><span style="color:#59C2FF">TextWatcher</span><span style="color:#BFBDB6"> {</span></span>
+<span data-line=""><span style="color:#FF8F40">        override</span><span style="color:#FF8F40"> fun</span><span style="color:#FFB454"> onTextChanged</span><span style="color:#BFBDB6">(s: </span><span style="color:#59C2FF">CharSequence</span><span style="color:#BFBDB6">?, </span><span style="color:#F29668">..</span><span style="color:#BFBDB6">.) {</span></span>
+<span data-line=""><span style="color:#BFBDB6">            Log.</span><span style="color:#FFB454">i</span><span style="color:#BFBDB6">(TAG, </span><span style="color:#AAD94C">"onTextChanged </span><span style="color:#FF8F40">${</span><span style="color:#AAD94C">currentData?.name</span><span style="color:#FF8F40">}</span><span style="color:#AAD94C">: </span><span style="color:#BFBDB6">$s</span><span style="color:#AAD94C">"</span><span style="color:#BFBDB6">)</span></span>
+<span data-line=""><span style="color:#BFBDB6">        }</span></span>
+<span data-line=""><span style="color:#BFBDB6">    })</span></span>
+<span data-line=""><span style="color:#BFBDB6">}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color:#FF8F40">fun</span><span style="color:#FFB454"> bind</span><span style="color:#BFBDB6">(d: </span><span style="color:#59C2FF">Data</span><span style="color:#BFBDB6">, position: </span><span style="color:#59C2FF">Int</span><span style="color:#BFBDB6">) {</span></span>
+<span data-line=""><span style="color:#BFBDB6">    currentData </span><span style="color:#F29668">=</span><span style="color:#BFBDB6"> d</span></span>
+<span data-line=""><span style="color:#BFBDB6">    input?.</span><span style="color:#FFB454">setText</span><span style="color:#BFBDB6">(d.wealth.</span><span style="color:#FFB454">toString</span><span style="color:#BFBDB6">())</span></span>
+<span data-line=""><span style="color:#BFBDB6">}</span></span></code></pre></figure>
+<p><strong>能工作</strong>，但 <code>currentData</code> 是全局变量，多 ViewHolder 并发绑定时存在竞态。</p>
+<h2>修复方案</h2>
+<h3>修复前后对比</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>问题写法</th>
+<th>获焦注册（推荐）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>滑动列表</td>
+<td>Logcat 狂刷 <code>onTextChanged</code></td>
+<td><strong>无输出</strong></td>
+</tr>
+<tr>
+<td>杰夫·贝索斯财富</td>
+<td>被写成 618、418…</td>
+<td>保持 1770</td>
+</tr>
+<tr>
+<td>EditText 上 Watcher 数</td>
+<td>滑动后堆积 5+ 个</td>
+<td>最多 1 个（编辑中）</td>
+</tr>
+<tr>
+<td>用户点击输入</td>
+<td>同样错乱</td>
+<td>只回调当前行</td>
+</tr>
+</tbody>
+</table>
+<h3>方案 1（推荐）：获焦注册、失焦移除</h3>
+<p>只在用户<strong>真正编辑</strong>时监听，复用 <code>setText</code> 不触发业务回调：</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="kotlin" data-theme="ayu-dark"><code data-language="kotlin" data-theme="ayu-dark" style="display: grid;"><span data-line=""><span style="color:#FF8F40">fun</span><span style="color:#FFB454"> bind</span><span style="color:#BFBDB6">(d: </span><span style="color:#59C2FF">Data</span><span style="color:#BFBDB6">, position: </span><span style="color:#59C2FF">Int</span><span style="color:#BFBDB6">) {</span></span>
+<span data-line=""><span style="color:#BFBDB6">    text?.text </span><span style="color:#F29668">=</span><span style="color:#BFBDB6"> d.name</span></span>
+<span data-line=""><span style="color:#BFBDB6">    input?.</span><span style="color:#FFB454">setText</span><span style="color:#BFBDB6">(d.wealth.</span><span style="color:#FFB454">toString</span><span style="color:#BFBDB6">())</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color:#FF8F40">    val</span><span style="color:#BFBDB6"> watcher </span><span style="color:#F29668">=</span><span style="color:#FF8F40"> object</span><span style="color:#BFBDB6"> : </span><span style="color:#59C2FF">TextWatcher</span><span style="color:#BFBDB6"> {</span></span>
+<span data-line=""><span style="color:#FF8F40">        override</span><span style="color:#FF8F40"> fun</span><span style="color:#FFB454"> onTextChanged</span><span style="color:#BFBDB6">(s: </span><span style="color:#59C2FF">CharSequence</span><span style="color:#BFBDB6">?, start: </span><span style="color:#59C2FF">Int</span><span style="color:#BFBDB6">, before: </span><span style="color:#59C2FF">Int</span><span style="color:#BFBDB6">, count: </span><span style="color:#59C2FF">Int</span><span style="color:#BFBDB6">) {</span></span>
+<span data-line=""><span style="color:#BFBDB6">            d.wealth </span><span style="color:#F29668">=</span><span style="color:#BFBDB6"> s.</span><span style="color:#FFB454">toString</span><span style="color:#BFBDB6">().</span><span style="color:#FFB454">toIntOrNull</span><span style="color:#BFBDB6">() ?: d.wealth</span></span>
+<span data-line=""><span style="color:#BFBDB6">            Log.</span><span style="color:#FFB454">i</span><span style="color:#BFBDB6">(TAG, </span><span style="color:#AAD94C">"onTextChanged </span><span style="color:#FF8F40">${</span><span style="color:#AAD94C">d.name</span><span style="color:#FF8F40">}</span><span style="color:#AAD94C">: </span><span style="color:#BFBDB6">$s</span><span style="color:#AAD94C">"</span><span style="color:#BFBDB6">)</span></span>
+<span data-line=""><span style="color:#BFBDB6">        }</span></span>
+<span data-line=""><span style="color:#5A6673;font-style:italic">        // beforeTextChanged / afterTextChanged ...</span></span>
+<span data-line=""><span style="color:#BFBDB6">    }</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color:#BFBDB6">    input?.onFocusChangeListener </span><span style="color:#F29668">=</span><span style="color:#BFBDB6"> View.</span><span style="color:#FFB454">OnFocusChangeListener</span><span style="color:#BFBDB6"> { _, hasFocus </span><span style="color:#FF8F40">-></span></span>
+<span data-line=""><span style="color:#FF8F40">        if</span><span style="color:#BFBDB6"> (hasFocus) {</span></span>
+<span data-line=""><span style="color:#BFBDB6">            input?.</span><span style="color:#FFB454">addTextChangedListener</span><span style="color:#BFBDB6">(watcher)</span></span>
+<span data-line=""><span style="color:#BFBDB6">        } </span><span style="color:#FF8F40">else</span><span style="color:#BFBDB6"> {</span></span>
+<span data-line=""><span style="color:#BFBDB6">            input?.</span><span style="color:#FFB454">removeTextChangedListener</span><span style="color:#BFBDB6">(watcher)</span></span>
+<span data-line=""><span style="color:#BFBDB6">        }</span></span>
+<span data-line=""><span style="color:#BFBDB6">    }</span></span>
+<span data-line=""><span style="color:#BFBDB6">}</span></span></code></pre></figure>
+<pre class="mermaid-source"><code class="language-mermaid">flowchart TD
+    A[bind: setText 不注册监听] --&gt; B[用户点击 EditText]
+    B --&gt; C[onFocus → addTextChangedListener]
+    C --&gt; D[用户输入 → onTextChanged]
+    D --&gt; E[失焦 → removeTextChangedListener]
+    E --&gt; F[ViewHolder 复用 bind 新数据]
+    F --&gt; A</code></pre>
+<table>
+<thead>
+<tr>
+<th>优点</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>复用 setText 不触发</td>
+<td>失焦后无监听，滑动绑定安全</td>
+</tr>
+<tr>
+<td>闭包捕获当前 <code>d</code></td>
+<td>编辑期间 Data 与 Watcher 一一对应</td>
+</tr>
+<tr>
+<td>符合 Android 设计</td>
+<td><code>addTextChangedListener</code> 本就是为多监听场景设计</td>
+</tr>
+</tbody>
+</table>
+<p><strong>修复后日志（滑动到底）：</strong></p>
+<pre><code># 只有 Holder init，没有 onTextChanged
+I/吴敬悦: Holder init: -------------------------------
+I/吴敬悦: Holder init: -------------------------------
+...
+# 用户点击某行输入后才出现
+I/吴敬悦: onFocusChange: true
+I/吴敬悦: onTextChanged 杰夫·贝索斯: 1771
+</code></pre>
+<h3>方案 2：bind 前先 removeTextChangedListener</h3>
+<p>若必须在 bind 时注册，需<strong>先清再绑</strong>，并避免在 <code>onBindViewHolder</code> 里反复 add：</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="kotlin" data-theme="ayu-dark"><code data-language="kotlin" data-theme="ayu-dark" style="display: grid;"><span data-line=""><span style="color:#FF8F40">private</span><span style="color:#FF8F40"> var</span><span style="color:#BFBDB6"> watcher: </span><span style="color:#59C2FF">TextWatcher</span><span style="color:#BFBDB6">? </span><span style="color:#F29668">=</span><span style="color:#D2A6FF"> null</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color:#FF8F40">fun</span><span style="color:#FFB454"> bind</span><span style="color:#BFBDB6">(d: </span><span style="color:#59C2FF">Data</span><span style="color:#BFBDB6">, position: </span><span style="color:#59C2FF">Int</span><span style="color:#BFBDB6">) {</span></span>
+<span data-line=""><span style="color:#BFBDB6">    watcher?.</span><span style="color:#FFB454">let</span><span style="color:#BFBDB6"> { input?.</span><span style="color:#FFB454">removeTextChangedListener</span><span style="color:#BFBDB6">(it) }</span></span>
+<span data-line=""><span style="color:#BFBDB6">    watcher </span><span style="color:#F29668">=</span><span style="color:#FF8F40"> object</span><span style="color:#BFBDB6"> : </span><span style="color:#59C2FF">TextWatcher</span><span style="color:#BFBDB6"> { </span><span style="color:#5A6673;font-style:italic">/* 使用 d */</span><span style="color:#BFBDB6"> }</span></span>
+<span data-line=""><span style="color:#BFBDB6">    input?.</span><span style="color:#FFB454">addTextChangedListener</span><span style="color:#BFBDB6">(watcher)</span></span>
+<span data-line=""><span style="color:#BFBDB6">    input?.</span><span style="color:#FFB454">setText</span><span style="color:#BFBDB6">(d.wealth.</span><span style="color:#FFB454">toString</span><span style="color:#BFBDB6">())</span></span>
+<span data-line=""><span style="color:#BFBDB6">}</span></span></code></pre></figure>
+<p>注意：<code>setText</code> 仍会在 add 之后触发一次，通常需配合 <code>TextWatcher</code> 内 flag 或 <code>setText</code> 前临时移除监听。</p>
+<h3>方案 3：不用 EditText，改用单向展示 + 弹窗编辑</h3>
+<p>列表只展示，点击后 Dialog / 新页面编辑，彻底避开复用与输入框耦合。</p>
+<h2>经验总结</h2>
+<ol>
+<li><strong>永远不要在 <code>onBindViewHolder</code> 里无节制 <code>addTextChangedListener</code></strong>——<code>add</code> 是追加，复用会堆积</li>
+<li><code>EditText</code> 实例数 = ViewHolder 复用数，<strong>不是</strong> item 数</li>
+<li>复用绑定的 <code>setText</code> 会触发已注册的所有 <code>TextWatcher</code></li>
+<li>RecyclerView + 可编辑控件：优先<strong>获焦注册 / 失焦移除</strong>，或 bind 前 <code>removeTextChangedListener</code></li>
+<li>排查时对比 <code>Holder init</code> 次数（≈ 复用池）与 <code>onTextChanged</code> 中姓名是否错位</li>
+</ol>
+<h2>验证</h2>
+<p>使用 <strong>真实 <code>RecyclerView</code> + <code>EditText</code></strong>（Robolectric 驱动 Android 框架，非 mock）复现文中逻辑：</p>
+<table>
+<thead>
+<tr>
+<th>环境</th>
+<th>版本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>compileSdk</td>
+<td>34</td>
+</tr>
+<tr>
+<td>androidx.recyclerview</td>
+<td>1.3.2</td>
+</tr>
+<tr>
+<td>测试</td>
+<td>Robolectric 4.11 + JUnit4</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>验证项</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>addTextChangedListener</code> 两次 add 同一 Watcher</td>
+<td><code>mListeners</code> 数量为 <strong>2</strong>（追加非替换）</td>
+</tr>
+<tr>
+<td>问题 Adapter：同一 ViewHolder 连续 bind 5 次</td>
+<td>单个 EditText 上堆积 <strong>5</strong> 个 TextWatcher</td>
+</tr>
+<tr>
+<td>问题 Adapter：复用 bind 后 <code>setText</code></td>
+<td>触发多个不同 name 的 <code>onTextChanged</code></td>
+</tr>
+<tr>
+<td>获焦方案：复用 bind 未获焦</td>
+<td><code>onTextChanged</code> <strong>0</strong> 次</td>
+</tr>
+<tr>
+<td>获焦方案：requestFocus 后 setText</td>
+<td>回调 name 与当前 item <strong>一致</strong></td>
+</tr>
+<tr>
+<td>真实 RecyclerView scrollToPosition(30)</td>
+<td>未获焦时 <code>onTextChanged</code> <strong>0</strong> 次</td>
+</tr>
+</tbody>
+</table>
+<h2>参考</h2>
+<ul>
+<li><a href="https://developer.android.com/reference/androidx/recyclerview/widget/RecyclerView">RecyclerView - ViewHolder 复用</a></li>
+<li><a href="https://developer.android.com/reference/android/widget/TextView#addTextChangedListener(android.text.TextWatcher)">EditText.addTextChangedListener</a></li>
+</ul>4:["$","div",null,{"className":"min-h-full bg-zinc-50 dark:bg-black","children":["$","main",null,{"className":"mx-auto max-w-3xl px-6 py-12","children":[["$","$L13",null,{"href":"/companies/yuanqi-senlin/projects/xundian","className":"mb-8 inline-block text-sm text-zinc-500 transition-colors hover:text-zinc-900 dark:hover:text-zinc-200","children":["← 返回 ","元气巡店"]}],["$","article",null,{"children":[["$","header",null,{"className":"mb-8 border-b border-zinc-200 pb-6 dark:border-zinc-800","children":[["$","p",null,{"className":"text-sm text-zinc-500","children":["北京元气森林科技有限公司"," · ","元气巡店"," · 问题记录"]}],["$","div",null,{"className":"mt-2 flex flex-wrap items-center gap-3","children":[["$","h1",null,{"className":"text-3xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-50","children":"RecyclerView EditText 复用导致 TextWatcher 错乱"}],["$","span",null,{"className":"inline-flex shrink-0 items-center rounded-full bg-amber-50 px-2.5 py-0.5 text-xs font-medium text-amber-800 dark:bg-amber-950 dark:text-amber-200","children":["难度 ",6,"/10"]}]]}],["$","time",null,{"className":"mt-2 block text-sm text-zinc-500","children":"2021-08-15"}],["$","p",null,{"className":"mt-3 text-zinc-600 dark:text-zinc-400","children":"RecyclerView 中 EditText 绑定 TextWatcher 后，滑动列表会误触发 onTextChanged，财富值与姓名错位"}]]}],["$","$L14",null,{"html":"$15"}]]}]]}]}]
+10:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+16:I[27201,["/Wujing/_next/static/chunks/05-c3ty_6dwfk.js","/Wujing/_next/static/chunks/1-8s9_t85wwr4.js"],"IconMark"]
+d:null
+12:[["$","title","0",{"children":"RecyclerView EditText 复用导致 TextWatcher 错乱"}],["$","meta","1",{"name":"description","content":"RecyclerView 中 EditText 绑定 TextWatcher 后，滑动列表会误触发 onTextChanged，财富值与姓名错位"}],["$","link","2",{"rel":"icon","href":"/Wujing/favicon.ico?favicon.2vob68tjqpejf.ico","sizes":"256x256","type":"image/x-icon"}],["$","$L16","3",{}]]
