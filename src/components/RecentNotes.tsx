@@ -17,10 +17,10 @@ function formatDisplayDate(date?: string) {
     return date;
   }
 
-  return parsed.toLocaleDateString("en-US", {
-    month: "short",
-    day: "2-digit",
+  return parsed.toLocaleDateString("zh-CN", {
     year: "numeric",
+    month: "short",
+    day: "numeric",
   });
 }
 
@@ -28,28 +28,38 @@ export function RecentNotes({
   title,
   items,
   moreHref,
-  moreLabel,
+  total,
+  limit = 5,
+  unit = "篇",
+  showDescription = false,
 }: {
   title: string;
   items: RecentItem[];
   moreHref?: string;
-  moreLabel?: string;
+  total?: number;
+  limit?: number;
+  unit?: string;
+  showDescription?: boolean;
 }) {
+  const visible = items.slice(0, limit);
+  const fullCount = total ?? items.length;
+  const remaining = Math.max(0, fullCount - visible.length);
+
   return (
     <section className="recent-notes">
       <h3>{title}</h3>
-      {items.length === 0 ? (
+      {visible.length === 0 ? (
         <p className="recent-empty">暂无内容</p>
       ) : (
         <ul className="recent-ul">
-          {items.map((item) => (
+          {visible.map((item) => (
             <li key={item.href} className="recent-li">
               <div className="section">
                 <div className="desc">
                   <h3>
                     <Link href={item.href}>{item.title}</Link>
                   </h3>
-                  {item.description ? (
+                  {showDescription && item.description ? (
                     <p className="recent-desc">{item.description}</p>
                   ) : null}
                 </div>
@@ -63,10 +73,10 @@ export function RecentNotes({
           ))}
         </ul>
       )}
-      {moreHref && moreLabel ? (
+      {remaining > 0 && moreHref ? (
         <p>
           <Link className="see-more" href={moreHref}>
-            {moreLabel}
+            查看其余 {remaining} {unit} →
           </Link>
         </p>
       ) : null}
