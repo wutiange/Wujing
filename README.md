@@ -36,11 +36,18 @@ npm run dev
 
 **https://wutiange.github.io/Wujing/**
 
+页脚提供 **GitHub** 与 **网站** 两个入口，可从站点直接跳转到仓库或在线页面。
+
+若希望在 GitHub 仓库页「About」旁也能一点进入网站，请在仓库 Settings → General → Website 填入：
+
+`https://wutiange.github.io/Wujing/`
+
 更新内容后，执行以下命令重新发布：
 
 ```bash
 npm run deploy
 ```
+
 
 ## 添加笔记
 

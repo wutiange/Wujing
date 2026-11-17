@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ProjectItemSection } from "@/components/ProjectItemSection";
+import { SiteShell } from "@/components/SiteShell";
 import {
   getAllProjectItems,
   getAllProjectParams,
@@ -55,25 +56,18 @@ export default async function ProjectPage({
   const features = getAllProjectItems(slug, project, "features");
 
   return (
-    <div className="min-h-full bg-zinc-50 dark:bg-black">
-      <main className="mx-auto max-w-3xl px-6 py-12">
-        <Link
-          href={`/companies/${slug}`}
-          className="mb-8 inline-block text-sm text-zinc-500 transition-colors hover:text-zinc-900 dark:hover:text-zinc-200"
-        >
+    <SiteShell>
+      <div className="page-panel">
+        <Link href={`/companies/${slug}`} className="back-link">
           ← 返回 {company.title}
         </Link>
 
-        <header className="mb-10 border-b border-zinc-200 pb-6 dark:border-zinc-800">
-          <p className="text-sm text-zinc-500">{company.title}</p>
-          <h1 className="mt-1 text-3xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-50">
-            {projectMeta.title}
-          </h1>
-          {projectMeta.description && (
-            <p className="mt-3 text-zinc-600 dark:text-zinc-400">
-              {projectMeta.description}
-            </p>
-          )}
+        <header className="article-header">
+          <p className="article-kicker">{company.title}</p>
+          <h1>{projectMeta.title}</h1>
+          {projectMeta.description ? (
+            <p className="article-desc">{projectMeta.description}</p>
+          ) : null}
         </header>
 
         <div className="space-y-12">
@@ -90,7 +84,7 @@ export default async function ProjectPage({
             items={features}
           />
         </div>
-      </main>
-    </div>
+      </div>
+    </SiteShell>
   );
 }
