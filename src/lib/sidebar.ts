@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import { formatTenureRange, tenureSortKey } from "@/lib/dates";
 import { getAllCompanies, getAllNotes, type NoteMeta } from "@/lib/markdown";
 
 const SIDEBAR_LIMIT = 5;
@@ -35,28 +36,29 @@ export function getSidebarNotes() {
 }
 
 export function getSidebarCompanies() {
-  const companiesRoot = path.join(process.cwd(), "content", "companies");
-
-  return getAllCompanies()
-    .map((company) =>
-      withCreatedDate(
-        company,
-        path.join(companiesRoot, `${company.slug}.md`),
-      ),
-    )
-    .sort((a, b) => (b.date || "").localeCompare(a.date || ""));
+  return getAllCompanies().sort(
+    (a, b) => tenureSortKey(b.end, b.start) - tenureSortKey(a.end, a.start),
+  );
 }
 
 export function toSidebarItems(
   items: NoteMeta[],
   hrefFor: (slug: string) => string,
+  options?: { useTenure?: boolean },
 ) {
-  return items.map((item) => ({
-    href: hrefFor(item.slug),
-    title: item.title,
-    date: item.date,
-    description: item.description,
-  }));
+  return items.map((item) => {
+    const tenure = options?.useTenure
+      ? formatTenureRange(item.start, item.end)
+      : undefined;
+
+    return {
+      href: hrefFor(item.slug),
+      title: item.title,
+      date: options?.useTenure ? undefined : item.date,
+      dateLabel: tenure || undefined,
+      description: item.description,
+    };
+  });
 }
 
 export function getSidebarSections() {
@@ -73,7 +75,11 @@ export function getSidebarSections() {
     },
     companies: {
       title: "工作经历",
-      items: toSidebarItems(companies, (slug) => `/companies/${slug}`),
+      items: toSidebarItems(
+        companies,
+        (slug) => `/companies/${slug}`,
+        { useTenure: true },
+      ),
       total: companies.length,
       moreHref: "/companies",
       limit: SIDEBAR_LIMIT,

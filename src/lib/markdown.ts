@@ -81,10 +81,31 @@ function getContentDirectory(subdir = ""): string {
   return subdir ? path.join(contentRoot, subdir) : contentRoot;
 }
 
+function readPeriodField(data: Record<string, unknown>, key: string): string | undefined {
+  const value = data[key];
+  if (value == null || value === "") {
+    return undefined;
+  }
+
+  if (value instanceof Date) {
+    return `${value.getFullYear()}-${String(value.getMonth() + 1).padStart(2, "0")}`;
+  }
+
+  return String(value).trim();
+}
+
+function parseCompanyFields(data: Record<string, unknown>) {
+  return {
+    start: readPeriodField(data, "start"),
+    end: readPeriodField(data, "end"),
+  };
+}
+
 async function parseMarkdownFile(fullPath: string, slug: string) {
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const { data, content } = matter(fileContents);
   const processedContent = await renderMarkdown(content);
+  const period = parseCompanyFields(data);
 
   return {
     slug,
@@ -92,17 +113,23 @@ async function parseMarkdownFile(fullPath: string, slug: string) {
     date: formatDate(data.date),
     description: data.description as string | undefined,
     contentHtml: processedContent,
+    hasBody: content.trim().length > 0,
+    start: period.start,
+    end: period.end,
   };
 }
 
 function parseMarkdownMeta(fullPath: string, slug: string): NoteMeta {
   const { data } = matter(fs.readFileSync(fullPath, "utf8"));
+  const period = parseCompanyFields(data);
 
   return {
     slug,
     title: (data.title as string) || slug,
     date: formatDate(data.date),
     description: data.description as string | undefined,
+    start: period.start,
+    end: period.end,
   };
 }
 
@@ -124,6 +151,10 @@ export interface NoteMeta {
   title: string;
   date?: string;
   description?: string;
+  /** Company tenure start, `YYYY-MM`. */
+  start?: string;
+  /** Company tenure end, `YYYY-MM` or `至今` / `present`. */
+  end?: string;
 }
 
 export interface ProjectItemMeta extends NoteMeta {
@@ -166,6 +197,19 @@ export function getAllCompanies(): NoteMeta[] {
     const fullPath = path.join(getContentDirectory("companies"), `${slug}.md`);
     return parseMarkdownMeta(fullPath, slug);
   });
+}
+
+export function companyHasBodyHtml(contentHtml: string | undefined): boolean {
+  if (!contentHtml) {
+    return false;
+  }
+
+  const text = contentHtml
+    .replace(/<[^>]+>/g, "")
+    .replace(/&nbsp;/g, " ")
+    .trim();
+
+  return text.length > 0;
 }
 
 function getProjectsDirectory(companySlug: string): string {

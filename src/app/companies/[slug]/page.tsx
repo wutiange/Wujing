@@ -2,7 +2,9 @@ import Link from "next/link";
 import { MarkdownContent } from "@/components/MarkdownContent";
 import { SiteShell } from "@/components/SiteShell";
 import { notFound } from "next/navigation";
+import { formatTenureRange } from "@/lib/dates";
 import {
+  companyHasBodyHtml,
   getAllProjects,
   getCompanyBySlug,
   getCompanySlugs,
@@ -46,6 +48,9 @@ export default async function CompanyPage({
 
   const company = await getCompanyBySlug(slug);
   const projects = getAllProjects(slug);
+  const tenure = formatTenureRange(company.start, company.end);
+  const hasReflection = companyHasBodyHtml(company.contentHtml);
+  const isEmpty = !hasReflection && projects.length === 0;
 
   return (
     <SiteShell>
@@ -57,42 +62,58 @@ export default async function CompanyPage({
         <article>
           <header className="article-header">
             <h1>{company.title}</h1>
-            {company.date ? (
-              <time dateTime={company.date}>{company.date}</time>
+            {tenure ? (
+              <time className="tenure-range" dateTime={company.start}>
+                {tenure}
+              </time>
             ) : null}
             {company.description ? (
               <p className="article-desc">{company.description}</p>
             ) : null}
           </header>
 
-          {company.contentHtml ? (
-            <div className="mb-10">
-              <MarkdownContent html={company.contentHtml} />
-            </div>
-          ) : null}
-
+          {/* 项目目录置顶；若有公司感想正文则紧随其后优先呈现 */}
           {projects.length > 0 ? (
-            <section>
+            <nav className="project-directory" aria-label="项目目录">
               <h2 className="section-label">项目</h2>
-              <ul className="list-stack">
-                {projects.map((project) => (
+              <ul className="project-directory-list">
+                {projects.map((project, index) => (
                   <li key={project.slug}>
                     <Link
                       href={`/companies/${slug}/projects/${project.slug}`}
-                      className="list-link"
+                      className="project-directory-link"
                     >
-                      <h3>{project.title}</h3>
-                      {project.description ? <p>{project.description}</p> : null}
+                      <span className="project-index">
+                        {String(index + 1).padStart(2, "0")}
+                      </span>
+                      <span className="project-directory-body">
+                        <span className="project-directory-title">
+                          {project.title}
+                        </span>
+                        {project.description ? (
+                          <span className="project-directory-desc">
+                            {project.description}
+                          </span>
+                        ) : null}
+                      </span>
+                      <span className="project-directory-arrow" aria-hidden="true">
+                        →
+                      </span>
                     </Link>
                   </li>
                 ))}
               </ul>
+            </nav>
+          ) : null}
+
+          {hasReflection ? (
+            <section className="company-reflection">
+              <h2 className="section-label">感想</h2>
+              <MarkdownContent html={company.contentHtml} />
             </section>
           ) : null}
 
-          {!company.contentHtml && projects.length === 0 ? (
-            <p className="empty-hint">暂无内容，请直接编辑对应的 Markdown 文件。</p>
-          ) : null}
+          {isEmpty ? <p className="empty-hint">暂无内容</p> : null}
         </article>
       </div>
     </SiteShell>
