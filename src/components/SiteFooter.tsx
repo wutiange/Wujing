@@ -12,11 +12,6 @@ export function SiteFooter() {
             GitHub
           </a>
         </li>
-        <li>
-          <a href={siteConfig.website} target="_blank" rel="noreferrer">
-            网站
-          </a>
-        </li>
       </ul>
     </footer>
   );
