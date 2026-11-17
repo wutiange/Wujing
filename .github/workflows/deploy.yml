@@ -30,7 +30,8 @@ jobs:
         run: npm ci
 
       - name: Build static site
-        run: npm run build
+        # Use webpack: Turbopack + next/font/google can fail in CI font fetch
+        run: npx next build --webpack
         env:
           GITHUB_PAGES: "true"
           NODE_ENV: production

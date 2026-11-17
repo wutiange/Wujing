@@ -1,29 +1,6 @@
 import type { Metadata } from "next";
-import {
-  Bricolage_Grotesque,
-  JetBrains_Mono,
-  Noto_Serif_SC,
-} from "next/font/google";
 import { siteConfig } from "@/lib/site";
 import "./globals.css";
-
-const display = Noto_Serif_SC({
-  variable: "--font-display",
-  subsets: ["latin"],
-  weight: ["400", "600", "700"],
-});
-
-const body = Bricolage_Grotesque({
-  variable: "--font-body",
-  subsets: ["latin"],
-  weight: ["400", "600"],
-});
-
-const mono = JetBrains_Mono({
-  variable: "--font-mono",
-  subsets: ["latin"],
-  weight: ["400", "600"],
-});
 
 export const metadata: Metadata = {
   title: {
@@ -51,12 +28,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="zh-CN"
-      className={`${display.variable} ${body.variable} ${mono.variable} h-full antialiased`}
-      suppressHydrationWarning
-    >
+    <html lang="zh-CN" className="h-full antialiased" suppressHydrationWarning>
       <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        {/* App Router root layout: load display fonts without next/font build-time fetch */}
+        {/* eslint-disable-next-line @next/next/no-page-custom-font */}
+        <link
+          href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600&family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@400;600;700&display=swap"
+          rel="stylesheet"
+        />
         <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
       </head>
       <body className="min-h-full flex flex-col">{children}</body>

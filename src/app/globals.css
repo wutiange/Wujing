@@ -15,6 +15,10 @@
   --komorebi-shadow: #233452;
   --komorebi-mid: #e89a39;
   --komorebi-light: #f5eedd;
+  --font-display: "Noto Serif SC", "Songti SC", serif;
+  --font-body: "Bricolage Grotesque", "PingFang SC", "Noto Sans SC",
+    "Microsoft YaHei", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
 }
 
 html[data-theme="dark"] {
