@@ -72,6 +72,7 @@ export default async function CompanyPage({
             ) : null}
           </header>
 
+          {/* 项目目录置顶；若有公司感想正文则紧随其后优先呈现 */}
           {projects.length > 0 ? (
             <nav className="project-directory" aria-label="项目目录">
               <h2 className="section-label">项目</h2>
@@ -106,14 +107,8 @@ export default async function CompanyPage({
           ) : null}
 
           {hasReflection ? (
-            <section
-              className={
-                projects.length > 0 ? "company-reflection" : undefined
-              }
-            >
-              {projects.length > 0 ? (
-                <h2 className="section-label">感想</h2>
-              ) : null}
+            <section className="company-reflection">
+              <h2 className="section-label">感想</h2>
               <MarkdownContent html={company.contentHtml} />
             </section>
           ) : null}
