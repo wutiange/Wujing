@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { MarkdownContent } from "@/components/MarkdownContent";
+import { SiteShell } from "@/components/SiteShell";
 import { notFound } from "next/navigation";
 import {
   getAllProjects,
@@ -47,70 +48,53 @@ export default async function CompanyPage({
   const projects = getAllProjects(slug);
 
   return (
-    <div className="min-h-full bg-zinc-50 dark:bg-black">
-      <main className="mx-auto max-w-3xl px-6 py-12">
-        <Link
-          href="/"
-          className="mb-8 inline-block text-sm text-zinc-500 transition-colors hover:text-zinc-900 dark:hover:text-zinc-200"
-        >
+    <SiteShell>
+      <div className="page-panel">
+        <Link href="/" className="back-link">
           ← 返回首页
         </Link>
 
         <article>
-          <header className="mb-8 border-b border-zinc-200 pb-6 dark:border-zinc-800">
-            <h1 className="text-3xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-50">
-              {company.title}
-            </h1>
-            {company.date && (
-              <time className="mt-2 block text-sm text-zinc-500">
-                {company.date}
-              </time>
-            )}
-            {company.description && (
-              <p className="mt-3 text-zinc-600 dark:text-zinc-400">
-                {company.description}
-              </p>
-            )}
+          <header className="article-header">
+            <h1>{company.title}</h1>
+            {company.date ? (
+              <time dateTime={company.date}>{company.date}</time>
+            ) : null}
+            {company.description ? (
+              <p className="article-desc">{company.description}</p>
+            ) : null}
           </header>
 
           {company.contentHtml ? (
-            <div className="mb-12">
+            <div className="mb-10">
               <MarkdownContent html={company.contentHtml} />
             </div>
           ) : null}
 
-          {projects.length > 0 && (
+          {projects.length > 0 ? (
             <section>
-              <h2 className="mb-4 text-sm font-medium uppercase tracking-wider text-zinc-500">
-                项目
-              </h2>
-              <ul className="space-y-3">
+              <h2 className="section-label">项目</h2>
+              <ul className="list-stack">
                 {projects.map((project) => (
                   <li key={project.slug}>
                     <Link
                       href={`/companies/${slug}/projects/${project.slug}`}
-                      className="group block rounded-lg border border-zinc-200 bg-white p-5 transition-colors hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-950 dark:hover:border-zinc-700"
+                      className="list-link"
                     >
-                      <h3 className="text-lg font-medium text-zinc-900 group-hover:text-zinc-700 dark:text-zinc-50 dark:group-hover:text-zinc-200">
-                        {project.title}
-                      </h3>
-                      {project.description && (
-                        <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-                          {project.description}
-                        </p>
-                      )}
+                      <h3>{project.title}</h3>
+                      {project.description ? <p>{project.description}</p> : null}
                     </Link>
                   </li>
                 ))}
               </ul>
             </section>
-          )}
+          ) : null}
 
-          {!company.contentHtml && projects.length === 0 && (
-            <p className="text-zinc-500">暂无内容，请直接编辑对应的 Markdown 文件。</p>
-          )}
+          {!company.contentHtml && projects.length === 0 ? (
+            <p className="empty-hint">暂无内容，请直接编辑对应的 Markdown 文件。</p>
+          ) : null}
         </article>
-      </main>
-    </div>
+      </div>
+    </SiteShell>
   );
 }

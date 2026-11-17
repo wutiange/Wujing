@@ -1,59 +1,94 @@
 import Link from "next/link";
-import { getAllNotes } from "@/lib/markdown";
+import { DappledScene } from "@/components/DappledScene";
+import { RecentNotes } from "@/components/RecentNotes";
+import { SiteShell } from "@/components/SiteShell";
+import { getAllCompanies, getAllNotes } from "@/lib/markdown";
+import { siteConfig } from "@/lib/site";
 
 export default function Home() {
-  const notes = getAllNotes();
+  const notes = getAllNotes().filter((note) => note.slug !== "welcome");
+  const companies = getAllCompanies();
+
+  const companyItems = companies.map((company) => ({
+    href: `/companies/${company.slug}`,
+    title: company.title,
+    description: company.description,
+    date: company.date,
+  }));
+
+  const noteItems = notes.map((note) => ({
+    href: `/notes/${note.slug}`,
+    title: note.title,
+    description: note.description,
+    date: note.date,
+  }));
 
   return (
-    <div className="min-h-full bg-zinc-50 dark:bg-black">
-      <main className="mx-auto max-w-3xl px-6 py-16">
-        <header className="mb-12">
-          <h1 className="text-4xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-50">
-            吴敬笔记
-          </h1>
-          <p className="mt-4 text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            学习记录、工作记录，以及工作中遇到的问题与解决方案。
-          </p>
-        </header>
-
-        <section>
-          <h2 className="mb-6 text-sm font-medium uppercase tracking-wider text-zinc-500">
-            全部笔记
-          </h2>
-
-          {notes.length === 0 ? (
-            <p className="text-zinc-600 dark:text-zinc-400">
-              暂无笔记，请在 <code className="text-sm">content/</code>{" "}
-              目录下添加 Markdown 文件。
-            </p>
-          ) : (
-            <ul className="space-y-4">
-              {notes.map((note) => (
-                <li key={note.slug}>
-                  <Link
-                    href={`/notes/${note.slug}`}
-                    className="group block rounded-lg border border-zinc-200 bg-white p-5 transition-colors hover:border-zinc-300 dark:border-zinc-800 dark:bg-zinc-950 dark:hover:border-zinc-700"
-                  >
-                    <h3 className="text-lg font-medium text-zinc-900 group-hover:text-zinc-700 dark:text-zinc-50 dark:group-hover:text-zinc-200">
-                      {note.title}
-                    </h3>
-                    {note.description && (
-                      <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-                        {note.description}
-                      </p>
-                    )}
-                    {note.date && (
-                      <time className="mt-3 block text-xs text-zinc-400">
-                        {note.date}
-                      </time>
-                    )}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          )}
-        </section>
-      </main>
-    </div>
+    <SiteShell
+      home
+      left={
+        <RecentNotes
+          title="工作经历"
+          items={companyItems.slice(0, 5)}
+          moreHref={companies.length > 5 ? "/#companies" : undefined}
+          moreLabel={
+            companies.length > 5 ? `查看其余 ${companies.length - 5} 家 →` : undefined
+          }
+        />
+      }
+      right={
+        <RecentNotes
+          title="学习笔记"
+          items={
+            noteItems.length > 0
+              ? noteItems.slice(0, 6)
+              : [
+                  {
+                    href: "/notes/welcome",
+                    title: "欢迎使用",
+                    description: "如何添加笔记与记录内容",
+                    date: "2026-06-25",
+                  },
+                ]
+          }
+        />
+      }
+    >
+      <article className="home-article">
+        <DappledScene />
+        <pre className="poetry">欢迎！</pre>
+        <p>
+          我是{siteConfig.author}。这里是我在互联网上的一小片超文本花园 ——
+          随便逛逛，当自己家就好。
+        </p>
+        <p>
+          我主要记录学习过程中的收获，以及工作里踩过的坑、做过的难点功能和解法。希望这些笔记不只是备忘，也能成为以后回看时还能辨认路径的路标。
+        </p>
+        <p>
+          如果你也在做类似的事，欢迎从这些入口走进来：
+        </p>
+        <ul>
+          <li>
+            <Link href="/notes/welcome">学习笔记</Link>
+            ：日常学习与思考的落点；
+          </li>
+          <li>
+            <Link href={companyItems[0]?.href ?? "/"}>工作经历</Link>
+            ：走过的公司与项目现场；
+          </li>
+          <li>
+            <a href={siteConfig.github} target="_blank" rel="noreferrer">
+              GitHub
+            </a>
+            ：源码仓库，旁边可直达
+            <a href={siteConfig.website} target="_blank" rel="noreferrer">
+              在线网站
+            </a>
+            。
+          </li>
+        </ul>
+        <p className="signature">— {siteConfig.author}</p>
+      </article>
+    </SiteShell>
   );
 }
