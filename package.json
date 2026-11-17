@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build --webpack",
     "deploy": "GITHUB_PAGES=true npm run build && gh-pages -d out --dotfiles",
     "start": "next start",
     "lint": "eslint"
