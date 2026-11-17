@@ -37,20 +37,9 @@ export default function Home() {
                 ）
               </>
             ) : null}
-            ；
-          </li>
-          <li>
-            <a href={siteConfig.github} target="_blank" rel="noreferrer">
-              GitHub
-            </a>
-            ：源码仓库，旁边可直达
-            <a href={siteConfig.website} target="_blank" rel="noreferrer">
-              在线网站
-            </a>
             。
           </li>
         </ul>
-        <p className="signature">— {siteConfig.author}</p>
       </article>
     </SiteShell>
   );
