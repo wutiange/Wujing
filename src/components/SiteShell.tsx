@@ -1,14 +1,13 @@
+import { LeftNav } from "@/components/LeftNav";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 
 export function SiteShell({
   children,
-  left,
   right,
   home = false,
 }: {
   children: React.ReactNode;
-  left?: React.ReactNode;
   right?: React.ReactNode;
   home?: boolean;
 }) {
@@ -17,12 +16,16 @@ export function SiteShell({
       <div className="site-body">
         <aside className="sidebar sidebar-left">
           <SiteHeader />
-          {left}
+          <div className="desktop-only-nav">
+            <LeftNav />
+          </div>
         </aside>
 
         <div className="site-center">
           {children}
-          <div className="mobile-side-stacks">{left}</div>
+          <div className="mobile-side-stacks">
+            <LeftNav />
+          </div>
         </div>
 
         {right ? <aside className="sidebar sidebar-right">{right}</aside> : null}
