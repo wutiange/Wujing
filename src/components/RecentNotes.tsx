@@ -4,6 +4,8 @@ export interface RecentItem {
   href: string;
   title: string;
   date?: string;
+  /** Preformatted label, e.g. tenure `2019年7月~2020年4月`. */
+  dateLabel?: string;
   description?: string;
 }
 
@@ -52,25 +54,29 @@ export function RecentNotes({
         <p className="recent-empty">暂无内容</p>
       ) : (
         <ul className="recent-ul">
-          {visible.map((item) => (
-            <li key={item.href} className="recent-li">
-              <div className="section">
-                <div className="desc">
-                  <h3>
-                    <Link href={item.href}>{item.title}</Link>
-                  </h3>
-                  {showDescription && item.description ? (
-                    <p className="recent-desc">{item.description}</p>
+          {visible.map((item) => {
+            const metaLabel = item.dateLabel || formatDisplayDate(item.date);
+
+            return (
+              <li key={item.href} className="recent-li">
+                <div className="section">
+                  <div className="desc">
+                    <h3>
+                      <Link href={item.href}>{item.title}</Link>
+                    </h3>
+                    {showDescription && item.description ? (
+                      <p className="recent-desc">{item.description}</p>
+                    ) : null}
+                  </div>
+                  {metaLabel ? (
+                    <p className="meta">
+                      <time dateTime={item.date || item.dateLabel}>{metaLabel}</time>
+                    </p>
                   ) : null}
                 </div>
-                {item.date ? (
-                  <p className="meta">
-                    <time dateTime={item.date}>{formatDisplayDate(item.date)}</time>
-                  </p>
-                ) : null}
-              </div>
-            </li>
-          ))}
+              </li>
+            );
+          })}
         </ul>
       )}
       {remaining > 0 && moreHref ? (

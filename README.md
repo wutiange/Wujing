@@ -65,11 +65,14 @@ description: 简短描述
 
 | 文件 | 路由 |
 |------|------|
-| `tengwan-weigu.md` | `/companies/tengwan-weigu` |
-| `yuanqi-senlin.md` | `/companies/yuanqi-senlin` |
-| `xidi.md` | `/companies/xidi` |
-| `boshi.md` | `/companies/boshi` |
+| `yiyuan.md` | `/companies/yiyuan` |
 | `dreame.md` | `/companies/dreame` |
+| `boshi.md` | `/companies/boshi` |
+| `xidi.md` | `/companies/xidi` |
+| `yuanqi-senlin.md` | `/companies/yuanqi-senlin` |
+| `tengwan-weigu.md` | `/companies/tengwan-weigu` |
+
+公司 frontmatter 可用 `start` / `end` 表示在职区间（如 `2026-08`、`至今`），侧栏与列表会显示为 `2026年8月~至今`。
 
 ```markdown
 ---
