@@ -10,15 +10,14 @@
 
 ## 部署说明
 
-本项目配置为**静态资源网站**（`output: "export"`），构建产物输出到 `out/` 目录，可部署到任意静态托管平台：
+本项目配置为**静态资源网站**（`output: "export"`），构建产物输出到 `out/` 目录。
 
-- GitHub Pages
-- Cloudflare Pages
-- Nginx / OSS 等静态文件服务
+推送到 `main` 后，GitHub Actions 会自动构建并发布到 GitHub Pages（`gh-pages` 分支）。也可在 Actions 页手动触发 **Deploy to GitHub Pages**。
+
+本地也可手动发布：
 
 ```bash
-npm run build
-# 产物位于 out/ 目录
+npm run deploy
 ```
 
 ## 本地开发
@@ -42,12 +41,7 @@ npm run dev
 
 `https://wutiange.github.io/Wujing/`
 
-更新内容后，执行以下命令重新发布：
-
-```bash
-npm run deploy
-```
-
+合并到 `main` 后会自动发布；若需本地立刻发布，仍可执行 `npm run deploy`。
 
 ## 添加笔记
 
