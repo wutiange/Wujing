@@ -1,9 +1,11 @@
-import Link from "next/link";
+import { ArticleBreadcrumb } from "@/components/ArticleBreadcrumb";
+import { ArticleToc } from "@/components/ArticleToc";
 import { MarkdownContent } from "@/components/MarkdownContent";
 import { notFound } from "next/navigation";
 import { DifficultyBadge } from "@/components/DifficultyBadge";
 import { SiteShell } from "@/components/SiteShell";
 import {
+  CATEGORY_LABELS,
   getAllProjectItemParams,
   getCompanyBySlug,
   getCompanySlugs,
@@ -80,20 +82,27 @@ export default async function FeaturePage({
   const item = await getProjectItemBySlug(slug, project, "features", itemSlug);
 
   return (
-    <SiteShell>
+    <SiteShell
+      right={item.toc.length > 0 ? <ArticleToc items={item.toc} /> : undefined}
+    >
       <div className="page-panel">
-        <Link
-          href={`/companies/${slug}/projects/${project}`}
-          className="back-link"
-        >
-          ← 返回 {projectMeta.title}
-        </Link>
-
         <article>
           <header className="article-header">
-            <p className="article-kicker">
-              {company.title} · {projectMeta.title} · 功能实现
-            </p>
+            <ArticleBreadcrumb
+              items={[
+                { label: "首页", href: "/" },
+                { label: "工作经历", href: "/companies" },
+                { label: company.title, href: `/companies/${slug}` },
+                {
+                  label: projectMeta.title,
+                  href: `/companies/${slug}/projects/${project}`,
+                },
+                {
+                  label: CATEGORY_LABELS.features,
+                  href: `/companies/${slug}/projects/${project}#features`,
+                },
+              ]}
+            />
             <div className="mt-2 flex flex-wrap items-center gap-3">
               <h1>{item.title}</h1>
               <DifficultyBadge level={item.difficulty} />

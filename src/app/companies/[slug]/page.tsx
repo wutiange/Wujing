@@ -1,6 +1,7 @@
-import Link from "next/link";
+import { ArticleBreadcrumb } from "@/components/ArticleBreadcrumb";
 import { MarkdownContent } from "@/components/MarkdownContent";
 import { SiteShell } from "@/components/SiteShell";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { formatTenureRange } from "@/lib/dates";
 import {
@@ -55,12 +56,15 @@ export default async function CompanyPage({
   return (
     <SiteShell>
       <div className="page-panel">
-        <Link href="/" className="back-link">
-          ← 返回首页
-        </Link>
-
         <article>
           <header className="article-header">
+            <ArticleBreadcrumb
+              items={[
+                { label: "首页", href: "/" },
+                { label: "工作经历", href: "/companies" },
+                { label: company.title, href: `/companies/${slug}` },
+              ]}
+            />
             <h1>{company.title}</h1>
             {tenure ? (
               <time className="tenure-range" dateTime={company.start}>
@@ -72,7 +76,6 @@ export default async function CompanyPage({
             ) : null}
           </header>
 
-          {/* 项目目录置顶；若有公司感想正文则紧随其后优先呈现 */}
           {projects.length > 0 ? (
             <nav className="project-directory" aria-label="项目目录">
               <h2 className="section-label">项目</h2>

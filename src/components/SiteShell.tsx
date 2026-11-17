@@ -16,21 +16,25 @@ export function SiteShell({
       <div className="site-body">
         <aside className="sidebar sidebar-left">
           <SiteHeader />
-          <div className="desktop-only-nav">
+          <div className="scroll-pane scroll-pane--nav desktop-only-nav">
             <LeftNav />
           </div>
         </aside>
 
-        <div className="site-center">
+        <div className="scroll-pane scroll-pane--content site-center">
           {children}
           <div className="mobile-side-stacks">
             <LeftNav />
           </div>
+          <SiteFooter />
         </div>
 
-        {right ? <aside className="sidebar sidebar-right">{right}</aside> : null}
+        {right ? (
+          <aside className="scroll-pane scroll-pane--toc sidebar sidebar-right">
+            {right}
+          </aside>
+        ) : null}
       </div>
-      <SiteFooter />
     </div>
   );
 }

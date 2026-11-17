@@ -1,5 +1,5 @@
-import Link from "next/link";
 import { notFound } from "next/navigation";
+import { ArticleBreadcrumb } from "@/components/ArticleBreadcrumb";
 import { ProjectItemSection } from "@/components/ProjectItemSection";
 import { SiteShell } from "@/components/SiteShell";
 import {
@@ -58,12 +58,18 @@ export default async function ProjectPage({
   return (
     <SiteShell>
       <div className="page-panel">
-        <Link href={`/companies/${slug}`} className="back-link">
-          ← 返回 {company.title}
-        </Link>
-
         <header className="article-header">
-          <p className="article-kicker">{company.title}</p>
+          <ArticleBreadcrumb
+            items={[
+              { label: "首页", href: "/" },
+              { label: "工作经历", href: "/companies" },
+              { label: company.title, href: `/companies/${slug}` },
+              {
+                label: projectMeta.title,
+                href: `/companies/${slug}/projects/${project}`,
+              },
+            ]}
+          />
           <h1>{projectMeta.title}</h1>
           {projectMeta.description ? (
             <p className="article-desc">{projectMeta.description}</p>

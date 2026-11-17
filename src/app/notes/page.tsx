@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ArticleBreadcrumb } from "@/components/ArticleBreadcrumb";
 import { SiteShell } from "@/components/SiteShell";
 import { getSidebarNotes } from "@/lib/sidebar";
 
@@ -30,11 +31,13 @@ export default function NotesIndexPage() {
   return (
     <SiteShell>
       <div className="page-panel">
-        <Link href="/" className="back-link">
-          ← 返回首页
-        </Link>
-
         <header className="article-header">
+          <ArticleBreadcrumb
+            items={[
+              { label: "首页", href: "/" },
+              { label: "学习笔记", href: "/notes" },
+            ]}
+          />
           <h1>学习笔记</h1>
           <p className="article-desc">共 {notes.length} 篇</p>
         </header>

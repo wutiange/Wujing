@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ArticleBreadcrumb } from "@/components/ArticleBreadcrumb";
 import { SiteShell } from "@/components/SiteShell";
 import { formatTenureRange } from "@/lib/dates";
 import { getSidebarCompanies } from "@/lib/sidebar";
@@ -14,11 +15,13 @@ export default function CompaniesIndexPage() {
   return (
     <SiteShell>
       <div className="page-panel">
-        <Link href="/" className="back-link">
-          ← 返回首页
-        </Link>
-
         <header className="article-header">
+          <ArticleBreadcrumb
+            items={[
+              { label: "首页", href: "/" },
+              { label: "工作经历", href: "/companies" },
+            ]}
+          />
           <h1>工作经历</h1>
           <p className="article-desc">共 {companies.length} 家</p>
         </header>

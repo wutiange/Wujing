@@ -20,17 +20,11 @@ export function ProjectItemSection({
   const label = CATEGORY_LABELS[category];
 
   return (
-    <section>
+    <section id={category} className="project-item-section">
       <h2 className="section-label">{label}</h2>
 
       {items.length === 0 ? (
-        <p className="empty-hint">
-          暂无{label}，请在{" "}
-          <code>
-            content/companies/{companySlug}/projects/{projectSlug}/{category}/
-          </code>{" "}
-          目录下添加 Markdown 文件。
-        </p>
+        <p className="empty-hint">暂无{label}</p>
       ) : (
         <ul className="list-stack">
           {items.map((item) => (

@@ -50,6 +50,7 @@ html[data-theme="dark"] {
 
 html {
   color-scheme: light;
+  height: 100%;
 }
 
 html[data-theme="dark"] {
@@ -59,6 +60,8 @@ html[data-theme="dark"] {
 body {
   margin: 0;
   min-height: 100%;
+  height: 100%;
+  overflow: hidden;
   background: var(--light);
   color: var(--darkgray);
   font-family: var(--font-body), "PingFang SC", "Noto Sans SC", "Microsoft YaHei",
@@ -78,9 +81,11 @@ a:hover {
 }
 
 .site-root {
-  min-height: 100vh;
+  height: 100%;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
   background:
     radial-gradient(ellipse 80% 50% at 10% -10%, color-mix(in srgb, var(--komorebi-mid) 18%, transparent), transparent 55%),
     radial-gradient(ellipse 60% 40% at 90% 0%, color-mix(in srgb, var(--secondary) 12%, transparent), transparent 50%),
@@ -89,17 +94,20 @@ a:hover {
 
 .site-body {
   flex: 1;
+  min-height: 0;
   width: min(1200px, calc(100% - 2rem));
   margin: 0 auto;
-  padding: 1.25rem 0 2rem;
+  padding: 1.25rem 0 0;
   display: grid;
   grid-template-columns: minmax(230px, 0.85fr) minmax(0, 2.2fr);
   gap: 1.75rem;
-  align-items: start;
+  align-items: stretch;
+  overflow: hidden;
 }
 
-.site-root.is-home .site-body:has(.sidebar-right) {
-  grid-template-columns: minmax(230px, 0.9fr) minmax(0, 1.6fr) minmax(210px, 0.9fr);
+.site-body:has(.sidebar-right) {
+  width: min(1320px, calc(100% - 2rem));
+  grid-template-columns: minmax(220px, 0.85fr) minmax(0, 1.7fr) minmax(200px, 0.85fr);
 }
 
 .left-nav {
@@ -108,8 +116,89 @@ a:hover {
 }
 
 .sidebar {
-  position: sticky;
-  top: 1rem;
+  min-height: 0;
+  min-width: 0;
+}
+
+.sidebar-left {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  overflow: hidden;
+}
+
+/*
+ * 三个滚动区独立，纯 CSS 控粗细。
+ *
+ * 不写 scrollbar-width / scrollbar-color：Chrome 会优先标准属性，
+ * ::-webkit-scrollbar 的像素宽度就会失效，看起来一直很粗。
+ * 不写 :hover / JS 显隐：避免「人在区域内就不消失」。
+ *
+ * 代价：自定义 width 后是经典滚动条（常驻），但可以细到约 1px。
+ * 「细 + 停滚即隐」无法同时用纯 CSS 做到。
+ */
+.scroll-pane {
+  min-height: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  padding-inline-end: 12px;
+}
+
+.scroll-pane--nav::-webkit-scrollbar,
+.scroll-pane--content::-webkit-scrollbar,
+.scroll-pane--toc::-webkit-scrollbar {
+  width: 1px;
+  height: 1px;
+}
+
+.scroll-pane--nav::-webkit-scrollbar-track,
+.scroll-pane--content::-webkit-scrollbar-track,
+.scroll-pane--toc::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scroll-pane--nav::-webkit-scrollbar-thumb,
+.scroll-pane--content::-webkit-scrollbar-thumb,
+.scroll-pane--toc::-webkit-scrollbar-thumb {
+  background: color-mix(in srgb, var(--gray) 45%, var(--lightgray));
+  border-radius: 999px;
+}
+
+.scroll-pane--nav::-webkit-scrollbar-corner,
+.scroll-pane--content::-webkit-scrollbar-corner,
+.scroll-pane--toc::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* Firefox 无 webkit 像素宽度，只能 thin */
+@supports not selector(::-webkit-scrollbar) {
+  .scroll-pane--nav,
+  .scroll-pane--content,
+  .scroll-pane--toc {
+    scrollbar-width: thin;
+    scrollbar-color: color-mix(in srgb, var(--gray) 45%, var(--lightgray))
+      transparent;
+  }
+}
+
+.sidebar-left > .scroll-pane--nav {
+  flex: 1;
+  padding-inline-end: 0;
+  padding-bottom: 1.5rem;
+  /* 左栏仍可滚动，但不显示滚动条 */
+  scrollbar-width: none;
+}
+
+.sidebar-left > .scroll-pane--nav::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+.scroll-pane--toc {
+  padding-bottom: 1.5rem;
 }
 
 .site-header {
@@ -117,6 +206,7 @@ a:hover {
   align-items: center;
   gap: 0.75rem;
   margin-bottom: 1.25rem;
+  flex-shrink: 0;
 }
 
 .page-title {
@@ -169,6 +259,8 @@ a:hover {
 
 .site-center {
   min-width: 0;
+  min-height: 0;
+  padding-bottom: 1.5rem;
   animation: rise-in 0.55s ease both;
 }
 
@@ -361,6 +453,52 @@ a:hover {
   margin: 0 0 0.5rem;
   font-size: 0.875rem;
   color: var(--gray);
+}
+
+.article-breadcrumb {
+  margin: 0 0 0.5rem;
+  font-size: 0.875rem;
+  color: var(--gray);
+}
+
+.article-breadcrumb ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.15rem 0;
+}
+
+.article-breadcrumb li {
+  display: inline-flex;
+  align-items: center;
+  min-width: 0;
+}
+
+.article-breadcrumb-sep {
+  margin: 0 0.4rem;
+  color: var(--gray);
+  font-weight: 400;
+}
+
+.article-breadcrumb a {
+  color: var(--gray);
+  font-weight: 500;
+}
+
+.article-breadcrumb a:hover {
+  color: var(--tertiary);
+}
+
+.article-breadcrumb [aria-current="page"] {
+  color: var(--gray);
+  font-weight: 500;
+}
+
+.project-item-section {
+  scroll-margin-top: 1.25rem;
 }
 
 .article-header time,
@@ -557,8 +695,8 @@ a:hover {
 }
 
 .site-footer {
-  width: min(1200px, calc(100% - 2rem));
-  margin: 0 auto 1.5rem;
+  width: 100%;
+  margin: 2rem 0 0;
   padding-top: 1rem;
   border-top: 1px solid var(--lightgray);
   display: flex;
@@ -608,13 +746,31 @@ a:hover {
 }
 
 @media (max-width: 980px) {
-  .site-body,
-  .site-root.is-home .site-body:has(.sidebar-right) {
-    grid-template-columns: 1fr;
+  html,
+  body {
+    height: auto;
+    overflow: auto;
   }
 
-  .sidebar {
-    position: static;
+  .site-root {
+    height: auto;
+    min-height: 100%;
+    overflow: visible;
+  }
+
+  .site-body,
+  .site-body:has(.sidebar-right) {
+    width: min(1200px, calc(100% - 2rem));
+    grid-template-columns: 1fr;
+    overflow: visible;
+    padding-bottom: 1.5rem;
+  }
+
+  .sidebar,
+  .sidebar-left,
+  .scroll-pane,
+  .site-center {
+    overflow: visible;
   }
 
   .sidebar-right,
@@ -649,6 +805,60 @@ a:hover {
   }
 }
 
+.article-toc {
+  display: grid;
+  gap: 0.75rem;
+  padding: 0.25rem 0 0.5rem;
+}
+
+.article-toc-title {
+  margin: 0;
+  font-family: var(--font-display), "Noto Serif SC", "Songti SC", serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--dark);
+}
+
+.article-toc-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.35rem;
+  border-left: 1px solid var(--lightgray);
+}
+
+.article-toc-item {
+  margin: 0;
+}
+
+.article-toc-item a {
+  display: block;
+  padding: 0.2rem 0 0.2rem 0.85rem;
+  color: var(--gray);
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.4;
+  border-left: 2px solid transparent;
+  margin-left: -1px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.article-toc-item.depth-3 a {
+  padding-left: 1.45rem;
+  font-size: 0.8125rem;
+}
+
+.article-toc-item a:hover,
+.article-toc-item.is-active a {
+  color: var(--secondary);
+}
+
+.article-toc-item.is-active a {
+  border-left-color: var(--tertiary);
+  color: var(--dark);
+}
+
 .prose {
   line-height: 1.75;
   color: var(--darkgray);
@@ -662,6 +872,7 @@ a:hover {
   font-family: var(--font-display), "Noto Serif SC", "Songti SC", serif;
   font-weight: 400;
   color: var(--dark);
+  scroll-margin-top: 1.25rem;
 }
 
 .prose h1 {

@@ -1,4 +1,5 @@
-import Link from "next/link";
+import { ArticleBreadcrumb } from "@/components/ArticleBreadcrumb";
+import { ArticleToc } from "@/components/ArticleToc";
 import { MarkdownContent } from "@/components/MarkdownContent";
 import { SiteShell } from "@/components/SiteShell";
 import { notFound } from "next/navigation";
@@ -43,14 +44,19 @@ export default async function NotePage({
   const note = await getNoteBySlug(slug);
 
   return (
-    <SiteShell>
+    <SiteShell
+      right={note.toc.length > 0 ? <ArticleToc items={note.toc} /> : undefined}
+    >
       <div className="page-panel">
-        <Link href="/" className="back-link">
-          ← 返回首页
-        </Link>
-
         <article>
           <header className="article-header">
+            <ArticleBreadcrumb
+              items={[
+                { label: "首页", href: "/" },
+                { label: "学习笔记", href: "/notes" },
+                { label: note.title, href: `/notes/${slug}` },
+              ]}
+            />
             <h1>{note.title}</h1>
             {note.date ? (
               <time dateTime={note.date}>{note.date}</time>

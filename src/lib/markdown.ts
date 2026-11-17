@@ -11,12 +11,46 @@ import type { Root } from "mdast";
 
 const contentRoot = path.join(process.cwd(), "content");
 
+export interface TocItem {
+  id: string;
+  text: string;
+  depth: 2 | 3;
+}
+
 function escapeHtml(value: string): string {
   return value
     .replace(/&/g, "&amp;")
     .replace(/</g, "&lt;")
     .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;");
+}
+
+function slugifyHeading(text: string): string {
+  const slug = text
+    .trim()
+    .toLowerCase()
+    .replace(/\s+/g, "-")
+    .replace(/[^\w\u4e00-\u9fff-]/g, "");
+
+  return slug || "section";
+}
+
+function collectElementText(node: {
+  type?: string;
+  value?: string;
+  children?: unknown[];
+}): string {
+  if (node.type === "text" && typeof node.value === "string") {
+    return node.value;
+  }
+
+  if (!Array.isArray(node.children)) {
+    return "";
+  }
+
+  return node.children
+    .map((child) => collectElementText(child as typeof node))
+    .join("");
 }
 
 function remarkMermaid() {
@@ -34,7 +68,48 @@ function remarkMermaid() {
   };
 }
 
-async function renderMarkdown(content: string): Promise<string> {
+function rehypeHeadingAnchors(toc: TocItem[]) {
+  return () => (tree: unknown) => {
+    const seen = new Map<string, number>();
+
+    visit(tree as Root, "element", (node) => {
+      const element = node as {
+        tagName?: string;
+        properties?: Record<string, unknown>;
+        children?: unknown[];
+      };
+
+      if (element.tagName !== "h2" && element.tagName !== "h3") {
+        return;
+      }
+
+      const text = collectElementText(element).trim();
+      if (!text) {
+        return;
+      }
+
+      let id = slugifyHeading(text);
+      const count = seen.get(id) ?? 0;
+      seen.set(id, count + 1);
+      if (count > 0) {
+        id = `${id}-${count}`;
+      }
+
+      element.properties = element.properties ?? {};
+      element.properties.id = id;
+      toc.push({
+        id,
+        text,
+        depth: element.tagName === "h2" ? 2 : 3,
+      });
+    });
+  };
+}
+
+async function renderMarkdown(
+  content: string,
+): Promise<{ contentHtml: string; toc: TocItem[] }> {
+  const toc: TocItem[] = [];
   const processed = await remark()
     .use(remarkGfm)
     .use(remarkMermaid)
@@ -43,10 +118,14 @@ async function renderMarkdown(content: string): Promise<string> {
       theme: "ayu-dark",
       keepBackground: false,
     })
+    .use(rehypeHeadingAnchors(toc))
     .use(rehypeStringify, { allowDangerousHtml: true })
     .process(content);
 
-  return processed.toString();
+  return {
+    contentHtml: processed.toString(),
+    toc,
+  };
 }
 
 export type ProjectCategory = "problems" | "features";
@@ -104,7 +183,7 @@ function parseCompanyFields(data: Record<string, unknown>) {
 async function parseMarkdownFile(fullPath: string, slug: string) {
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const { data, content } = matter(fileContents);
-  const processedContent = await renderMarkdown(content);
+  const { contentHtml, toc } = await renderMarkdown(content);
   const period = parseCompanyFields(data);
 
   return {
@@ -112,7 +191,8 @@ async function parseMarkdownFile(fullPath: string, slug: string) {
     title: (data.title as string) || slug,
     date: formatDate(data.date),
     description: data.description as string | undefined,
-    contentHtml: processedContent,
+    contentHtml,
+    toc,
     hasBody: content.trim().length > 0,
     start: period.start,
     end: period.end,
@@ -163,6 +243,7 @@ export interface ProjectItemMeta extends NoteMeta {
 
 export interface ProjectItem extends ProjectItemMeta {
   contentHtml: string;
+  toc: TocItem[];
 }
 
 export function getNoteSlugs(): string[] {
@@ -380,7 +461,7 @@ export async function getProjectItemBySlug(
 
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const { data, content } = matter(fileContents);
-  const contentHtml = await renderMarkdown(content);
+  const { contentHtml, toc } = await renderMarkdown(content);
 
   return {
     slug: itemSlug,
@@ -389,6 +470,7 @@ export async function getProjectItemBySlug(
     description: data.description as string | undefined,
     difficulty: parseDifficulty(data.difficulty),
     contentHtml,
+    toc,
   };
 }
 
