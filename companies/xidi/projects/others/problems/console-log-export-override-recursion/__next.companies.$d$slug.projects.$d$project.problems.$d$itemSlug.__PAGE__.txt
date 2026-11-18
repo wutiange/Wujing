@@ -1,0 +1,235 @@
+1:"$Sreact.fragment"
+2:I[3549,["2941","static/chunks/73972abe-73ae6eeb7f747ebc.js","2995","static/chunks/0b9a0da7-9d681b148c2109e1.js","233","static/chunks/233-5dfd80d382a556e5.js","6294","static/chunks/6294-2487c203252ab294.js","361","static/chunks/app/companies/%5Bslug%5D/projects/%5Bproject%5D/problems/%5BitemSlug%5D/page-d65aa9f9e5dde013.js"],""]
+3:I[8610,["2941","static/chunks/73972abe-73ae6eeb7f747ebc.js","2995","static/chunks/0b9a0da7-9d681b148c2109e1.js","233","static/chunks/233-5dfd80d382a556e5.js","6294","static/chunks/6294-2487c203252ab294.js","361","static/chunks/app/companies/%5Bslug%5D/projects/%5Bproject%5D/problems/%5BitemSlug%5D/page-d65aa9f9e5dde013.js"],"ThemeToggle"]
+f:I[2771,["2941","static/chunks/73972abe-73ae6eeb7f747ebc.js","2995","static/chunks/0b9a0da7-9d681b148c2109e1.js","233","static/chunks/233-5dfd80d382a556e5.js","6294","static/chunks/6294-2487c203252ab294.js","361","static/chunks/app/companies/%5Bslug%5D/projects/%5Bproject%5D/problems/%5BitemSlug%5D/page-d65aa9f9e5dde013.js"],"MarkdownContent"]
+11:I[6963,["2941","static/chunks/73972abe-73ae6eeb7f747ebc.js","2995","static/chunks/0b9a0da7-9d681b148c2109e1.js","233","static/chunks/233-5dfd80d382a556e5.js","6294","static/chunks/6294-2487c203252ab294.js","361","static/chunks/app/companies/%5Bslug%5D/projects/%5Bproject%5D/problems/%5BitemSlug%5D/page-d65aa9f9e5dde013.js"],"ArticleToc"]
+12:I[8937,[],"OutletBoundary"]
+13:"$Sreact.suspense"
+0:{"rsc":["$","$1","c",{"children":[["$","div",null,{"className":"site-root","children":["$","div",null,{"className":"site-body","children":[["$","aside",null,{"className":"sidebar sidebar-left","children":[["$","div",null,{"className":"site-header","children":[["$","h1",null,{"className":"page-title","children":["$","$L2",null,{"href":"/","children":"吴敬悦"}]}],["$","$L3",null,{}]]}],["$","div",null,{"className":"scroll-pane scroll-pane--nav desktop-only-nav","children":["$","div",null,{"className":"left-nav","children":[["$","section",null,{"className":"recent-notes","children":[["$","h3",null,{"children":"学习笔记"}],["$","ul",null,{"className":"recent-ul","children":[["$","li","/notes/welcome",{"className":"recent-li","children":["$","div",null,{"className":"section","children":[["$","div",null,{"className":"desc","children":[["$","h3",null,{"children":["$","$L2",null,{"href":"/notes/welcome","children":"欢迎使用"}]}],null]}],["$","p",null,{"className":"meta","children":["$","time",null,{"dateTime":"2026-06-25","children":"2026年6月25日"}]}]]}]}],["$","li","/notes/ble-notify-consumed-before-waiter",{"className":"recent-li","children":["$","div",null,{"className":"section","children":[["$","div",null,{"className":"desc","children":[["$","h3",null,{"children":["$","$L2",null,{"href":"/notes/ble-notify-consumed-before-waiter","children":"react-native-ble-plx：回包被提前消费，等待却还没挂上"}]}],null]}],["$","p",null,{"className":"meta","children":["$","time",null,{"dateTime":"2026-01-27","children":"2026年1月27日"}]}]]}]}],["$","li","/notes/yarn-workspace-monorepo",{"className":"recent-li","children":["$","div",null,{"className":"section","children":[["$","div",null,{"className":"desc","children":[["$","h3",null,{"children":["$","$L2",null,{"href":"/notes/yarn-workspace-monorepo","children":"使用 yarn workspace 管理多个项目"}]}],null]}],["$","p",null,{"className":"meta","children":["$","time",null,{"dateTime":"2024-12-09","children":"2024年12月9日"}]}]]}]}]]}],null]}],["$","section",null,{"className":"recent-notes","children":[["$","h3",null,{"children":"工作经历"}],["$","ul",null,{"className":"recent-ul","children":[["$","li","/companies/yiyuan",{"className":"recent-li","children":["$","div",null,{"className":"section","children":[["$","div",null,{"className":"desc","children":[["$","h3",null,{"children":["$","$L2",null,{"href":"/companies/yiyuan","children":"上海移远科技股份有限责任公司"}]}],null]}],["$","p",null,{"className":"meta","children":["$","time",null,{"dateTime":"2026年8月~至今","children":"2026年8月~至今"}]}]]}]}],["$","li","/companies/dreame",{"className":"recent-li","children":["$","div",null,{"className":"section","children":[["$","div",null,{"className":"desc","children":[["$","h3",null,{"children":["$","$L2",null,{"href":"/companies/dreame","children":"追觅科技有限公司"}]}],null]}],["$","p",null,{"className":"meta","children":["$","time",null,{"dateTime":"2026年4月~2026年7月","children":"2026年4月~2026年7月"}]}]]}]}],["$","li","/companies/boshi",{"className":"recent-li","children":["$","div",null,{"className":"section","children":[["$","div",null,{"className":"desc","children":[["$","h3",null,{"children":["$","$L2",null,{"href":"/companies/boshi","children":"重庆波士科技有限公司"}]}],null]}],["$","p",null,{"className":"meta","children":["$","time",null,{"dateTime":"2025年7月~2026年1月","children":"2025年7月~2026年1月"}]}]]}]}],["$","li","/companies/xidi",{"className":"recent-li","children":["$","div",null,{"className":"section","children":[["$","div",null,{"className":"desc","children":[["$","h3",null,{"children":["$","$L2",null,{"href":"/companies/xidi","children":"深圳矽递科技有限公司"}]}],null]}],["$","p",null,{"className":"meta","children":["$","time",null,{"dateTime":"2022年3月~2025年7月","children":"2022年3月~2025年7月"}]}]]}]}],["$","li","/companies/yuanqi-senlin",{"className":"recent-li","children":["$","div",null,{"className":"section","children":[["$","div",null,{"className":"desc","children":[["$","h3",null,{"children":["$","$L2",null,{"href":"/companies/yuanqi-senlin","children":"北京元气森林科技有限公司"}]}],null]}],["$","p",null,{"className":"meta","children":["$","time",null,{"dateTime":"2020年5月~2022年3月","children":"2020年5月~2022年3月"}]}]]}]}]]}],["$","p",null,{"children":["$","$L2",null,{"className":"see-more","href":"/companies","children":["查看其余 ",1," ","家"," →"]}]}]]}]]}]}]]}],["$","div",null,{"className":"scroll-pane scroll-pane--content site-center","children":[["$","div",null,{"className":"page-panel","children":["$","article",null,{"children":[["$","header",null,{"className":"article-header","children":[["$","nav",null,{"className":"article-breadcrumb","aria-label":"面包屑","children":["$","ol",null,{"children":[["$","li","首页-0",{"children":[null,["$","$L2",null,{"href":"/","children":"首页"}]]}],["$","li","工作经历-1",{"children":[["$","span",null,{"className":"article-breadcrumb-sep","aria-hidden":"true","children":"·"}],["$","$L2",null,{"href":"/companies","children":"工作经历"}]]}],["$","li","深圳矽递科技有限公司-2",{"children":[["$","span",null,{"className":"article-breadcrumb-sep","aria-hidden":"true","children":"·"}],["$","$L2",null,{"href":"/companies/xidi","children":"深圳矽递科技有限公司"}]]}],["$","li","Others-3",{"children":["$L4","$L5"]}],"$L6"]}]}],"$L7","$L8","$L9"]}],"$La"]}]}],"$Lb","$Lc"]}],"$Ld"]}]}],null,"$Le"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"KUYpKVuJoW-NB5H1d6g_s"}
+4:["$","span",null,{"className":"article-breadcrumb-sep","aria-hidden":"true","children":"·"}]
+5:["$","$L2",null,{"href":"/companies/xidi/projects/others","children":"Others"}]
+6:["$","li","问题记录-4",{"children":[["$","span",null,{"className":"article-breadcrumb-sep","aria-hidden":"true","children":"·"}],["$","$L2",null,{"href":"/companies/xidi/projects/others#problems","aria-current":"page","children":"问题记录"}]]}]
+7:["$","div",null,{"className":"mt-2 flex flex-wrap items-center gap-3","children":[["$","h1",null,{"children":"console.log 命名导出 + 全局重写导致无限递归"}],["$","span",null,{"className":"difficulty-badge","children":["难度 ",5,"/10"]}]]}]
+8:["$","time",null,{"dateTime":"2023-08-10","children":"2023-08-10"}]
+9:["$","p",null,{"className":"article-desc","children":"export 导出 console.log 后全局重写 console.log，Android WebView 上触发栈溢出；需用闭包对象包装原生引用"}]
+10:T5aaf,<h2 id="一句话">一句话</h2>
+<p><strong>把 <code>console.log</code> 命名导出，再 <code>console.log = () => log()</code> 做全局劫持——Android 上会栈溢出；换成 default export 的 <code>logger.log</code> 就正常。</strong></p>
+<h2 id="问题现象">问题现象</h2>
+<p>在 <strong>Android WebView / RN 容器</strong>里做日志统一上报：先封装 logger，再全局重写 <code>console.log</code> 走自定义逻辑。</p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>情况</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>写法 A</td>
+<td><code>export const [log, …] = [console.log, …]</code> + <code>import { log }</code> + 重写 <code>console.log</code></td>
+</tr>
+<tr>
+<td>写法 B</td>
+<td><code>export default logger</code>（对象方法内调用闭包里的 <code>log</code>）+ <code>import logger</code></td>
+</tr>
+<tr>
+<td>写法 A</td>
+<td><strong>栈溢出 / 无限递归</strong>，页面卡死</td>
+</tr>
+<tr>
+<td>写法 B</td>
+<td><strong>正常</strong></td>
+</tr>
+<tr>
+<td>验证环境</td>
+<td>Android 真机 / WebView（桌面 Chrome 有时不易复现）</td>
+</tr>
+</tbody>
+</table>
+<h2 id="问题代码-vs-正确代码">问题代码 vs 正确代码</h2>
+<h3 id="-会递归">❌ 会递归</h3>
+<p><strong>logger.ts</strong></p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="typescript" data-theme="ayu-dark"><code data-language="typescript" data-theme="ayu-dark" style="display: grid;"><span data-line=""><span style="color:#FF8F40">export</span><span style="color:#FF8F40"> const</span><span style="color:#BFBDB6"> [log</span><span style="color:#BFBDB6B3">,</span><span style="color:#BFBDB6"> warn</span><span style="color:#BFBDB6B3">,</span><span style="color:#BFBDB6"> error] </span><span style="color:#F29668">=</span><span style="color:#BFBDB6"> [console</span><span style="color:#F29668">.</span><span style="color:#BFBDB6">log</span><span style="color:#BFBDB6B3">,</span><span style="color:#BFBDB6"> console</span><span style="color:#F29668">.</span><span style="color:#BFBDB6">warn</span><span style="color:#BFBDB6B3">,</span><span style="color:#BFBDB6"> console</span><span style="color:#F29668">.</span><span style="color:#BFBDB6">error]</span></span></code></pre></figure>
+<p><strong>入口 / 拦截处</strong></p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="typescript" data-theme="ayu-dark"><code data-language="typescript" data-theme="ayu-dark" style="display: grid;"><span data-line=""><span style="color:#FF8F40">import</span><span style="color:#BFBDB6"> { log } </span><span style="color:#FF8F40">from</span><span style="color:#AAD94C"> './logger'</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color:#BFBDB6">console</span><span style="color:#F29668">.</span><span style="color:#FFB454">log</span><span style="color:#F29668"> =</span><span style="color:#BFBDB6"> (</span><span style="color:#F29668">...</span><span style="color:#D2A6FF">data</span><span style="color:#F29668">:</span><span style="color:#39BAE6"> any</span><span style="color:#BFBDB6">[]) </span><span style="color:#FF8F40">=></span><span style="color:#BFBDB6"> {</span></span>
+<span data-line=""><span style="color:#FFB454">  log</span><span style="color:#BFBDB6">(</span><span style="color:#F29668">...</span><span style="color:#BFBDB6">data)   </span><span style="color:#5A6673;font-style:italic">// ← 期望调用「原生 log」，实际陷入递归</span></span>
+<span data-line=""><span style="color:#BFBDB6">}</span></span></code></pre></figure>
+<h3 id="-正常">✅ 正常</h3>
+<p><strong>logger.ts</strong></p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="typescript" data-theme="ayu-dark"><code data-language="typescript" data-theme="ayu-dark" style="display: grid;"><span data-line=""><span style="color:#FF8F40">const</span><span style="color:#BFBDB6"> [log</span><span style="color:#BFBDB6B3">,</span><span style="color:#BFBDB6"> warn</span><span style="color:#BFBDB6B3">,</span><span style="color:#BFBDB6"> error] </span><span style="color:#F29668">=</span><span style="color:#BFBDB6"> [console</span><span style="color:#F29668">.</span><span style="color:#BFBDB6">log</span><span style="color:#BFBDB6B3">,</span><span style="color:#BFBDB6"> console</span><span style="color:#F29668">.</span><span style="color:#BFBDB6">warn</span><span style="color:#BFBDB6B3">,</span><span style="color:#BFBDB6"> console</span><span style="color:#F29668">.</span><span style="color:#BFBDB6">error]</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color:#FF8F40">const</span><span style="color:#BFBDB6"> logger </span><span style="color:#F29668">=</span><span style="color:#BFBDB6"> {</span></span>
+<span data-line=""><span style="color:#FFB454">  log</span><span style="color:#BFBDB6B3">:</span><span style="color:#BFBDB6"> (</span><span style="color:#F29668">...</span><span style="color:#D2A6FF">data</span><span style="color:#F29668">:</span><span style="color:#39BAE6"> any</span><span style="color:#BFBDB6">[]) </span><span style="color:#FF8F40">=></span><span style="color:#BFBDB6"> {</span></span>
+<span data-line=""><span style="color:#FFB454">    log</span><span style="color:#BFBDB6">(</span><span style="color:#F29668">...</span><span style="color:#BFBDB6">data)   </span><span style="color:#5A6673;font-style:italic">// 闭包捕获模块加载时的 log</span></span>
+<span data-line=""><span style="color:#BFBDB6">  }</span><span style="color:#BFBDB6B3">,</span></span>
+<span data-line=""><span style="color:#FFB454">  warn</span><span style="color:#BFBDB6B3">:</span><span style="color:#BFBDB6"> (</span><span style="color:#F29668">...</span><span style="color:#D2A6FF">data</span><span style="color:#F29668">:</span><span style="color:#39BAE6"> any</span><span style="color:#BFBDB6">[]) </span><span style="color:#FF8F40">=></span><span style="color:#BFBDB6"> {</span></span>
+<span data-line=""><span style="color:#FFB454">    warn</span><span style="color:#BFBDB6">(</span><span style="color:#F29668">...</span><span style="color:#BFBDB6">data)</span></span>
+<span data-line=""><span style="color:#BFBDB6">  }</span><span style="color:#BFBDB6B3">,</span></span>
+<span data-line=""><span style="color:#FFB454">  error</span><span style="color:#BFBDB6B3">:</span><span style="color:#BFBDB6"> (</span><span style="color:#F29668">...</span><span style="color:#D2A6FF">data</span><span style="color:#F29668">:</span><span style="color:#39BAE6"> any</span><span style="color:#BFBDB6">[]) </span><span style="color:#FF8F40">=></span><span style="color:#BFBDB6"> {</span></span>
+<span data-line=""><span style="color:#FFB454">    error</span><span style="color:#BFBDB6">(</span><span style="color:#F29668">...</span><span style="color:#BFBDB6">data)</span></span>
+<span data-line=""><span style="color:#BFBDB6">  }</span><span style="color:#BFBDB6B3">,</span></span>
+<span data-line=""><span style="color:#BFBDB6">}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color:#FF8F40">export</span><span style="color:#FF8F40"> default</span><span style="color:#BFBDB6"> logger</span></span></code></pre></figure>
+<p><strong>入口 / 拦截处</strong></p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="typescript" data-theme="ayu-dark"><code data-language="typescript" data-theme="ayu-dark" style="display: grid;"><span data-line=""><span style="color:#FF8F40">import</span><span style="color:#BFBDB6"> logger </span><span style="color:#FF8F40">from</span><span style="color:#AAD94C"> './logger'</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color:#BFBDB6">console</span><span style="color:#F29668">.</span><span style="color:#FFB454">log</span><span style="color:#F29668"> =</span><span style="color:#BFBDB6"> (</span><span style="color:#F29668">...</span><span style="color:#D2A6FF">data</span><span style="color:#F29668">:</span><span style="color:#39BAE6"> any</span><span style="color:#BFBDB6">[]) </span><span style="color:#FF8F40">=></span><span style="color:#BFBDB6"> {</span></span>
+<span data-line=""><span style="color:#BFBDB6">  logger</span><span style="color:#F29668">.</span><span style="color:#FFB454">log</span><span style="color:#BFBDB6">(</span><span style="color:#F29668">...</span><span style="color:#BFBDB6">data)   </span><span style="color:#5A6673;font-style:italic">// 走对象方法，不递归</span></span>
+<span data-line=""><span style="color:#BFBDB6">}</span></span></code></pre></figure>
+<h2 id="期望-vs-实际">期望 vs 实际</h2>
+<table>
+<thead>
+<tr>
+<th>步骤</th>
+<th>期望</th>
+<th>实际（写法 A）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. 模块加载</td>
+<td><code>log</code> 保存原生 <code>console.log</code> 引用</td>
+<td>引用看似已保存</td>
+</tr>
+<tr>
+<td>2. 重写 <code>console.log</code></td>
+<td>新函数 → 调用原生 <code>log</code></td>
+<td>新函数 → 调用 <code>log</code></td>
+</tr>
+<tr>
+<td>3. 执行 <code>log(...)</code></td>
+<td>输出到原生控制台</td>
+<td><strong>再次进入</strong>已重写的 <code>console.log</code></td>
+</tr>
+<tr>
+<td>4. 结果</td>
+<td>打印一次</td>
+<td><strong>RangeError: Maximum call stack size exceeded</strong></td>
+</tr>
+</tbody>
+</table>
+<pre class="mermaid-source"><code class="language-mermaid">flowchart TD
+    A[&quot;console.log(...args) 业务调用&quot;] --&gt; B[&quot;劫持函数 wrapper&quot;]
+    B --&gt; C[&quot;import 的 log(...)&quot;]
+    C --&gt; D{&quot;log 指向谁？&quot;}
+    D --&gt;|&quot;❌ 仍解析到 console.log&quot;| B
+    D --&gt;|&quot;✅ 闭包里的原生引用&quot;| E[&quot;原生输出 / 上报&quot;]</code></pre>
+<h2 id="根因分析">根因分析</h2>
+<h3 id="为什么会递归">为什么会递归？</h3>
+<p>劫持的本质是：</p>
+<pre><code>新的 console.log  →  自定义逻辑  →  原生 console.log
+</code></pre>
+<p>写法 A 断裂在最后一环：<strong><code>import { log }</code> 拿到的并不一定是「模块加载那一刻的原生函数」</strong>。</p>
+<table>
+<thead>
+<tr>
+<th>原因</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>活绑定 / 桥接方法</strong></td>
+<td>Android WebView 里 <code>console.log</code> 可能是宿主桥接方法，提取后调用仍 dispatch 到 <strong><code>console.log</code> 当前槽位</strong></td>
+</tr>
+<tr>
+<td><strong>Bundler 内联</strong></td>
+<td>Metro / Webpack 可能把命名导出 <code>log</code> 优化成对全局 <code>console.log</code> 的访问，重写后 import 的 <code>log</code> 与 <code>console.log</code> 同源</td>
+</tr>
+<tr>
+<td><strong>隐式包装</strong></td>
+<td>若写成 <code>export const log = (...a) => console.log(...a)</code>（而非直接引用），重写后必递归</td>
+</tr>
+</tbody>
+</table>
+<p>一旦 <code>log(...)</code> 内部仍走到<strong>已被重写</strong>的 <code>console.log</code>，调用链闭合：</p>
+<pre><code>console.log → wrapper → log → console.log → wrapper → …
+</code></pre>
+<h3 id="写法-b-为什么没问题">写法 B 为什么没问题？</h3>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="typescript" data-theme="ayu-dark"><code data-language="typescript" data-theme="ayu-dark" style="display: grid;"><span data-line=""><span style="color:#FF8F40">const</span><span style="color:#BFBDB6"> [log</span><span style="color:#BFBDB6B3">,</span><span style="color:#BFBDB6"> warn</span><span style="color:#BFBDB6B3">,</span><span style="color:#BFBDB6"> error] </span><span style="color:#F29668">=</span><span style="color:#BFBDB6"> [console</span><span style="color:#F29668">.</span><span style="color:#BFBDB6">log</span><span style="color:#BFBDB6B3">,</span><span style="color:#BFBDB6"> console</span><span style="color:#F29668">.</span><span style="color:#BFBDB6">warn</span><span style="color:#BFBDB6B3">,</span><span style="color:#BFBDB6"> console</span><span style="color:#F29668">.</span><span style="color:#BFBDB6">error]</span></span>
+<span data-line=""><span style="color:#5A6673;font-style:italic">//     ↑ 模块私有 const，仅在模块初始化时求值一次</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color:#FF8F40">const</span><span style="color:#BFBDB6"> logger </span><span style="color:#F29668">=</span><span style="color:#BFBDB6"> {</span></span>
+<span data-line=""><span style="color:#FFB454">  log</span><span style="color:#BFBDB6B3">:</span><span style="color:#BFBDB6"> (</span><span style="color:#F29668">...</span><span style="color:#D2A6FF">data</span><span style="color:#BFBDB6">) </span><span style="color:#FF8F40">=></span><span style="color:#BFBDB6"> { </span><span style="color:#FFB454">log</span><span style="color:#BFBDB6">(</span><span style="color:#F29668">...</span><span style="color:#BFBDB6">data) }</span></span>
+<span data-line=""><span style="color:#5A6673;font-style:italic">  //                  ↑ 闭包捕获上面的 const log，不是 export 绑定</span></span>
+<span data-line=""><span style="color:#BFBDB6">}</span></span></code></pre></figure>
+<table>
+<thead>
+<tr>
+<th>对比</th>
+<th>命名导出 <code>log</code></th>
+<th><code>logger.log</code> 方法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>导出方式</td>
+<td><code>export const log = …</code> 可被 bundler 当公共符号处理</td>
+<td><code>default export</code> 对象，方法为独立函数</td>
+</tr>
+<tr>
+<td>调用路径</td>
+<td>劫持处直接 <code>log()</code></td>
+<td>劫持处 <code>logger.log()</code> → 闭包内 <code>log()</code></td>
+</tr>
+<tr>
+<td>与 <code>console.log</code> 槽位</td>
+<td>易耦合</td>
+<td><strong>解耦</strong>，闭包持有初始化时的引用</td>
+</tr>
+</tbody>
+</table>
+<h2 id="修复方案">修复方案</h2>
+<h3 id="方案-1推荐模块内-capture--default-export-对象">方案 1（推荐）：模块内 capture + default export 对象</h3>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="typescript" data-theme="ayu-dark"><code data-language="typescript" data-theme="ayu-dark" style="display: grid;"><span data-line=""><span style="color:#FF8F40">const</span><span style="color:#BFBDB6"> nativeLog </span><span style="color:#F29668">=</span><span style="color:#BFBDB6"> console</span><span style="color:#F29668">.</span><span style="color:#BFBDB6">log</span><span style="color:#F29668">.</span><span style="color:#FFB454">bind</span><span style="color:#BFBDB6">(console)</span></span>
+<span data-line=""><span style="color:#FF8F40">const</span><span style="color:#BFBDB6"> nativeWarn </span><span style="color:#F29668">=</span><span style="color:#BFBDB6"> console</span><span style="color:#F29668">.</span><span style="color:#BFBDB6">warn</span><span style="color:#F29668">.</span><span style="color:#FFB454">bind</span><span style="color:#BFBDB6">(console)</span></span>
+<span data-line=""><span style="color:#FF8F40">const</span><span style="color:#BFBDB6"> nativeError </span><span style="color:#F29668">=</span><span style="color:#BFBDB6"> console</span><span style="color:#F29668">.</span><span style="color:#BFBDB6">error</span><span style="color:#F29668">.</span><span style="color:#FFB454">bind</span><span style="color:#BFBDB6">(console)</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color:#FF8F40">const</span><span style="color:#BFBDB6"> logger </span><span style="color:#F29668">=</span><span style="color:#BFBDB6"> {</span></span>
+<span data-line=""><span style="color:#FFB454">  log</span><span style="color:#BFBDB6B3">:</span><span style="color:#BFBDB6"> (</span><span style="color:#F29668">...</span><span style="color:#D2A6FF">data</span><span style="color:#F29668">:</span><span style="color:#39BAE6"> any</span><span style="color:#BFBDB6">[]) </span><span style="color:#FF8F40">=></span><span style="color:#FFB454"> nativeLog</span><span style="color:#BFBDB6">(</span><span style="color:#F29668">...</span><span style="color:#BFBDB6">data)</span><span style="color:#BFBDB6B3">,</span></span>
+<span data-line=""><span style="color:#FFB454">  warn</span><span style="color:#BFBDB6B3">:</span><span style="color:#BFBDB6"> (</span><span style="color:#F29668">...</span><span style="color:#D2A6FF">data</span><span style="color:#F29668">:</span><span style="color:#39BAE6"> any</span><span style="color:#BFBDB6">[]) </span><span style="color:#FF8F40">=></span><span style="color:#FFB454"> nativeWarn</span><span style="color:#BFBDB6">(</span><span style="color:#F29668">...</span><span style="color:#BFBDB6">data)</span><span style="color:#BFBDB6B3">,</span></span>
+<span data-line=""><span style="color:#FFB454">  error</span><span style="color:#BFBDB6B3">:</span><span style="color:#BFBDB6"> (</span><span style="color:#F29668">...</span><span style="color:#D2A6FF">data</span><span style="color:#F29668">:</span><span style="color:#39BAE6"> any</span><span style="color:#BFBDB6">[]) </span><span style="color:#FF8F40">=></span><span style="color:#FFB454"> nativeError</span><span style="color:#BFBDB6">(</span><span style="color:#F29668">...</span><span style="color:#BFBDB6">data)</span><span style="color:#BFBDB6B3">,</span></span>
+<span data-line=""><span style="color:#BFBDB6">}</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color:#FF8F40">export</span><span style="color:#FF8F40"> default</span><span style="color:#BFBDB6"> logger</span></span></code></pre></figure>
+<p><code>.bind(console)</code> 确保 <code>this</code> 正确，且引用在<strong>重写前</strong>固定。</p>
+<h3 id="方案-2显式保存原生引用不-export-裸-console-方法">方案 2：显式保存原生引用，不 export 裸 console 方法</h3>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="typescript" data-theme="ayu-dark"><code data-language="typescript" data-theme="ayu-dark" style="display: grid;"><span data-line=""><span style="color:#5A6673;font-style:italic">// ❌ 不要</span></span>
+<span data-line=""><span style="color:#FF8F40">export</span><span style="color:#FF8F40"> const</span><span style="color:#BFBDB6"> log </span><span style="color:#F29668">=</span><span style="color:#BFBDB6"> console</span><span style="color:#F29668">.</span><span style="color:#BFBDB6">log</span></span>
+<span data-line=""><span style="color:#FF8F40">export</span><span style="color:#FF8F40"> const</span><span style="color:#FFB454"> log</span><span style="color:#F29668"> =</span><span style="color:#BFBDB6"> (</span><span style="color:#F29668">...</span><span style="color:#D2A6FF">args</span><span style="color:#F29668">:</span><span style="color:#39BAE6"> any</span><span style="color:#BFBDB6">[]) </span><span style="color:#FF8F40">=></span><span style="color:#BFBDB6"> console</span><span style="color:#F29668">.</span><span style="color:#FFB454">log</span><span style="color:#BFBDB6">(</span><span style="color:#F29668">...</span><span style="color:#BFBDB6">args)</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color:#5A6673;font-style:italic">// ✅ 可以</span></span>
+<span data-line=""><span style="color:#FF8F40">const</span><span style="color:#BFBDB6"> _log </span><span style="color:#F29668">=</span><span style="color:#BFBDB6"> console</span><span style="color:#F29668">.</span><span style="color:#BFBDB6">log</span><span style="color:#F29668">.</span><span style="color:#FFB454">bind</span><span style="color:#BFBDB6">(console)</span></span>
+<span data-line=""><span style="color:#FF8F40">export</span><span style="color:#FF8F40"> function</span><span style="color:#FFB454"> log</span><span style="color:#BFBDB6">(</span><span style="color:#F29668">...</span><span style="color:#D2A6FF">args</span><span style="color:#F29668">:</span><span style="color:#39BAE6"> any</span><span style="color:#BFBDB6">[]) {</span></span>
+<span data-line=""><span style="color:#FFB454">  _log</span><span style="color:#BFBDB6">(</span><span style="color:#F29668">...</span><span style="color:#BFBDB6">args)</span></span>
+<span data-line=""><span style="color:#BFBDB6">}</span></span></code></pre></figure>
+<p>若必须命名导出，export 的应是<strong>调用闭包变量</strong>的 wrapper，且闭包变量 <code>_log</code> 不 export。</p>
+<h3 id="方案-3劫持时使用-logger且避免在-wrapper-里写-consolelog">方案 3：劫持时使用 logger，且避免在 wrapper 里写 <code>console.log</code></h3>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="typescript" data-theme="ayu-dark"><code data-language="typescript" data-theme="ayu-dark" style="display: grid;"><span data-line=""><span style="color:#FF8F40">import</span><span style="color:#BFBDB6"> logger </span><span style="color:#FF8F40">from</span><span style="color:#AAD94C"> './logger'</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color:#BFBDB6">console</span><span style="color:#F29668">.</span><span style="color:#FFB454">log</span><span style="color:#F29668"> =</span><span style="color:#BFBDB6"> (</span><span style="color:#F29668">...</span><span style="color:#D2A6FF">data</span><span style="color:#F29668">:</span><span style="color:#39BAE6"> any</span><span style="color:#BFBDB6">[]) </span><span style="color:#FF8F40">=></span><span style="color:#BFBDB6"> {</span></span>
+<span data-line=""><span style="color:#5A6673;font-style:italic">  // 上报逻辑</span></span>
+<span data-line=""><span style="color:#FFB454">  sendToServer</span><span style="color:#BFBDB6">(</span><span style="color:#AAD94C">'log'</span><span style="color:#BFBDB6B3">,</span><span style="color:#BFBDB6"> data)</span></span>
+<span data-line=""><span style="color:#BFBDB6">  logger</span><span style="color:#F29668">.</span><span style="color:#FFB454">log</span><span style="color:#BFBDB6">(</span><span style="color:#F29668">...</span><span style="color:#BFBDB6">data)   </span><span style="color:#5A6673;font-style:italic">// 永远走 logger，不要 console.log(...)</span></span>
+<span data-line=""><span style="color:#BFBDB6">}</span></span></code></pre></figure>
+<h2 id="经验总结">经验总结</h2>
+<ol>
+<li><strong>不要 <code>export const log = console.log</code> 再全局重写 <code>console.log</code></strong>——Android WebView 上极易递归</li>
+<li>劫持全局 <code>console.*</code> 时，原生方法必须在模块顶层 <strong><code>const native = console.log.bind(console)</code></strong> 一次性 capture</li>
+<li>用 <strong>default export 对象 + 闭包</strong>，不要 export 裸的 console 方法引用</li>
+<li>wrapper 函数体内<strong>禁止</strong>再写 <code>console.log(...)</code>，只调 capture 后的 <code>nativeLog</code> 或 <code>logger.log</code></li>
+<li>桌面浏览器不一定复现，<strong>以 Android 真机为准</strong>验证日志劫持</li>
+</ol>
+<h2 id="参考">参考</h2>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/console/log">MDN: console.log</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_objects/Function/bind">MDN: Function.prototype.bind</a></li>
+</ul>a:["$","$Lf",null,{"html":"$10"}]
+b:["$","div",null,{"className":"mobile-side-stacks","children":["$","div",null,{"className":"left-nav","children":[["$","section",null,{"className":"recent-notes","children":[["$","h3",null,{"children":"学习笔记"}],["$","ul",null,{"className":"recent-ul","children":[["$","li","/notes/welcome",{"className":"recent-li","children":["$","div",null,{"className":"section","children":[["$","div",null,{"className":"desc","children":[["$","h3",null,{"children":["$","$L2",null,{"href":"/notes/welcome","children":"欢迎使用"}]}],null]}],["$","p",null,{"className":"meta","children":["$","time",null,{"dateTime":"2026-06-25","children":"2026年6月25日"}]}]]}]}],["$","li","/notes/ble-notify-consumed-before-waiter",{"className":"recent-li","children":["$","div",null,{"className":"section","children":[["$","div",null,{"className":"desc","children":[["$","h3",null,{"children":["$","$L2",null,{"href":"/notes/ble-notify-consumed-before-waiter","children":"react-native-ble-plx：回包被提前消费，等待却还没挂上"}]}],null]}],["$","p",null,{"className":"meta","children":["$","time",null,{"dateTime":"2026-01-27","children":"2026年1月27日"}]}]]}]}],["$","li","/notes/yarn-workspace-monorepo",{"className":"recent-li","children":["$","div",null,{"className":"section","children":[["$","div",null,{"className":"desc","children":[["$","h3",null,{"children":["$","$L2",null,{"href":"/notes/yarn-workspace-monorepo","children":"使用 yarn workspace 管理多个项目"}]}],null]}],["$","p",null,{"className":"meta","children":["$","time",null,{"dateTime":"2024-12-09","children":"2024年12月9日"}]}]]}]}]]}],null]}],["$","section",null,{"className":"recent-notes","children":[["$","h3",null,{"children":"工作经历"}],["$","ul",null,{"className":"recent-ul","children":[["$","li","/companies/yiyuan",{"className":"recent-li","children":["$","div",null,{"className":"section","children":[["$","div",null,{"className":"desc","children":[["$","h3",null,{"children":["$","$L2",null,{"href":"/companies/yiyuan","children":"上海移远科技股份有限责任公司"}]}],null]}],["$","p",null,{"className":"meta","children":["$","time",null,{"dateTime":"2026年8月~至今","children":"2026年8月~至今"}]}]]}]}],["$","li","/companies/dreame",{"className":"recent-li","children":["$","div",null,{"className":"section","children":[["$","div",null,{"className":"desc","children":[["$","h3",null,{"children":["$","$L2",null,{"href":"/companies/dreame","children":"追觅科技有限公司"}]}],null]}],["$","p",null,{"className":"meta","children":["$","time",null,{"dateTime":"2026年4月~2026年7月","children":"2026年4月~2026年7月"}]}]]}]}],["$","li","/companies/boshi",{"className":"recent-li","children":["$","div",null,{"className":"section","children":[["$","div",null,{"className":"desc","children":[["$","h3",null,{"children":["$","$L2",null,{"href":"/companies/boshi","children":"重庆波士科技有限公司"}]}],null]}],["$","p",null,{"className":"meta","children":["$","time",null,{"dateTime":"2025年7月~2026年1月","children":"2025年7月~2026年1月"}]}]]}]}],["$","li","/companies/xidi",{"className":"recent-li","children":["$","div",null,{"className":"section","children":[["$","div",null,{"className":"desc","children":[["$","h3",null,{"children":["$","$L2",null,{"href":"/companies/xidi","children":"深圳矽递科技有限公司"}]}],null]}],["$","p",null,{"className":"meta","children":["$","time",null,{"dateTime":"2022年3月~2025年7月","children":"2022年3月~2025年7月"}]}]]}]}],["$","li","/companies/yuanqi-senlin",{"className":"recent-li","children":["$","div",null,{"className":"section","children":[["$","div",null,{"className":"desc","children":[["$","h3",null,{"children":["$","$L2",null,{"href":"/companies/yuanqi-senlin","children":"北京元气森林科技有限公司"}]}],null]}],["$","p",null,{"className":"meta","children":["$","time",null,{"dateTime":"2020年5月~2022年3月","children":"2020年5月~2022年3月"}]}]]}]}]]}],["$","p",null,{"children":["$","$L2",null,{"className":"see-more","href":"/companies","children":["查看其余 ",1," ","家"," →"]}]}]]}]]}]}]
+c:["$","footer",null,{"className":"site-footer","children":[["$","p",null,{"children":["© ",2026," ","吴敬悦"]}],["$","ul",null,{"children":["$","li",null,{"children":["$","a",null,{"href":"https://github.com/wutiange/Wujing","target":"_blank","rel":"noreferrer","children":"GitHub"}]}]}]]}]
+d:["$","aside",null,{"className":"scroll-pane scroll-pane--toc sidebar sidebar-right","children":["$","$L11",null,{"items":[{"id":"一句话","text":"一句话","depth":2},{"id":"问题现象","text":"问题现象","depth":2},{"id":"问题代码-vs-正确代码","text":"问题代码 vs 正确代码","depth":2},{"id":"-会递归","text":"❌ 会递归","depth":3},{"id":"-正常","text":"✅ 正常","depth":3},{"id":"期望-vs-实际","text":"期望 vs 实际","depth":2},{"id":"根因分析","text":"根因分析","depth":2},{"id":"为什么会递归","text":"为什么会递归？","depth":3},{"id":"写法-b-为什么没问题","text":"写法 B 为什么没问题？","depth":3},{"id":"修复方案","text":"修复方案","depth":2},{"id":"方案-1推荐模块内-capture--default-export-对象","text":"方案 1（推荐）：模块内 capture + default export 对象","depth":3},{"id":"方案-2显式保存原生引用不-export-裸-console-方法","text":"方案 2：显式保存原生引用，不 export 裸 console 方法","depth":3},{"id":"方案-3劫持时使用-logger且避免在-wrapper-里写-consolelog","text":"方案 3：劫持时使用 logger，且避免在 wrapper 里写 console.log","depth":3},{"id":"经验总结","text":"经验总结","depth":2},{"id":"参考","text":"参考","depth":2}]}]}]
+e:["$","$L12",null,{"children":["$","$13",null,{"name":"Next.MetadataOutlet","children":"$@14"}]}]
+14:null

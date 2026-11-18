@@ -1,0 +1,243 @@
+1:"$Sreact.fragment"
+2:I[3549,["2941","static/chunks/73972abe-73ae6eeb7f747ebc.js","2995","static/chunks/0b9a0da7-9d681b148c2109e1.js","233","static/chunks/233-5dfd80d382a556e5.js","6294","static/chunks/6294-2487c203252ab294.js","740","static/chunks/app/notes/%5Bslug%5D/page-d65aa9f9e5dde013.js"],""]
+3:I[8610,["2941","static/chunks/73972abe-73ae6eeb7f747ebc.js","2995","static/chunks/0b9a0da7-9d681b148c2109e1.js","233","static/chunks/233-5dfd80d382a556e5.js","6294","static/chunks/6294-2487c203252ab294.js","740","static/chunks/app/notes/%5Bslug%5D/page-d65aa9f9e5dde013.js"],"ThemeToggle"]
+c:I[2771,["2941","static/chunks/73972abe-73ae6eeb7f747ebc.js","2995","static/chunks/0b9a0da7-9d681b148c2109e1.js","233","static/chunks/233-5dfd80d382a556e5.js","6294","static/chunks/6294-2487c203252ab294.js","740","static/chunks/app/notes/%5Bslug%5D/page-d65aa9f9e5dde013.js"],"MarkdownContent"]
+e:I[6963,["2941","static/chunks/73972abe-73ae6eeb7f747ebc.js","2995","static/chunks/0b9a0da7-9d681b148c2109e1.js","233","static/chunks/233-5dfd80d382a556e5.js","6294","static/chunks/6294-2487c203252ab294.js","740","static/chunks/app/notes/%5Bslug%5D/page-d65aa9f9e5dde013.js"],"ArticleToc"]
+f:I[8937,[],"OutletBoundary"]
+10:"$Sreact.suspense"
+0:{"rsc":["$","$1","c",{"children":[["$","div",null,{"className":"site-root","children":["$","div",null,{"className":"site-body","children":[["$","aside",null,{"className":"sidebar sidebar-left","children":[["$","div",null,{"className":"site-header","children":[["$","h1",null,{"className":"page-title","children":["$","$L2",null,{"href":"/","children":"吴敬悦"}]}],["$","$L3",null,{}]]}],["$","div",null,{"className":"scroll-pane scroll-pane--nav desktop-only-nav","children":["$","div",null,{"className":"left-nav","children":[["$","section",null,{"className":"recent-notes","children":[["$","h3",null,{"children":"学习笔记"}],["$","ul",null,{"className":"recent-ul","children":[["$","li","/notes/welcome",{"className":"recent-li","children":["$","div",null,{"className":"section","children":[["$","div",null,{"className":"desc","children":[["$","h3",null,{"children":["$","$L2",null,{"href":"/notes/welcome","children":"欢迎使用"}]}],null]}],["$","p",null,{"className":"meta","children":["$","time",null,{"dateTime":"2026-06-25","children":"2026年6月25日"}]}]]}]}],["$","li","/notes/ble-notify-consumed-before-waiter",{"className":"recent-li","children":["$","div",null,{"className":"section","children":[["$","div",null,{"className":"desc","children":[["$","h3",null,{"children":["$","$L2",null,{"href":"/notes/ble-notify-consumed-before-waiter","children":"react-native-ble-plx：回包被提前消费，等待却还没挂上"}]}],null]}],["$","p",null,{"className":"meta","children":["$","time",null,{"dateTime":"2026-01-27","children":"2026年1月27日"}]}]]}]}],["$","li","/notes/yarn-workspace-monorepo",{"className":"recent-li","children":["$","div",null,{"className":"section","children":[["$","div",null,{"className":"desc","children":[["$","h3",null,{"children":["$","$L2",null,{"href":"/notes/yarn-workspace-monorepo","children":"使用 yarn workspace 管理多个项目"}]}],null]}],["$","p",null,{"className":"meta","children":["$","time",null,{"dateTime":"2024-12-09","children":"2024年12月9日"}]}]]}]}]]}],null]}],["$","section",null,{"className":"recent-notes","children":[["$","h3",null,{"children":"工作经历"}],["$","ul",null,{"className":"recent-ul","children":[["$","li","/companies/yiyuan",{"className":"recent-li","children":["$","div",null,{"className":"section","children":[["$","div",null,{"className":"desc","children":[["$","h3",null,{"children":["$","$L2",null,{"href":"/companies/yiyuan","children":"上海移远科技股份有限责任公司"}]}],null]}],["$","p",null,{"className":"meta","children":["$","time",null,{"dateTime":"2026年8月~至今","children":"2026年8月~至今"}]}]]}]}],["$","li","/companies/dreame",{"className":"recent-li","children":["$","div",null,{"className":"section","children":[["$","div",null,{"className":"desc","children":[["$","h3",null,{"children":["$","$L2",null,{"href":"/companies/dreame","children":"追觅科技有限公司"}]}],null]}],["$","p",null,{"className":"meta","children":["$","time",null,{"dateTime":"2026年4月~2026年7月","children":"2026年4月~2026年7月"}]}]]}]}],["$","li","/companies/boshi",{"className":"recent-li","children":["$","div",null,{"className":"section","children":[["$","div",null,{"className":"desc","children":[["$","h3",null,{"children":["$","$L2",null,{"href":"/companies/boshi","children":"重庆波士科技有限公司"}]}],null]}],["$","p",null,{"className":"meta","children":["$","time",null,{"dateTime":"2025年7月~2026年1月","children":"2025年7月~2026年1月"}]}]]}]}],["$","li","/companies/xidi",{"className":"recent-li","children":["$","div",null,{"className":"section","children":[["$","div",null,{"className":"desc","children":[["$","h3",null,{"children":["$","$L2",null,{"href":"/companies/xidi","children":"深圳矽递科技有限公司"}]}],null]}],["$","p",null,{"className":"meta","children":["$","time",null,{"dateTime":"2022年3月~2025年7月","children":"2022年3月~2025年7月"}]}]]}]}],["$","li","/companies/yuanqi-senlin",{"className":"recent-li","children":["$","div",null,{"className":"section","children":[["$","div",null,{"className":"desc","children":[["$","h3",null,{"children":["$","$L2",null,{"href":"/companies/yuanqi-senlin","children":"北京元气森林科技有限公司"}]}],null]}],["$","p",null,{"className":"meta","children":["$","time",null,{"dateTime":"2020年5月~2022年3月","children":"2020年5月~2022年3月"}]}]]}]}]]}],["$","p",null,{"children":["$","$L2",null,{"className":"see-more","href":"/companies","children":["查看其余 ",1," ","家"," →"]}]}]]}]]}]}]]}],["$","div",null,{"className":"scroll-pane scroll-pane--content site-center","children":[["$","div",null,{"className":"page-panel","children":["$","article",null,{"children":[["$","header",null,{"className":"article-header","children":[["$","nav",null,{"className":"article-breadcrumb","aria-label":"面包屑","children":["$","ol",null,{"children":[["$","li","首页-0",{"children":[null,["$","$L2",null,{"href":"/","children":"首页"}]]}],["$","li","学习笔记-1",{"children":[["$","span",null,{"className":"article-breadcrumb-sep","aria-hidden":"true","children":"·"}],["$","$L2",null,{"href":"/notes","children":"学习笔记"}]]}],["$","li","使用 yarn workspace 管理多个项目-2",{"children":[["$","span",null,{"className":"article-breadcrumb-sep","aria-hidden":"true","children":"·"}],["$","$L2",null,{"href":"/notes/yarn-workspace-monorepo","aria-current":"page","children":"使用 yarn workspace 管理多个项目"}]]}]]}]}],"$L4","$L5","$L6"]}],"$L7"]}]}],"$L8","$L9"]}],"$La"]}]}],null,"$Lb"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"KUYpKVuJoW-NB5H1d6g_s"}
+4:["$","h1",null,{"children":"使用 yarn workspace 管理多个项目"}]
+5:["$","time",null,{"dateTime":"2024-12-09","children":"2024-12-09"}]
+6:["$","p",null,{"className":"article-desc","children":"用 yarn workspace 做 monorepo，共享组件与公共逻辑，理清依赖合并规则"}]
+d:T3dd1,<h2 id="前言">前言</h2>
+<p>网上常说的 monorepo，用 yarn workspace 就是一种落地方式。目标很直接：把多个项目里相同的部分抽到一处，少做重复开发，也少在拷贝粘贴里修同一处 bug。</p>
+<p>本文按「问题 → 架构对比 → 流行库结构 → 手动搭建 → 依赖合并」拆开说明。</p>
+<h2 id="一当前存在的问题">一、当前存在的问题</h2>
+<h3 id="1-相同功能组件重复实现">1. 相同功能组件重复实现</h3>
+<p>前端里同一个组件常在多个项目里各写一份。人一多、项目一散，更容易变成「同一套 Button / Table / Form，几个人各实现一遍」。靠拷贝共享，组件出问题就得反复复制修补。</p>
+<h3 id="2-公共逻辑无法统一管理">2. 公共逻辑无法统一管理</h3>
+<p>公司常见 web + app 双端：界面不同，业务逻辑大量重合，却各写一套。后端若是 Node.js + TypeScript，API 类型前后端各定义一遍；表单校验也常是两端各写一份。项目一拆开，公共逻辑就很难统一演进。</p>
+<h2 id="二普通项目与-workspace-架构对比">二、普通项目与 workspace 架构对比</h2>
+<h3 id="1-普通多项目">1. 普通多项目</h3>
+<p>相同逻辑或组件，各自仓库里各存一份：</p>
+<pre class="mermaid-source"><code class="language-mermaid">flowchart TD
+  subgraph &quot;普通多项目结构&quot;
+      P1[项目A] --&gt; N1[node_modules]
+      P1 --&gt; S1[src]
+      S1 --&gt; C1[&quot;组件 · Button · Table · Form&quot;]
+      S1 --&gt; U1[&quot;工具 · format · validate · request&quot;]
+
+      P2[项目B] --&gt; N2[node_modules]
+      P2 --&gt; S2[src]
+      S2 --&gt; C2[&quot;组件 · Button · Table · Form&quot;]
+      S2 --&gt; U2[&quot;工具 · format · validate · request&quot;]
+
+      P3[项目C] --&gt; N3[node_modules]
+      P3 --&gt; S3[src]
+      S3 --&gt; C3[&quot;组件 · Button · Table · Form&quot;]
+      S3 --&gt; U3[&quot;工具 · format · validate · request&quot;]
+
+      style C1 fill:#ffebee,stroke:#c62828
+      style C2 fill:#ffebee,stroke:#c62828
+      style C3 fill:#ffebee,stroke:#c62828
+      style U1 fill:#fff3e0,stroke:#ef6c00
+      style U2 fill:#fff3e0,stroke:#ef6c00
+      style U3 fill:#fff3e0,stroke:#ef6c00
+  end
+
+  classDef project fill:#e1f5fe,stroke:#01579b
+  classDef deps fill:#f5f5f5,stroke:#9e9e9e
+  class P1,P2,P3 project
+  class N1,N2,N3 deps</code></pre>
+<p>编写和维护都要付多倍成本。</p>
+<h3 id="2-workspace-项目">2. Workspace 项目</h3>
+<p>相同逻辑或组件放到共享包，业务项目只保留自己的部分：</p>
+<pre class="mermaid-source"><code class="language-mermaid">flowchart TD
+  subgraph &quot;Workspace 项目架构&quot;
+      ROOT[根目录] --&gt; PF[&quot;package.json · workspaces: ['packages/*']&quot;]
+      ROOT --&gt; NM[&quot;共享 node_modules&quot;]
+      ROOT --&gt; PKG[packages]
+
+      PKG --&gt; SHARED[共享模块]
+      SHARED --&gt; COMP[&quot;@shared/components · Button · Table · Form&quot;]
+      SHARED --&gt; UTILS[&quot;@shared/utils · format · validate · request&quot;]
+
+      PKG --&gt; P1[项目A]
+      PKG --&gt; P2[项目B]
+      PKG --&gt; P3[项目C]
+
+      P1 --&gt; S1[&quot;src · 业务组件 · 业务逻辑&quot;]
+      P2 --&gt; S2[&quot;src · 业务组件 · 业务逻辑&quot;]
+      P3 --&gt; S3[&quot;src · 业务组件 · 业务逻辑&quot;]
+
+      COMP -.-&gt; S1
+      COMP -.-&gt; S2
+      COMP -.-&gt; S3
+      UTILS -.-&gt; S1
+      UTILS -.-&gt; S2
+      UTILS -.-&gt; S3
+
+      style COMP fill:#e8f5e9,stroke:#2e7d32
+      style UTILS fill:#e8f5e9,stroke:#2e7d32
+  end
+
+  classDef root fill:#e1f5fe,stroke:#01579b
+  classDef project fill:#bbdefb,stroke:#1976d2
+  classDef deps fill:#f5f5f5,stroke:#9e9e9e
+  class ROOT root
+  class P1,P2,P3 project
+  class NM,PF,PKG deps</code></pre>
+<h2 id="三流行库的项目结构">三、流行库的项目结构</h2>
+<p>以下示意图在 AI 辅助下生成，并非基于当下最新源码，仅供参考结构思路。</p>
+<h3 id="1-vue">1. Vue</h3>
+<p>前端常用的 Vue，大致是 monorepo 拆编译器、运行时、完整包等：</p>
+<pre class="mermaid-source"><code class="language-mermaid">flowchart TD
+  ROOT[vue-next] --&gt; PF[&quot;package.json · pnpm-workspace.yaml&quot;]
+  ROOT --&gt; PKGS[packages]
+
+  PKGS --&gt; COMP[&quot;compiler-core&quot;]
+  PKGS --&gt; COMPD[&quot;compiler-dom&quot;]
+  PKGS --&gt; COMPS[&quot;compiler-sfc&quot;]
+  PKGS --&gt; COMPSSR[&quot;compiler-ssr&quot;]
+  PKGS --&gt; REACT[&quot;reactivity&quot;]
+  PKGS --&gt; RUNTIME[&quot;runtime-core&quot;]
+  PKGS --&gt; RUNTIMED[&quot;runtime-dom&quot;]
+  PKGS --&gt; VUE[&quot;vue&quot;]
+  PKGS --&gt; TEMPC[&quot;template-compiler&quot;]
+  PKGS --&gt; SERVER[&quot;server-renderer&quot;]
+
+  COMP --&gt; COMPD
+  COMP --&gt; COMPS
+  COMP --&gt; COMPSSR
+  RUNTIME --&gt; RUNTIMED
+  REACT --&gt; RUNTIME
+  RUNTIMED --&gt; VUE
+  COMPS --&gt; VUE
+
+  classDef root fill:#e1f5fe,stroke:#01579b
+  classDef core fill:#e8f5e9,stroke:#2e7d32
+  classDef comp fill:#fff3e0,stroke:#ff9800
+  class ROOT root
+  class COMP,RUNTIME,REACT core
+  class COMPD,COMPS,COMPSSR,RUNTIMED,VUE,TEMPC,SERVER comp</code></pre>
+<h3 id="2-nextjs">2. Next.js</h3>
+<p>服务端渲染很常见的 Next.js，也是多包 + examples：</p>
+<pre class="mermaid-source"><code class="language-mermaid">flowchart TD
+  ROOT[next.js] --&gt; PF[&quot;package.json · turbo.json&quot;]
+  ROOT --&gt; PKGS[packages]
+  ROOT --&gt; DOCS[docs]
+  ROOT --&gt; EXAMPLES[examples]
+  ROOT --&gt; TEST[test]
+
+  PKGS --&gt; NEXT[&quot;next&quot;]
+  PKGS --&gt; CREATE[&quot;create-next-app&quot;]
+  PKGS --&gt; FONT[&quot;next-font&quot;]
+  PKGS --&gt; SWCE[&quot;@next/swc&quot;]
+  PKGS --&gt; ENV[&quot;@next/env&quot;]
+  PKGS --&gt; MDX[&quot;@next/mdx&quot;]
+  PKGS --&gt; BUNDLE[&quot;@next/bundle-analyzer&quot;]
+
+  EXAMPLES --&gt; EX1[&quot;with-typescript&quot;]
+  EXAMPLES --&gt; EX2[&quot;with-tailwindcss&quot;]
+  EXAMPLES --&gt; EX3[&quot;...其他示例&quot;]
+
+  SWCE --&gt; NEXT
+  ENV --&gt; NEXT
+  FONT --&gt; NEXT
+  NEXT --&gt; CREATE
+
+  classDef root fill:#e1f5fe,stroke:#01579b
+  classDef core fill:#e8f5e9,stroke:#2e7d32
+  classDef addon fill:#fff3e0,stroke:#ff9800
+  classDef example fill:#f3e5f5,stroke:#7b1fa2
+  class ROOT root
+  class NEXT,SWCE core
+  class CREATE,FONT,ENV,MDX,BUNDLE addon
+  class EXAMPLES,EX1,EX2,EX3 example</code></pre>
+<p>Node 侧如 NestJS、Prisma 等，同样常见 workspace / monorepo 组织方式。</p>
+<h2 id="四手动搭建-workspace">四、手动搭建 workspace</h2>
+<h3 id="1-初始化根项目">1. 初始化根项目</h3>
+<p>准备目录 <code>workspace-learn</code>，生成 <code>package.json</code>：</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="ayu-dark"><code data-language="bash" data-theme="ayu-dark" style="display: grid;"><span data-line=""><span style="color:#59C2FF">mkdir</span><span style="color:#AAD94C"> workspace-learn</span></span>
+<span data-line=""><span style="color:#F07178">cd</span><span style="color:#AAD94C"> workspace-learn</span></span>
+<span data-line=""><span style="color:#59C2FF">yarn</span><span style="color:#AAD94C"> init</span><span style="color:#95E6CB"> -y</span></span></code></pre></figure>
+<p>得到类似：</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="json" data-theme="ayu-dark"><code data-language="json" data-theme="ayu-dark" style="display: grid;"><span data-line=""><span style="color:#BFBDB6">{</span></span>
+<span data-line=""><span style="color:#39BAE6">  "name"</span><span style="color:#BFBDB6B3">:</span><span style="color:#AAD94C"> "workspace-learn"</span><span style="color:#BFBDB6B3">,</span></span>
+<span data-line=""><span style="color:#39BAE6">  "version"</span><span style="color:#BFBDB6B3">:</span><span style="color:#AAD94C"> "1.0.0"</span><span style="color:#BFBDB6B3">,</span></span>
+<span data-line=""><span style="color:#39BAE6">  "main"</span><span style="color:#BFBDB6B3">:</span><span style="color:#AAD94C"> "index.js"</span><span style="color:#BFBDB6B3">,</span></span>
+<span data-line=""><span style="color:#39BAE6">  "license"</span><span style="color:#BFBDB6B3">:</span><span style="color:#AAD94C"> "MIT"</span></span>
+<span data-line=""><span style="color:#BFBDB6">}</span></span></code></pre></figure>
+<p>workspace 根项目必须是私有的，加上：</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="json" data-theme="ayu-dark"><code data-language="json" data-theme="ayu-dark" style="display: grid;"><span data-line=""><span style="color:#BFBDB6">{</span></span>
+<span data-line=""><span style="color:#39BAE6">  "private"</span><span style="color:#BFBDB6B3">:</span><span style="color:#D2A6FF"> true</span></span>
+<span data-line=""><span style="color:#BFBDB6">}</span></span></code></pre></figure>
+<p>再建 <code>packages</code> 放子项目：</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="ayu-dark"><code data-language="bash" data-theme="ayu-dark" style="display: grid;"><span data-line=""><span style="color:#59C2FF">mkdir</span><span style="color:#AAD94C"> packages</span></span></code></pre></figure>
+<p>目录此时是：</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="text" data-theme="ayu-dark"><code data-language="text" data-theme="ayu-dark" style="display: grid;"><span data-line=""><span>workspace-learn</span></span>
+<span data-line=""><span>├── package.json</span></span>
+<span data-line=""><span>└── packages</span></span></code></pre></figure>
+<p>还要在根 <code>package.json</code> 声明 workspaces（字段名是 <code>workspaces</code>，复数），Yarn 才会识别：</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="json" data-theme="ayu-dark"><code data-language="json" data-theme="ayu-dark" style="display: grid;"><span data-line=""><span style="color:#BFBDB6">{</span></span>
+<span data-line=""><span style="color:#39BAE6">  "workspaces"</span><span style="color:#BFBDB6B3">:</span><span style="color:#BFBDB6"> [</span><span style="color:#AAD94C">"packages/*"</span><span style="color:#BFBDB6">]</span></span>
+<span data-line=""><span style="color:#BFBDB6">}</span></span></code></pre></figure>
+<p>放置目录不必叫 <code>packages</code>；有的仓库还会另开 <code>examples</code>。只是社区里用 <code>packages</code> 最常见。</p>
+<h3 id="2-放入子项目">2. 放入子项目</h3>
+<p>在 <code>packages</code> 下新建两个子项目目录 <code>one</code>、<code>two</code>：</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="ayu-dark"><code data-language="bash" data-theme="ayu-dark" style="display: grid;"><span data-line=""><span style="color:#F07178">cd</span><span style="color:#AAD94C"> packages</span></span>
+<span data-line=""><span style="color:#59C2FF">mkdir</span><span style="color:#AAD94C"> one</span><span style="color:#AAD94C"> two</span></span></code></pre></figure>
+<p>各自补上自己的 <code>package.json</code>（<code>name</code> 要能被 <code>yarn workspace &#x3C;name></code> 引用）。</p>
+<h3 id="3-给子项目加依赖">3. 给子项目加依赖</h3>
+<p>例如给 <code>one</code> 装 dayjs：</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="ayu-dark"><code data-language="bash" data-theme="ayu-dark" style="display: grid;"><span data-line=""><span style="color:#5A6673;font-style:italic"># yarn workspace [package.json 里的 name] add [依赖]</span></span>
+<span data-line=""><span style="color:#59C2FF">yarn</span><span style="color:#AAD94C"> workspace</span><span style="color:#AAD94C"> one</span><span style="color:#AAD94C"> add</span><span style="color:#AAD94C"> dayjs</span></span></code></pre></figure>
+<p>移除：</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="ayu-dark"><code data-language="bash" data-theme="ayu-dark" style="display: grid;"><span data-line=""><span style="color:#59C2FF">yarn</span><span style="color:#AAD94C"> workspace</span><span style="color:#AAD94C"> one</span><span style="color:#AAD94C"> remove</span><span style="color:#AAD94C"> dayjs</span></span></code></pre></figure>
+<h2 id="五yarn-依赖合并原则">五、yarn 依赖合并原则</h2>
+<p>安装方式可参考 <a href="https://docs.npmjs.com/cli/v6/using-npm/semver">npm 依赖版本说明</a>。版本由 <code>[major, minor, patch]</code> 构成，详见 <a href="https://semver.org/lang/zh-CN/">semver</a>：</p>
+<table>
+<thead>
+<tr>
+<th>段</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>major</td>
+<td>不兼容的变更</td>
+</tr>
+<tr>
+<td>minor</td>
+<td>兼容的新功能</td>
+</tr>
+<tr>
+<td>patch</td>
+<td>兼容的 bug 修复</td>
+</tr>
+</tbody>
+</table>
+<p>库若遵循这套规则，只要不 bump major，通常可在同一大版本内合并。默认安装常写成 <code>"dayjs": "^1.11.13"</code>，<code>^</code> 表示会解析到 <code>1.11.13 &#x3C;= dayjs &#x3C; 2.0.0</code>。Yarn 合并依赖时也按这个区间思路处理。</p>
+<p>例如：</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="ayu-dark"><code data-language="bash" data-theme="ayu-dark" style="display: grid;"><span data-line=""><span style="color:#59C2FF">yarn</span><span style="color:#AAD94C"> workspace</span><span style="color:#AAD94C"> one</span><span style="color:#AAD94C"> add</span><span style="color:#AAD94C"> dayjs@^1.11.13</span></span>
+<span data-line=""><span style="color:#59C2FF">yarn</span><span style="color:#AAD94C"> workspace</span><span style="color:#AAD94C"> two</span><span style="color:#AAD94C"> add</span><span style="color:#AAD94C"> dayjs@^1.11.12</span></span></code></pre></figure>
+<p>两边都是 caret 范围，有机会合并到同一满足双方的版本。若写成精确版本、去掉 <code>^</code>：</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="bash" data-theme="ayu-dark"><code data-language="bash" data-theme="ayu-dark" style="display: grid;"><span data-line=""><span style="color:#59C2FF">yarn</span><span style="color:#AAD94C"> workspace</span><span style="color:#AAD94C"> one</span><span style="color:#AAD94C"> add</span><span style="color:#AAD94C"> dayjs@1.11.13</span></span>
+<span data-line=""><span style="color:#59C2FF">yarn</span><span style="color:#AAD94C"> workspace</span><span style="color:#AAD94C"> two</span><span style="color:#AAD94C"> add</span><span style="color:#AAD94C"> dayjs@1.11.12</span></span></code></pre></figure>
+<p>则两个版本会并存，不会合并。</p>
+<p>代码没改却突然跑不起来时，除了先核对 Node 版本，也要怀疑依赖区间合并带来的「静默升级」。</p>
+<p>其它常见范围写法：</p>
+<ol>
+<li><code>^</code>：更新 minor / patch；major 为 0 时通常只动 patch；major、minor 都为 0 时更保守。见 <a href="https://docs.npmjs.com/cli/v6/using-npm/semver#caret-ranges-123-062-004">Caret Ranges</a>。</li>
+<li><code>~</code>：通常只更新 patch。</li>
+<li><code>>=</code>：按规则可落到满足条件的较新版本。</li>
+<li>不写符号、写死版本：装指定版本；<code>dayjs@1</code> / <code>dayjs@1.x</code> 一类则落在该 major 的允许区间内。</li>
+</ol>
+<h2 id="结尾">结尾</h2>
+<p>yarn workspace 解决的是「多项目重复造轮子」：共享包放公共组件与逻辑，业务仓只留差异。搭好 <code>private</code> + <code>workspaces</code> 之后，真正要盯紧的是依赖版本范围——合并省空间，也可能在你没改代码时换掉实际装上的版本。</p>7:["$","$Lc",null,{"html":"$d"}]
+8:["$","div",null,{"className":"mobile-side-stacks","children":["$","div",null,{"className":"left-nav","children":[["$","section",null,{"className":"recent-notes","children":[["$","h3",null,{"children":"学习笔记"}],["$","ul",null,{"className":"recent-ul","children":[["$","li","/notes/welcome",{"className":"recent-li","children":["$","div",null,{"className":"section","children":[["$","div",null,{"className":"desc","children":[["$","h3",null,{"children":["$","$L2",null,{"href":"/notes/welcome","children":"欢迎使用"}]}],null]}],["$","p",null,{"className":"meta","children":["$","time",null,{"dateTime":"2026-06-25","children":"2026年6月25日"}]}]]}]}],["$","li","/notes/ble-notify-consumed-before-waiter",{"className":"recent-li","children":["$","div",null,{"className":"section","children":[["$","div",null,{"className":"desc","children":[["$","h3",null,{"children":["$","$L2",null,{"href":"/notes/ble-notify-consumed-before-waiter","children":"react-native-ble-plx：回包被提前消费，等待却还没挂上"}]}],null]}],["$","p",null,{"className":"meta","children":["$","time",null,{"dateTime":"2026-01-27","children":"2026年1月27日"}]}]]}]}],["$","li","/notes/yarn-workspace-monorepo",{"className":"recent-li","children":["$","div",null,{"className":"section","children":[["$","div",null,{"className":"desc","children":[["$","h3",null,{"children":["$","$L2",null,{"href":"/notes/yarn-workspace-monorepo","children":"使用 yarn workspace 管理多个项目"}]}],null]}],["$","p",null,{"className":"meta","children":["$","time",null,{"dateTime":"2024-12-09","children":"2024年12月9日"}]}]]}]}]]}],null]}],["$","section",null,{"className":"recent-notes","children":[["$","h3",null,{"children":"工作经历"}],["$","ul",null,{"className":"recent-ul","children":[["$","li","/companies/yiyuan",{"className":"recent-li","children":["$","div",null,{"className":"section","children":[["$","div",null,{"className":"desc","children":[["$","h3",null,{"children":["$","$L2",null,{"href":"/companies/yiyuan","children":"上海移远科技股份有限责任公司"}]}],null]}],["$","p",null,{"className":"meta","children":["$","time",null,{"dateTime":"2026年8月~至今","children":"2026年8月~至今"}]}]]}]}],["$","li","/companies/dreame",{"className":"recent-li","children":["$","div",null,{"className":"section","children":[["$","div",null,{"className":"desc","children":[["$","h3",null,{"children":["$","$L2",null,{"href":"/companies/dreame","children":"追觅科技有限公司"}]}],null]}],["$","p",null,{"className":"meta","children":["$","time",null,{"dateTime":"2026年4月~2026年7月","children":"2026年4月~2026年7月"}]}]]}]}],["$","li","/companies/boshi",{"className":"recent-li","children":["$","div",null,{"className":"section","children":[["$","div",null,{"className":"desc","children":[["$","h3",null,{"children":["$","$L2",null,{"href":"/companies/boshi","children":"重庆波士科技有限公司"}]}],null]}],["$","p",null,{"className":"meta","children":["$","time",null,{"dateTime":"2025年7月~2026年1月","children":"2025年7月~2026年1月"}]}]]}]}],["$","li","/companies/xidi",{"className":"recent-li","children":["$","div",null,{"className":"section","children":[["$","div",null,{"className":"desc","children":[["$","h3",null,{"children":["$","$L2",null,{"href":"/companies/xidi","children":"深圳矽递科技有限公司"}]}],null]}],["$","p",null,{"className":"meta","children":["$","time",null,{"dateTime":"2022年3月~2025年7月","children":"2022年3月~2025年7月"}]}]]}]}],["$","li","/companies/yuanqi-senlin",{"className":"recent-li","children":["$","div",null,{"className":"section","children":[["$","div",null,{"className":"desc","children":[["$","h3",null,{"children":["$","$L2",null,{"href":"/companies/yuanqi-senlin","children":"北京元气森林科技有限公司"}]}],null]}],["$","p",null,{"className":"meta","children":["$","time",null,{"dateTime":"2020年5月~2022年3月","children":"2020年5月~2022年3月"}]}]]}]}]]}],["$","p",null,{"children":["$","$L2",null,{"className":"see-more","href":"/companies","children":["查看其余 ",1," ","家"," →"]}]}]]}]]}]}]
+9:["$","footer",null,{"className":"site-footer","children":[["$","p",null,{"children":["© ",2026," ","吴敬悦"]}],["$","ul",null,{"children":["$","li",null,{"children":["$","a",null,{"href":"https://github.com/wutiange/Wujing","target":"_blank","rel":"noreferrer","children":"GitHub"}]}]}]]}]
+a:["$","aside",null,{"className":"scroll-pane scroll-pane--toc sidebar sidebar-right","children":["$","$Le",null,{"items":[{"id":"前言","text":"前言","depth":2},{"id":"一当前存在的问题","text":"一、当前存在的问题","depth":2},{"id":"1-相同功能组件重复实现","text":"1. 相同功能组件重复实现","depth":3},{"id":"2-公共逻辑无法统一管理","text":"2. 公共逻辑无法统一管理","depth":3},{"id":"二普通项目与-workspace-架构对比","text":"二、普通项目与 workspace 架构对比","depth":2},{"id":"1-普通多项目","text":"1. 普通多项目","depth":3},{"id":"2-workspace-项目","text":"2. Workspace 项目","depth":3},{"id":"三流行库的项目结构","text":"三、流行库的项目结构","depth":2},{"id":"1-vue","text":"1. Vue","depth":3},{"id":"2-nextjs","text":"2. Next.js","depth":3},{"id":"四手动搭建-workspace","text":"四、手动搭建 workspace","depth":2},{"id":"1-初始化根项目","text":"1. 初始化根项目","depth":3},{"id":"2-放入子项目","text":"2. 放入子项目","depth":3},{"id":"3-给子项目加依赖","text":"3. 给子项目加依赖","depth":3},{"id":"五yarn-依赖合并原则","text":"五、yarn 依赖合并原则","depth":2},{"id":"结尾","text":"结尾","depth":2}]}]}]
+b:["$","$Lf",null,{"children":["$","$10",null,{"name":"Next.MetadataOutlet","children":"$@11"}]}]
+11:null

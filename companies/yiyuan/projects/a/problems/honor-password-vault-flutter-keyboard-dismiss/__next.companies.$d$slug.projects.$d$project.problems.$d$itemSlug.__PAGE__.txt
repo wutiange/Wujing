@@ -1,0 +1,167 @@
+1:"$Sreact.fragment"
+2:I[3549,["2941","static/chunks/73972abe-73ae6eeb7f747ebc.js","2995","static/chunks/0b9a0da7-9d681b148c2109e1.js","233","static/chunks/233-5dfd80d382a556e5.js","6294","static/chunks/6294-2487c203252ab294.js","361","static/chunks/app/companies/%5Bslug%5D/projects/%5Bproject%5D/problems/%5BitemSlug%5D/page-d65aa9f9e5dde013.js"],""]
+3:I[8610,["2941","static/chunks/73972abe-73ae6eeb7f747ebc.js","2995","static/chunks/0b9a0da7-9d681b148c2109e1.js","233","static/chunks/233-5dfd80d382a556e5.js","6294","static/chunks/6294-2487c203252ab294.js","361","static/chunks/app/companies/%5Bslug%5D/projects/%5Bproject%5D/problems/%5BitemSlug%5D/page-d65aa9f9e5dde013.js"],"ThemeToggle"]
+f:I[2771,["2941","static/chunks/73972abe-73ae6eeb7f747ebc.js","2995","static/chunks/0b9a0da7-9d681b148c2109e1.js","233","static/chunks/233-5dfd80d382a556e5.js","6294","static/chunks/6294-2487c203252ab294.js","361","static/chunks/app/companies/%5Bslug%5D/projects/%5Bproject%5D/problems/%5BitemSlug%5D/page-d65aa9f9e5dde013.js"],"MarkdownContent"]
+11:I[6963,["2941","static/chunks/73972abe-73ae6eeb7f747ebc.js","2995","static/chunks/0b9a0da7-9d681b148c2109e1.js","233","static/chunks/233-5dfd80d382a556e5.js","6294","static/chunks/6294-2487c203252ab294.js","361","static/chunks/app/companies/%5Bslug%5D/projects/%5Bproject%5D/problems/%5BitemSlug%5D/page-d65aa9f9e5dde013.js"],"ArticleToc"]
+12:I[8937,[],"OutletBoundary"]
+13:"$Sreact.suspense"
+0:{"rsc":["$","$1","c",{"children":[["$","div",null,{"className":"site-root","children":["$","div",null,{"className":"site-body","children":[["$","aside",null,{"className":"sidebar sidebar-left","children":[["$","div",null,{"className":"site-header","children":[["$","h1",null,{"className":"page-title","children":["$","$L2",null,{"href":"/","children":"吴敬悦"}]}],["$","$L3",null,{}]]}],["$","div",null,{"className":"scroll-pane scroll-pane--nav desktop-only-nav","children":["$","div",null,{"className":"left-nav","children":[["$","section",null,{"className":"recent-notes","children":[["$","h3",null,{"children":"学习笔记"}],["$","ul",null,{"className":"recent-ul","children":[["$","li","/notes/welcome",{"className":"recent-li","children":["$","div",null,{"className":"section","children":[["$","div",null,{"className":"desc","children":[["$","h3",null,{"children":["$","$L2",null,{"href":"/notes/welcome","children":"欢迎使用"}]}],null]}],["$","p",null,{"className":"meta","children":["$","time",null,{"dateTime":"2026-06-25","children":"2026年6月25日"}]}]]}]}],["$","li","/notes/ble-notify-consumed-before-waiter",{"className":"recent-li","children":["$","div",null,{"className":"section","children":[["$","div",null,{"className":"desc","children":[["$","h3",null,{"children":["$","$L2",null,{"href":"/notes/ble-notify-consumed-before-waiter","children":"react-native-ble-plx：回包被提前消费，等待却还没挂上"}]}],null]}],["$","p",null,{"className":"meta","children":["$","time",null,{"dateTime":"2026-01-27","children":"2026年1月27日"}]}]]}]}],["$","li","/notes/yarn-workspace-monorepo",{"className":"recent-li","children":["$","div",null,{"className":"section","children":[["$","div",null,{"className":"desc","children":[["$","h3",null,{"children":["$","$L2",null,{"href":"/notes/yarn-workspace-monorepo","children":"使用 yarn workspace 管理多个项目"}]}],null]}],["$","p",null,{"className":"meta","children":["$","time",null,{"dateTime":"2024-12-09","children":"2024年12月9日"}]}]]}]}]]}],null]}],["$","section",null,{"className":"recent-notes","children":[["$","h3",null,{"children":"工作经历"}],["$","ul",null,{"className":"recent-ul","children":[["$","li","/companies/yiyuan",{"className":"recent-li","children":["$","div",null,{"className":"section","children":[["$","div",null,{"className":"desc","children":[["$","h3",null,{"children":["$","$L2",null,{"href":"/companies/yiyuan","children":"上海移远科技股份有限责任公司"}]}],null]}],["$","p",null,{"className":"meta","children":["$","time",null,{"dateTime":"2026年8月~至今","children":"2026年8月~至今"}]}]]}]}],["$","li","/companies/dreame",{"className":"recent-li","children":["$","div",null,{"className":"section","children":[["$","div",null,{"className":"desc","children":[["$","h3",null,{"children":["$","$L2",null,{"href":"/companies/dreame","children":"追觅科技有限公司"}]}],null]}],["$","p",null,{"className":"meta","children":["$","time",null,{"dateTime":"2026年4月~2026年7月","children":"2026年4月~2026年7月"}]}]]}]}],["$","li","/companies/boshi",{"className":"recent-li","children":["$","div",null,{"className":"section","children":[["$","div",null,{"className":"desc","children":[["$","h3",null,{"children":["$","$L2",null,{"href":"/companies/boshi","children":"重庆波士科技有限公司"}]}],null]}],["$","p",null,{"className":"meta","children":["$","time",null,{"dateTime":"2025年7月~2026年1月","children":"2025年7月~2026年1月"}]}]]}]}],["$","li","/companies/xidi",{"className":"recent-li","children":["$","div",null,{"className":"section","children":[["$","div",null,{"className":"desc","children":[["$","h3",null,{"children":["$","$L2",null,{"href":"/companies/xidi","children":"深圳矽递科技有限公司"}]}],null]}],["$","p",null,{"className":"meta","children":["$","time",null,{"dateTime":"2022年3月~2025年7月","children":"2022年3月~2025年7月"}]}]]}]}],["$","li","/companies/yuanqi-senlin",{"className":"recent-li","children":["$","div",null,{"className":"section","children":[["$","div",null,{"className":"desc","children":[["$","h3",null,{"children":["$","$L2",null,{"href":"/companies/yuanqi-senlin","children":"北京元气森林科技有限公司"}]}],null]}],["$","p",null,{"className":"meta","children":["$","time",null,{"dateTime":"2020年5月~2022年3月","children":"2020年5月~2022年3月"}]}]]}]}]]}],["$","p",null,{"children":["$","$L2",null,{"className":"see-more","href":"/companies","children":["查看其余 ",1," ","家"," →"]}]}]]}]]}]}]]}],["$","div",null,{"className":"scroll-pane scroll-pane--content site-center","children":[["$","div",null,{"className":"page-panel","children":["$","article",null,{"children":[["$","header",null,{"className":"article-header","children":[["$","nav",null,{"className":"article-breadcrumb","aria-label":"面包屑","children":["$","ol",null,{"children":[["$","li","首页-0",{"children":[null,["$","$L2",null,{"href":"/","children":"首页"}]]}],["$","li","工作经历-1",{"children":[["$","span",null,{"className":"article-breadcrumb-sep","aria-hidden":"true","children":"·"}],["$","$L2",null,{"href":"/companies","children":"工作经历"}]]}],["$","li","上海移远科技股份有限责任公司-2",{"children":[["$","span",null,{"className":"article-breadcrumb-sep","aria-hidden":"true","children":"·"}],["$","$L2",null,{"href":"/companies/yiyuan","children":"上海移远科技股份有限责任公司"}]]}],["$","li","A-3",{"children":["$L4","$L5"]}],"$L6"]}]}],"$L7","$L8","$L9"]}],"$La"]}]}],"$Lb","$Lc"]}],"$Ld"]}]}],null,"$Le"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"KUYpKVuJoW-NB5H1d6g_s"}
+4:["$","span",null,{"className":"article-breadcrumb-sep","aria-hidden":"true","children":"·"}]
+5:["$","$L2",null,{"href":"/companies/yiyuan/projects/a","children":"A"}]
+6:["$","li","问题记录-4",{"children":[["$","span",null,{"className":"article-breadcrumb-sep","aria-hidden":"true","children":"·"}],["$","$L2",null,{"href":"/companies/yiyuan/projects/a#problems","aria-current":"page","children":"问题记录"}]]}]
+7:["$","div",null,{"className":"mt-2 flex flex-wrap items-center gap-3","children":[["$","h1",null,{"children":"荣耀密码保险箱导致 Flutter 输入时键盘消失"}],["$","span",null,{"className":"difficulty-badge","children":["难度 ",7,"/10"]}]]}]
+8:["$","time",null,{"dateTime":"2026-11-17","children":"2026-11-17"}]
+9:["$","p",null,{"className":"article-desc","children":"荣耀 Magic 8 Pro Air 在密码保险箱已有账号时，Flutter TextField 输入会收起键盘；原生 EditText 正常，Android 改走 PlatformView"}]
+10:T2e00,<h2 id="问题现象">问题现象</h2>
+<p>测试机：<strong>荣耀 Magic 8 Pro Air</strong>。登录页已接入系统自动填充（见同项目功能实现：<a href="/companies/yiyuan/projects/a/features/flutter-login-system-autofill">Flutter 登录接入系统自动填充</a>）。</p>
+<table>
+<thead>
+<tr>
+<th>条件</th>
+<th>表现</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>密码保险箱里<strong>没有</strong>已存账号</td>
+<td>账号、密码均可正常输入</td>
+</tr>
+<tr>
+<td>密码保险箱里<strong>已有</strong>账号</td>
+<td>空框开始输入时键盘会被系统收起</td>
+</tr>
+<tr>
+<td>iOS 15</td>
+<td>正常</td>
+</tr>
+<tr>
+<td>关闭密码保险箱后再测</td>
+<td>恢复正常</td>
+</tr>
+</tbody>
+</table>
+<p>保险箱里已有账号时，账号框和密码框表现还不一样：</p>
+<p><strong>账号框（空框开始敲）：</strong></p>
+<ul>
+<li>敲的字符与已存账号前缀<strong>匹配</strong>：前三个字能打进去，第四个字即便仍匹配，键盘也会消失。</li>
+<li>第一个字符就<strong>不匹配</strong>：键盘立刻消失。</li>
+</ul>
+<p><strong>密码框：</strong></p>
+<ul>
+<li>无论是否匹配已存密码，一敲就消失。</li>
+</ul>
+<p>聚焦时密码保险箱提示可以出来，键盘也能起来；真正出问题的是<strong>开始输入之后</strong>。</p>
+<h2 id="问题分析">问题分析</h2>
+<p>关掉密码保险箱后输入立刻正常，说明触发条件就是保险箱。但这不等于「这台荣耀用不了自动填充」——别的原生 App 在同一台机上可以一边出保险箱提示、一边继续打字。更合理的怀疑是：当前实现里某个属性或某层封装，和保险箱抢焦点的行为撞车了。</p>
+<p>业务登录页干扰项不少：业务层自动填充封装、键盘顶起避免遮挡输入框的布局逻辑等。要先把这些干扰降到最低，再下结论。注意：最小复现<strong>仍然保留自动填充</strong>——没有 <code>autofillHints</code> 时输入是正常的，关掉自动填充等于绕开问题，并不能证明 Flutter 输入框本身没问题。</p>
+<h2 id="最小复现">最小复现</h2>
+<p>写一个尽量干净的页面：普通 Flutter <code>TextField</code>，带上 <code>AutofillGroup</code> / <code>autofillHints</code>，但去掉业务封装，也去掉「防键盘遮挡」相关逻辑。</p>
+<table>
+<thead>
+<tr>
+<th>最小页配置</th>
+<th>保险箱有账号时</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Flutter <code>TextField</code> + 自动填充</td>
+<td><strong>仍复现</strong>键盘消失</td>
+</tr>
+<tr>
+<td>同样干净，但不挂自动填充</td>
+<td>正常</td>
+</tr>
+</tbody>
+</table>
+<p>说明：</p>
+<ul>
+<li>问题不在业务布局或防遮挡逻辑；</li>
+<li>触发链是 <strong>Flutter <code>TextField</code> + 自动填充</strong>，和荣耀密码保险箱撞上了；</li>
+<li>「去掉自动填充就正常」只说明保险箱是条件，不能当成业务侧的最终解法——产品仍需要自动填充。</li>
+</ul>
+<h2 id="对照实验原生-edittext-正常">对照实验：原生 EditText 正常</h2>
+<p>同一台机器、同样开着密码保险箱、同样有已存账号、同样声明自动填充，用原生 <code>EditText</code> 做对照：</p>
+<table>
+<thead>
+<tr>
+<th>实现</th>
+<th>保险箱有账号时，空框输入</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Flutter <code>TextField</code> + 自动填充</td>
+<td>键盘消失（现象同上）</td>
+</tr>
+<tr>
+<td>原生 <code>EditText</code> + 自动填充</td>
+<td>正常</td>
+</tr>
+</tbody>
+</table>
+<p>于是可以收窄结论：</p>
+<ul>
+<li>不是「密码保险箱本身不能用」；</li>
+<li>是 <strong>Flutter 的 <code>TextField</code> 这条自动填充输入链路</strong> 在荣耀保险箱弹出 / 抢焦点时，键盘被系统收掉；</li>
+<li>iOS 上 Flutter <code>TextField</code> + 自动填充没问题，不必换实现。</li>
+</ul>
+<p>排查过程中系统输入法日志里，还能看到收起原因类似 <code>HIDE_SAME_WINDOW_FOCUSED_WITHOUT_EDITOR</code>：保险箱相关窗口抢走焦点后，焦点回到应用窗口时，系统判定当时没有编辑器，于是把 IME 关掉。这和「原生 EditText 能扛住、Flutter TextField 扛不住」是同一类焦点/IME 生命周期差异，而不是业务代码主动 <code>unfocus</code>。</p>
+<pre class="mermaid-source"><code class="language-mermaid">flowchart TD
+  A[空框开始输入] --&gt; B[Flutter TextField + 自动填充]
+  B --&gt; C[荣耀密码保险箱介入]
+  C --&gt; D[焦点/IME 连接异常]
+  D --&gt; E[键盘被系统收起]
+  A --&gt; F[原生 EditText + 自动填充]
+  F --&gt; G[输入继续]</code></pre>
+<h2 id="处理方案">处理方案</h2>
+<p>按平台分流：</p>
+<ul>
+<li><strong>iOS</strong>：继续用 Flutter <code>TextField</code> + 现有 <code>AutofillGroup</code> / <code>AutofillHints</code>。</li>
+<li><strong>Android</strong>：登录相关输入框改走原生 <code>EditText</code>，通过 <code>AndroidView</code>（PlatformView）嵌进现有 <code>AppTextField</code> 外观里；<code>autofillHints</code>、焦点、文本变更用 MethodChannel 与 Dart 侧同步。</li>
+</ul>
+<p>Dart 侧按平台分支（示意）：</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="dart" data-theme="ayu-dark"><code data-language="dart" data-theme="ayu-dark" style="display: grid;"><span data-line=""><span style="color:#39BAE6">Widget</span><span style="color:#FFB454"> _field</span><span style="color:#BFBDB6">(...) {</span></span>
+<span data-line=""><span style="color:#FF8F40">  if</span><span style="color:#BFBDB6"> (defaultTargetPlatform </span><span style="color:#F29668">==</span><span style="color:#39BAE6"> TargetPlatform</span><span style="color:#BFBDB6">.android) {</span></span>
+<span data-line=""><span style="color:#FF8F40">    return</span><span style="color:#39BAE6"> Focus</span><span style="color:#BFBDB6">(</span></span>
+<span data-line=""><span style="color:#BFBDB6">      focusNode</span><span style="color:#F29668">:</span><span style="color:#BFBDB6"> focusNode,</span></span>
+<span data-line=""><span style="color:#BFBDB6">      child</span><span style="color:#F29668">:</span><span style="color:#39BAE6"> AndroidView</span><span style="color:#BFBDB6">(</span></span>
+<span data-line=""><span style="color:#BFBDB6">        viewType</span><span style="color:#F29668">:</span><span style="color:#AAD94C"> 'smart_wheelchair/native_text_field'</span><span style="color:#BFBDB6">,</span></span>
+<span data-line=""><span style="color:#BFBDB6">        creationParams</span><span style="color:#F29668">:</span><span style="color:#BFBDB6"> {</span></span>
+<span data-line=""><span style="color:#AAD94C">          'text'</span><span style="color:#F29668">:</span><span style="color:#BFBDB6"> controller.text,</span></span>
+<span data-line=""><span style="color:#AAD94C">          'obscureText'</span><span style="color:#F29668">:</span><span style="color:#BFBDB6"> obscureText,</span></span>
+<span data-line=""><span style="color:#AAD94C">          'autofillHints'</span><span style="color:#F29668">:</span><span style="color:#BFBDB6"> autofillHints</span><span style="color:#F29668">?</span><span style="color:#BFBDB6">.</span><span style="color:#FFB454">toList</span><span style="color:#BFBDB6">() </span><span style="color:#F29668">??</span><span style="color:#FF8F40"> const</span><span style="color:#F29668"> &#x3C;</span><span style="color:#39BAE6">String</span><span style="color:#F29668">></span><span style="color:#BFBDB6">[],</span></span>
+<span data-line=""><span style="color:#5A6673;font-style:italic">          // …</span></span>
+<span data-line=""><span style="color:#BFBDB6">        },</span></span>
+<span data-line=""><span style="color:#BFBDB6">        creationParamsCodec</span><span style="color:#F29668">:</span><span style="color:#FF8F40"> const</span><span style="color:#39BAE6"> StandardMessageCodec</span><span style="color:#BFBDB6">(),</span></span>
+<span data-line=""><span style="color:#BFBDB6">      ),</span></span>
+<span data-line=""><span style="color:#BFBDB6">    )</span><span style="color:#BFBDB6B3">;</span></span>
+<span data-line=""><span style="color:#BFBDB6">  }</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color:#FF8F40">  return</span><span style="color:#39BAE6"> TextField</span><span style="color:#BFBDB6">(</span></span>
+<span data-line=""><span style="color:#BFBDB6">    controller</span><span style="color:#F29668">:</span><span style="color:#BFBDB6"> controller,</span></span>
+<span data-line=""><span style="color:#BFBDB6">    focusNode</span><span style="color:#F29668">:</span><span style="color:#BFBDB6"> focusNode,</span></span>
+<span data-line=""><span style="color:#BFBDB6">    autofillHints</span><span style="color:#F29668">:</span><span style="color:#BFBDB6"> autofillHints,</span></span>
+<span data-line=""><span style="color:#5A6673;font-style:italic">    // …</span></span>
+<span data-line=""><span style="color:#BFBDB6">  )</span><span style="color:#BFBDB6B3">;</span></span>
+<span data-line=""><span style="color:#BFBDB6">}</span></span></code></pre></figure>
+<p>Android 侧注册 PlatformView，用原生 <code>EditText</code> 承接自动填充：</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="kotlin" data-theme="ayu-dark"><code data-language="kotlin" data-theme="ayu-dark" style="display: grid;"><span data-line=""><span style="color:#FF8F40">if</span><span style="color:#BFBDB6"> (Build.VERSION.SDK_INT </span><span style="color:#F29668">>=</span><span style="color:#BFBDB6"> Build.VERSION_CODES.O) {</span></span>
+<span data-line=""><span style="color:#BFBDB6">    importantForAutofill </span><span style="color:#F29668">=</span><span style="color:#BFBDB6"> View.IMPORTANT_FOR_AUTOFILL_YES</span></span>
+<span data-line=""><span style="color:#BFBDB6">    autofillHints</span></span>
+<span data-line=""><span style="color:#BFBDB6">        .</span><span style="color:#FFB454">takeIf</span><span style="color:#BFBDB6"> { it.</span><span style="color:#FFB454">isNotEmpty</span><span style="color:#BFBDB6">() }</span></span>
+<span data-line=""><span style="color:#BFBDB6">        ?.</span><span style="color:#FFB454">let</span><span style="color:#BFBDB6"> { </span><span style="color:#FFB454">setAutofillHints</span><span style="color:#BFBDB6">(</span><span style="color:#F29668">*</span><span style="color:#BFBDB6">it.</span><span style="color:#FFB454">toTypedArray</span><span style="color:#BFBDB6">()) }</span></span>
+<span data-line=""><span style="color:#BFBDB6">}</span></span></code></pre></figure>
+<p>外观（圆角底、浮动 hint、错误描边）仍由 Flutter 画；真正吃键盘事件和保险箱的是原生控件。这样自动填充能力保留，荣耀上也不会再因为保险箱把键盘打没。</p>
+<h2 id="小结">小结</h2>
+<ol>
+<li><strong>复现条件</strong>：荣耀 Magic 8 Pro Air + 密码保险箱已有账号 + Flutter <code>TextField</code> 自动填充 + 空框输入。</li>
+<li><strong>账号框</strong>对前缀匹配更「宽容」（大约三个字符），<strong>密码框</strong>一敲就收键盘；关保险箱、去掉自动填充或换 iOS 则正常。</li>
+<li><strong>最小页仍带自动填充时 Flutter 复现，去掉自动填充正常；同条件原生 EditText 正常</strong> → 判定为 Flutter 自动填充输入链路与荣耀保险箱的兼容问题，而不是业务布局，也不是「机型不能用保险箱」。</li>
+<li><strong>落地</strong>：iOS 继续 Flutter；Android 登录输入改 PlatformView 原生 <code>EditText</code>，自动填充 hint 仍由原生侧声明。</li>
+</ol>a:["$","$Lf",null,{"html":"$10"}]
+b:["$","div",null,{"className":"mobile-side-stacks","children":["$","div",null,{"className":"left-nav","children":[["$","section",null,{"className":"recent-notes","children":[["$","h3",null,{"children":"学习笔记"}],["$","ul",null,{"className":"recent-ul","children":[["$","li","/notes/welcome",{"className":"recent-li","children":["$","div",null,{"className":"section","children":[["$","div",null,{"className":"desc","children":[["$","h3",null,{"children":["$","$L2",null,{"href":"/notes/welcome","children":"欢迎使用"}]}],null]}],["$","p",null,{"className":"meta","children":["$","time",null,{"dateTime":"2026-06-25","children":"2026年6月25日"}]}]]}]}],["$","li","/notes/ble-notify-consumed-before-waiter",{"className":"recent-li","children":["$","div",null,{"className":"section","children":[["$","div",null,{"className":"desc","children":[["$","h3",null,{"children":["$","$L2",null,{"href":"/notes/ble-notify-consumed-before-waiter","children":"react-native-ble-plx：回包被提前消费，等待却还没挂上"}]}],null]}],["$","p",null,{"className":"meta","children":["$","time",null,{"dateTime":"2026-01-27","children":"2026年1月27日"}]}]]}]}],["$","li","/notes/yarn-workspace-monorepo",{"className":"recent-li","children":["$","div",null,{"className":"section","children":[["$","div",null,{"className":"desc","children":[["$","h3",null,{"children":["$","$L2",null,{"href":"/notes/yarn-workspace-monorepo","children":"使用 yarn workspace 管理多个项目"}]}],null]}],["$","p",null,{"className":"meta","children":["$","time",null,{"dateTime":"2024-12-09","children":"2024年12月9日"}]}]]}]}]]}],null]}],["$","section",null,{"className":"recent-notes","children":[["$","h3",null,{"children":"工作经历"}],["$","ul",null,{"className":"recent-ul","children":[["$","li","/companies/yiyuan",{"className":"recent-li","children":["$","div",null,{"className":"section","children":[["$","div",null,{"className":"desc","children":[["$","h3",null,{"children":["$","$L2",null,{"href":"/companies/yiyuan","children":"上海移远科技股份有限责任公司"}]}],null]}],["$","p",null,{"className":"meta","children":["$","time",null,{"dateTime":"2026年8月~至今","children":"2026年8月~至今"}]}]]}]}],["$","li","/companies/dreame",{"className":"recent-li","children":["$","div",null,{"className":"section","children":[["$","div",null,{"className":"desc","children":[["$","h3",null,{"children":["$","$L2",null,{"href":"/companies/dreame","children":"追觅科技有限公司"}]}],null]}],["$","p",null,{"className":"meta","children":["$","time",null,{"dateTime":"2026年4月~2026年7月","children":"2026年4月~2026年7月"}]}]]}]}],["$","li","/companies/boshi",{"className":"recent-li","children":["$","div",null,{"className":"section","children":[["$","div",null,{"className":"desc","children":[["$","h3",null,{"children":["$","$L2",null,{"href":"/companies/boshi","children":"重庆波士科技有限公司"}]}],null]}],["$","p",null,{"className":"meta","children":["$","time",null,{"dateTime":"2025年7月~2026年1月","children":"2025年7月~2026年1月"}]}]]}]}],["$","li","/companies/xidi",{"className":"recent-li","children":["$","div",null,{"className":"section","children":[["$","div",null,{"className":"desc","children":[["$","h3",null,{"children":["$","$L2",null,{"href":"/companies/xidi","children":"深圳矽递科技有限公司"}]}],null]}],["$","p",null,{"className":"meta","children":["$","time",null,{"dateTime":"2022年3月~2025年7月","children":"2022年3月~2025年7月"}]}]]}]}],["$","li","/companies/yuanqi-senlin",{"className":"recent-li","children":["$","div",null,{"className":"section","children":[["$","div",null,{"className":"desc","children":[["$","h3",null,{"children":["$","$L2",null,{"href":"/companies/yuanqi-senlin","children":"北京元气森林科技有限公司"}]}],null]}],["$","p",null,{"className":"meta","children":["$","time",null,{"dateTime":"2020年5月~2022年3月","children":"2020年5月~2022年3月"}]}]]}]}]]}],["$","p",null,{"children":["$","$L2",null,{"className":"see-more","href":"/companies","children":["查看其余 ",1," ","家"," →"]}]}]]}]]}]}]
+c:["$","footer",null,{"className":"site-footer","children":[["$","p",null,{"children":["© ",2026," ","吴敬悦"]}],["$","ul",null,{"children":["$","li",null,{"children":["$","a",null,{"href":"https://github.com/wutiange/Wujing","target":"_blank","rel":"noreferrer","children":"GitHub"}]}]}]]}]
+d:["$","aside",null,{"className":"scroll-pane scroll-pane--toc sidebar sidebar-right","children":["$","$L11",null,{"items":[{"id":"问题现象","text":"问题现象","depth":2},{"id":"问题分析","text":"问题分析","depth":2},{"id":"最小复现","text":"最小复现","depth":2},{"id":"对照实验原生-edittext-正常","text":"对照实验：原生 EditText 正常","depth":2},{"id":"处理方案","text":"处理方案","depth":2},{"id":"小结","text":"小结","depth":2}]}]}]
+e:["$","$L12",null,{"children":["$","$13",null,{"name":"Next.MetadataOutlet","children":"$@14"}]}]
+14:null
