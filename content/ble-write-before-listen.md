@@ -1,40 +1,42 @@
 ---
 title: react-native-ble-plx：先写后听的顺序陷阱
 date: 2026-01-27
-description: 设备秒回时，writeWithResponse 后再挂监听会丢通知，Promise 一直等到超时才 reject
+description: 全局 monitor 一直在；若 write 之后才挂上本次任务的等待 Promise，秒回的 notify 会被先消费，后面再 await 只能等到超时
 ---
 
 ## 前言
 
-用 `react-native-ble-plx` 做指令队列时，我以为自己已经很熟了，结果还是踩了坑。代码最初是 AI 生成的；出问题后排查了很久，根因其实我以前就知道——只是两行代码的执行顺序不同。
+用 `react-native-ble-plx` 做指令队列时，我以为自己已经很熟了，结果还是踩了坑。代码最初是 AI 生成的；出问题后排查了很久，根因其实只是「本次任务的等待」挂得太晚——不是没开监听，而是**等的人来晚了**。
 
-前一家公司做蓝牙 App 时，就见过「先下发、再监听」的写法。当时觉得有隐患，也改过公司代码，但那次只是代码审查上的直觉，并没有线上故障可复现。
+前一家公司做蓝牙 App 时，就见过「先下发、再挂等待」的写法。当时觉得有隐患，也改过公司代码，但那次只是审查上的直觉，并没有线上故障可复现。
 
 对库还不熟时，可先看官方文档：[react-native-ble-plx](https://github.com/dotintent/react-native-ble-plx)。
 
-本文按「现象 → 代码 → 根因 → 修复 → 延伸」拆开说明；顺带记一件更值得想的事：逻辑有隐患、线上却没炸时，该不该改、怎么说服别人改。
+本文按「现象 → 错误理解 → 问题代码 → 根因 → 修复 → 延伸」说明；顺带记一件更值得想的事：逻辑有隐患、线上却没炸时，该不该改、怎么说服别人改。
 
 ## 一、业务约定
 
-设备端定义一个服务，下面两个特征值：
+设备端一个服务，两个特征值：
 
 | 方向 | 特征值 | 含义 |
 |------|--------|------|
 | App → 设备 | write | 下发指令 |
 | 设备 → App | notify | 回传结果 |
 
-例如 App 发 `AT+deviceInfo=?\r\n`，需要在 notify 特征上收到设备信息，再结束这次 `writeData` 的 Promise。
+例如 App 发查询指令后，要在 notify 上拿到设备信息，再结束这次 `writeData` 的 Promise。
+
+连接成功后，notify 特征上会挂**全局** `monitor`：一直在听，不是每次发指令才临时订阅。回包到来时，它找到当前任务并 `resolve`。
 
 ## 二、问题现象
 
 | 维度 | 情况 |
 |------|------|
 | 触发场景 | 高频下发 + 设备端几乎秒回 |
-| 表面表现 | 跑一段时间后卡住，要等超时长才失败 |
-| 误导点 | 前面多次成功，容易怀疑设备端蓝牙 |
-| 真实结果 | notify 先到、监听后挂上，响应被丢掉，`resolve` 永不触发 |
+| 表面表现 | 跑一段时间后卡住，等到超时长才失败 |
+| 误导点 | 前面多次成功，容易怀疑设备端 |
+| 真实结果 | 回包已被全局 monitor 处理掉，本次任务的等待还没挂上，`resolve` 永远等不来 |
 
-复现侧接近这样：
+复现侧接近：
 
 ```ts
 setInterval(async () => {
@@ -45,89 +47,197 @@ setInterval(async () => {
 }, 150);
 ```
 
-设备端（我自己写的 Python）为了验证链路，收到就回，几乎没有业务延迟。前一家公司设备处理较慢，先写后听往往「碰巧」没事；这次秒回，隐患就被放大了。
+设备端（自写 Python）为了验链路，收到就回。设备处理慢时，「先写再挂等待」往往碰巧没事；秒回时隐患会被放大。
 
-## 三、问题代码
+## 三、容易误判的一点
 
-### 1. writeData：只入队
-
-`writeData` 只把任务推进队列，真正发送在 `_send`：
+有人看到：
 
 ```ts
-async writeData(data: Command): Promise<any> {
+await this.writeCharacteristic.writeWithResponse(base64);
+await promise;
+```
+
+就以为问题是「两个 `await` 的先后」。**不对。**
+
+`promise` 若在 `write` **之前**就已经创建，并且已经把 `task.resolve` 接到等待器上，那全局 monitor 在 `writeWithResponse` 尚未返回时打进来，也能正确 `resolve`，后面的 `await promise` 只是拿到已完成的结果。
+
+真正危险的是：
+
+> **先 `writeWithResponse`，等它返回之后，才创建本次任务的 `promise` / 改写 `task.resolve`，再 `await`。**
+
+全局监听一直都在；回包来得早时，monitor 已经按「当前任务」处理过一遍，而那时等待器还没挂上——响应等于被消费掉了，后面再建的 `promise` 自然永远等不到。
+
+## 四、问题代码
+
+### 1. 入队
+
+```ts
+async writeData(data: Command): Promise<unknown> {
   const id = Date.now();
-  const sendStr = JSON.stringify({ id, ...data });
+  const payload = JSON.stringify({ id, ...data });
 
   return new Promise((resolve, reject) => {
-    this.tasks.push({
-      payload: sendStr,
-      resolve,
-      reject,
-      id,
-    });
-    this._send();
+    this.tasks.push({ id, payload, resolve, reject });
+    void this._send();
   });
 }
 ```
 
-### 2. _send：先写再等
+### 2. 全局 monitor（示意）
+
+```ts
+// 连接后只订阅一次
+this.notifyCharacteristic.monitor((error, characteristic) => {
+  if (error || !characteristic?.value) return;
+
+  const task = this.currentTask;
+  if (!task) return; // 没有「正在等」的任务，回包被丢掉
+
+  try {
+    const data = JSON.parse(
+      Buffer.from(characteristic.value, "base64").toString("utf8"),
+    );
+    task.resolve(data);
+  } catch (e) {
+    task.reject(e);
+  }
+});
+```
+
+### 3. 错误：先写，再挂等待
 
 ```ts
 private async _send(): Promise<void> {
-  if (this.sending) {
-    return;
-  }
+  if (this.sending) return;
   this.sending = true;
 
   while (this.tasks.length > 0) {
     const task = this.tasks.shift();
     if (!task) continue;
+
     this.currentTask = task;
-    let timer: ReturnType<typeof setTimeout> | null = null;
 
     try {
       if (!this.canWrite || !this.writeCharacteristic) {
-        task.reject?.(new Error("设备不支持写入或未正确连接"));
-        this.currentTask = null;
+        task.reject(new Error("设备不支持写入或未正确连接"));
         break;
       }
 
-      const promise = Promise.race([
-        new Promise((resolve, reject) => {
-          const originalResolve = task.resolve;
-          task.resolve = (data: any) => {
-            originalResolve?.(data);
-            resolve(data);
-            if (timer) clearTimeout(timer);
-          };
-          const originalReject = task.reject;
-          task.reject = (error: any) => {
-            originalReject?.(error);
-            reject(error);
-            if (timer) clearTimeout(timer);
-          };
-        }),
-        new Promise((_, reject) => {
-          timer = setTimeout(() => {
-            task.reject?.(new Error("命令响应超时"));
-            reject(new Error("命令响应超时"));
-          }, 100000);
-        }),
-      ]);
-
-      const Buffer = require("buffer").Buffer;
       const base64 = Buffer.from(task.payload, "utf8").toString("base64");
 
-      // 隐患：先写，再等「监听侧」把 task.resolve 调起来
+      // 1) 先下发 —— 设备可能在此期间秒回
       await this.writeCharacteristic.writeWithResponse(base64);
-      await promise;
 
-      this.currentTask = null;
+      // 2) 此时才挂上「本次等待」—— 晚了
+      //    全局 monitor 若已处理过回包，这里再等也等不到
+      await this.waitForTask(task, 100_000);
     } catch (error) {
-      console.error("等待任务完成时出错:", error);
-      this.currentTask = null;
+      console.error("发送任务失败:", error);
+      task.reject(error);
     } finally {
-      if (timer) clearTimeout(timer);
+      this.currentTask = null;
+    }
+  }
+
+  this.sending = false;
+}
+
+private waitForTask(task: BleTask, timeoutMs: number): Promise<unknown> {
+  return new Promise((resolve, reject) => {
+    const timer = setTimeout(() => {
+      reject(new Error("命令响应超时"));
+    }, timeoutMs);
+
+    const { resolve: userResolve, reject: userReject } = task;
+
+    task.resolve = (data) => {
+      clearTimeout(timer);
+      userResolve(data);
+      resolve(data);
+    };
+    task.reject = (error) => {
+      clearTimeout(timer);
+      userReject(error);
+      reject(error);
+    };
+  });
+}
+```
+
+关键顺序可以缩成：
+
+```ts
+await this.writeCharacteristic.writeWithResponse(base64);
+await this.waitForTask(task, 100_000); // 等待器建在 write 之后
+```
+
+## 五、根因分析
+
+### 1. 排查路径
+
+一开始更怀疑设备端。但连接未断、其它 App 也能通时，应把焦点转回 App。
+
+卡住最终走超时 `reject`，说明本次 `resolve` 从未被调用。全局 monitor 一直在，设备也在回——更合理的解释是：**回包到达时，本次任务的等待还没挂上，monitor 按「无有效等待 / 已处理」把这次 notify 消费掉了**；之后再 `waitForTask`，只能空等。
+
+### 2. 时序
+
+```mermaid
+sequenceDiagram
+  participant App
+  participant W as write 特征
+  participant Dev as 设备
+  participant M as 全局 monitor
+
+  App->>App: currentTask = task
+  App->>W: writeWithResponse(cmd)
+  W->>Dev: 下发
+  Dev->>M: 秒回 notify
+  M->>M: 看 currentTask，但 wait/resolve 包装尚未挂上
+  Note over M: 回包被处理掉 / 无法交给本次等待
+  W-->>App: write 返回
+  App->>App: 此时才 waitForTask(task)
+  Note over App: 只能等到超时 reject
+```
+
+设备慢时，回包常落在 `waitForTask` 之后，问题被掩盖；秒回 + 高频下发时更容易打中。前面多次成功，只说明还有别的时序因素，不否定这个顺序隐患。
+
+## 六、修复方式
+
+**先挂好本次等待，再 write。** 全局 monitor 不变；变的是「这次任务何时开始能被正确 resolve」。
+
+```ts
+private async _send(): Promise<void> {
+  if (this.sending) return;
+  this.sending = true;
+
+  while (this.tasks.length > 0) {
+    const task = this.tasks.shift();
+    if (!task) continue;
+
+    this.currentTask = task;
+
+    try {
+      if (!this.canWrite || !this.writeCharacteristic) {
+        task.reject(new Error("设备不支持写入或未正确连接"));
+        break;
+      }
+
+      // 1) 先挂等待 —— monitor 从此可以把回包交给 task
+      const waiting = this.waitForTask(task, 100_000);
+
+      const base64 = Buffer.from(task.payload, "utf8").toString("base64");
+
+      // 2) 再下发
+      await this.writeCharacteristic.writeWithResponse(base64);
+
+      // 3) 等结果（若秒回已在 write 期间到达，这里会立刻结束）
+      await waiting;
+    } catch (error) {
+      console.error("发送任务失败:", error);
+      task.reject(error);
+    } finally {
+      this.currentTask = null;
     }
   }
 
@@ -135,71 +245,28 @@ private async _send(): Promise<void> {
 }
 ```
 
-### 3. 关键片段
-
-可以缩成：
+对照：
 
 ```ts
-await this.writeCharacteristic.writeWithResponse(base64);
-await promise; // promise ≈「等 notify 回调里 resolve」
-```
+// 错：先写，再等
+await writeWithResponse(base64);
+await waitForTask(task, timeout);
 
-这里的 `promise` 依赖监听路径去消费 `task.resolve`。写在前、听在后，响应就可能落在监听窗口之外。
-
-## 四、根因分析
-
-### 1. 排查路径
-
-一开始更怀疑设备端——第一次写 Python 蓝牙逻辑，成功过几次也不敢自信。但设备只要成功过一次，在连接未断的前提下不该「突然永远不回」；用其他 App 测也正常。于是把注意力转回 App。
-
-卡住说明最终是超时走了 `reject`，也就是 `resolve` 从未被调用。`resolve` 挂在 notify 路径上：没收齐回调，要么设备没发，要么发了但 App 没接到。设备侧已排除后，只剩一种合理解释——**回包到了，监听还没挂上**。
-
-### 2. 时序
-
-```mermaid
-sequenceDiagram
-  participant App
-  participant BLE as write 特征
-  participant Dev as 设备
-  participant N as notify 特征
-
-  App->>BLE: writeWithResponse(cmd)
-  BLE->>Dev: 下发
-  Dev->>N: 秒回 notify
-  Note over App,N: 此时尚未开始等 / 监听未就绪
-  App->>App: 才 await promise（等 resolve）
-  Note over App: 回包已过，只能等到超时 reject
-```
-
-先写后听在「设备处理慢」时常常蒙混过关；设备秒回 + 150ms 轮询时，丢包与卡住就稳定出现。前面多次成功并不否定隐患——还有调度、缓冲等因素，但顺序错误是充分条件之一。
-
-## 五、修复方式
-
-把「准备好接收」放到「写入」之前：先挂好本次任务的等待 / 监听，再 `writeWithResponse`。
-
-```ts
-const Buffer = require("buffer").Buffer;
-const base64 = Buffer.from(task.payload, "utf8").toString("base64");
-
-// 先进入等待（监听路径已能 resolve 当前 task）
-const waiting = promise;
-await this.writeCharacteristic.writeWithResponse(base64);
+// 对：先等，再写，再 await 同一个 waiting
+const waiting = waitForTask(task, timeout);
+await writeWithResponse(base64);
 await waiting;
 ```
 
-若监听是单独 `monitor` / 订阅，同样要保证：**订阅完成后再写**。调换顺序后，同样的高频秒回场景下不再卡死。
+## 七、延伸：线上没炸，还要不要改？
 
-## 六、延伸：线上没炸，还要不要改？
+发现逻辑隐患、但线上暂时没事时，不宜凭感觉直接改。更稳妥的是：**先找到可复现路径，再拿结果说服人**。
 
-发现逻辑隐患、但线上暂时没事时，不宜凭感觉直接改——猜测和真实有时不一致，改动本身也可能引入回归。
+1. 觉得「后端突然返回空」会炸，就模拟空数据。
+2. 觉得「先写后挂等待」会丢包，就用秒回设备 + 高频下发把它打出来。
 
-更稳妥的做法是：**先找到可复现路径，再拿复现结果说服人**。
-
-1. 觉得「后端突然返回空」会炸，就模拟空数据，看线上逻辑是否如你所料。
-2. 觉得「先写后听」会丢包，就用秒回设备 + 高频下发把它打出来。
-
-复现成立，改动才有依据；复现不成立，回头检查自己的推理哪里漏了。态度上是把问题查到底，而不是在环境或运气上停住。
+复现成立，改动才有依据；复现不成立，回头检查推理哪里漏了。
 
 ## 结尾
 
-两行代码的顺序，足够让一条本来「看起来很稳」的蓝牙链路在秒回场景下彻底卡住。写之前先听，不是风格偏好，是时序正确性。
+全局 `monitor` 一直开着，不等于每次指令都「已经在听」。对队列里的每一次发送，仍要先挂上本次任务的等待，再 `write`——否则秒回的那一包，会被全局监听先处理掉，而业务 Promise 只能等到超时。
