@@ -10,7 +10,7 @@ description: 设备秒回时，writeWithResponse 后再挂监听会丢通知，P
 
 前一家公司做蓝牙 App 时，就见过「先下发、再监听」的写法。当时觉得有隐患，也改过公司代码，但那次只是代码审查上的直觉，并没有线上故障可复现。
 
-对库还不熟时，可先看：[react-native-ble-plx 权威指南](https://juejin.cn/post/7212450663922073656)。
+对库还不熟时，可先看官方文档：[react-native-ble-plx](https://github.com/dotintent/react-native-ble-plx)。
 
 本文按「现象 → 代码 → 根因 → 修复 → 延伸」拆开说明；顺带记一件更值得想的事：逻辑有隐患、线上却没炸时，该不该改、怎么说服别人改。
 
